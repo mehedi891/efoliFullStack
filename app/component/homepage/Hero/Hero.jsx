@@ -1,9 +1,8 @@
 import { Link } from "react-router";
-import team from "./team.png";
-import meeting from "./meeting.png";
-import single_person from "./imges_single.webp";
-import personImg from "./personImg.png";
-import ava1 from "./avatar1.png";
+import heroImg1 from "./heroImg1.webp";
+import heroImg2 from "./heroImg2.webp";
+import heroImg3 from "./heroImg3.webp";
+import heroImg4 from "./heroImg4.webp";
 import t1 from "./t1.png";
 import t2 from "./t2.png";
 import t3 from "./t3.png";
@@ -20,7 +19,18 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-12 sm:pt-16 lg:pt-20 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-sm font-medium text-amber-800 shadow-sm">
-          <span aria-hidden>✨</span>
+          <span aria-hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <g clipPath="url(#clip0_2298_2896)">
+                <path d="M14.6259 10.125C14.6273 10.3543 14.5576 10.5785 14.4264 10.7666C14.2952 10.9547 14.109 11.0976 13.8932 11.1755L10.2616 12.5114L8.92567 16.1402C8.84656 16.3552 8.70342 16.5406 8.51558 16.6717C8.32774 16.8027 8.10422 16.8729 7.8752 16.8729C7.64618 16.8729 7.42267 16.8027 7.23482 16.6717C7.04698 16.5406 6.90385 16.3552 6.82473 16.1402L5.48528 12.5156L1.85575 11.1797C1.64082 11.1006 1.45534 10.9574 1.32432 10.7696C1.1933 10.5818 1.12305 10.3582 1.12305 10.1292C1.12305 9.9002 1.1933 9.67668 1.32432 9.48884C1.45534 9.301 1.64082 9.15786 1.85575 9.07875L5.48739 7.74281L6.82333 4.11398C6.90244 3.89906 7.04557 3.71357 7.23342 3.58255C7.42126 3.45153 7.64477 3.38128 7.8738 3.38128C8.10282 3.38128 8.32633 3.45153 8.51417 3.58255C8.70202 3.71357 8.84515 3.89906 8.92426 4.11398L10.2602 7.74563L13.889 9.08156C14.1044 9.15836 14.2908 9.29982 14.4227 9.4866C14.5546 9.67338 14.6256 9.89634 14.6259 10.125ZM10.6884 3.375H11.8134V4.5C11.8134 4.64918 11.8727 4.79226 11.9782 4.89775C12.0836 5.00324 12.2267 5.0625 12.3759 5.0625C12.5251 5.0625 12.6682 5.00324 12.7737 4.89775C12.8791 4.79226 12.9384 4.64918 12.9384 4.5V3.375H14.0634C14.2126 3.375 14.3557 3.31574 14.4612 3.21025C14.5666 3.10476 14.6259 2.96168 14.6259 2.8125C14.6259 2.66332 14.5666 2.52024 14.4612 2.41475C14.3557 2.30926 14.2126 2.25 14.0634 2.25H12.9384V1.125C12.9384 0.975816 12.8791 0.832742 12.7737 0.727252C12.6682 0.621763 12.5251 0.5625 12.3759 0.5625C12.2267 0.5625 12.0836 0.621763 11.9782 0.727252C11.8727 0.832742 11.8134 0.975816 11.8134 1.125V2.25H10.6884C10.5392 2.25 10.3961 2.30926 10.2907 2.41475C10.1852 2.52024 10.1259 2.66332 10.1259 2.8125C10.1259 2.96168 10.1852 3.10476 10.2907 3.21025C10.3961 3.31574 10.5392 3.375 10.6884 3.375ZM16.8759 5.625H16.3134V5.0625C16.3134 4.91332 16.2541 4.77024 16.1487 4.66475C16.0432 4.55926 15.9001 4.5 15.7509 4.5C15.6017 4.5 15.4586 4.55926 15.3532 4.66475C15.2477 4.77024 15.1884 4.91332 15.1884 5.0625V5.625H14.6259C14.4767 5.625 14.3336 5.68426 14.2282 5.78975C14.1227 5.89524 14.0634 6.03832 14.0634 6.1875C14.0634 6.33668 14.1227 6.47976 14.2282 6.58525C14.3336 6.69074 14.4767 6.75 14.6259 6.75H15.1884V7.3125C15.1884 7.46168 15.2477 7.60476 15.3532 7.71025C15.4586 7.81574 15.6017 7.875 15.7509 7.875C15.9001 7.875 16.0432 7.81574 16.1487 7.71025C16.2541 7.60476 16.3134 7.46168 16.3134 7.3125V6.75H16.8759C17.0251 6.75 17.1682 6.69074 17.2737 6.58525C17.3791 6.47976 17.4384 6.33668 17.4384 6.1875C17.4384 6.03832 17.3791 5.89524 17.2737 5.78975C17.1682 5.68426 17.0251 5.625 16.8759 5.625Z" fill="#D97706" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2298_2896">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
           <span>Award winning shopify partner</span>
         </div>
 
@@ -34,7 +44,7 @@ export default function Hero() {
           <motion.span
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.2 }}
+            transition={{ duration: 1, delay: 0.25 }}
             className="block">Empowering Success.</motion.span>
         </h1>
 
@@ -50,14 +60,14 @@ export default function Hero() {
         <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
           <Link
             to="/products"
-            className="inline-flex items-center rounded-xl px-5 py-3 font-medium text-white shadow-sm
+            className="inline-flex items-center rounded-lg px-5 py-3 font-medium text-white shadow-sm
                        bg-[#0D99FF] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#0D99FF]/30"
           >
             Try Our Products
           </Link>
           <Link
             to="/contact"
-            className="inline-flex items-center rounded-xl px-5 py-3 font-medium
+            className="inline-flex items-center rounded-lg px-5 py-3 font-medium
                        text-[#0D99FF] border border-[#0D99FF] hover:bg-[#1d74bf]/5
                        focus:outline-none focus:ring-2 focus:ring-[#1d74bf]/20"
           >
@@ -67,102 +77,29 @@ export default function Hero() {
       </div>
 
       {/* Image/Stats Mosaic */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 mt-10">
+      <div className="max-w-[1600px] mx-auto py-20">
+        <div
+          className="
+      grid gap-6
+      grid-cols-4
+       [grid-template-areas:'A_B_C_D''A_E_C_F']
+        "
+        >
 
-        <div className="flex gap-3">
-
-          <div className="flex flex-col gap-3 items-end">
-            <div className="lg:col-span-4 row-span-1 rounded-tl-[64px] bg-[#F8CFE5] p-8 sm:p-10 max-w-2/3">
-              <div className="h-full flex flex-col justify-center">
-                <div className="text-6xl font-bold text-gray-900 flex items-baseline">
-                  <CounterText
-                    start={0}
-                    end={15}
-                    duration={1500}
-                    className="w-[59px]"
-                    once={true}
-                  />
-                  +</div>
-                <div className="mt-2 text-gray-700 font-medium">Years In Business</div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-4 row-span-1 overflow-hidden rounded-tr-[64px]">
-              <img
-                src={meeting}
-                alt="Team collaborating"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-
-
-
+          <div className="[grid-area:A]">
+              <img src={heroImg1} alt="Team" loading="lazy" className="object-cover h-full  lg:rounded-tr-[100px]"  />
           </div>
-
-          <div className="flex flex-col gap-3">
-            <div className="lg:col-span-5 row-span-2 overflow-hidden rounded-tr-[64px] place-self-start">
-              <img
-                src={team}
-                alt="Team collaborating"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            <div className="flex gap-2">
-              <div className="lg:col-span-4 row-span-1 overflow-hidden rounded-tr-[64px] rounded-tl-[64px]">
-                <img
-                  src={personImg}
-                  alt="Team collaborating"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="lg:col-span-3 rounded-tl-[64px] bg-[#D7FBEA] p-8 sm:p-10">
-                <div className="h-full flex flex-col justify-center">
-                  <div className="text-6xl font-bold text-gray-900 flex items-center">
-                    <CounterText
-                      start={10}
-                      end={180}
-                      duration={1500}
-                      className="w-[100px]"
-                      once={true}
-                    />
-                    +</div>
-                  <div className="mt-2 text-gray-700 font-medium">Countries Reached</div>
-                </div>
-              </div>
-            </div>
-
+          <div className="[grid-area:B] p-30 bg-amber-500 border">2</div>
+          <div className="[grid-area:C]">
+            <img src={heroImg3} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]"  />
           </div>
-
-          <div className="flex flex-col gap-3">
-            <div className="lg:col-span-3 row-span-1 rounded-tr-[64px] bg-[#FDF0CC] p-8 sm:p-10">
-              <div className="flex items-center -space-x-3">
-                {/* Avatars — replace with your assets */}
-                {[ava1, ava1, ava1, ava1].map((src, i) => (
-                  <img key={i} src={src} alt="" className="h-10 w-10 rounded-full ring-2 ring-white object-cover" />
-                ))}
-              </div>
-              <p className="mt-4 font-medium text-gray-900">
-                Trusted by <span className="font-semibold">15k+ clients</span>
-              </p>
-              <div className="mt-2 flex items-center gap-1" aria-label="5 out of 5 stars">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="h-5 w-5" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true">
-                    <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-            <div className="lg:col-span-4 row-span-1 overflow-hidden rounded-lt-[64px] max-w-5/6">
-              <img
-                src={single_person}
-                alt="Team collaborating"
-                className="max-h-[490px]  object-cover"
-              />
-            </div>
+          <div className="[grid-area:D]">
+             <img src={heroImg4} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tl-[100px]"  />
           </div>
+          <div className="[grid-area:E]">
+            <img src={heroImg2} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]"  />
+          </div>
+          <div className="[grid-area:F]p-30 bg-amber-500 border">6</div>
         </div>
       </div>
 
@@ -185,10 +122,10 @@ export default function Hero() {
 
       <LogoMarquee
         images={[t1, t2, t3, t4, t1, t2, t3, t4]}
-        slotWidth={180} 
+        slotWidth={180}
         slotPad={16}
-        logoHeight={48} 
-        speedPx={90}     
+        logoHeight={48}
+        speedPx={90}
         bg="#ffffff"
       />
 

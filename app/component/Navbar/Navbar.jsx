@@ -65,8 +65,8 @@ const Navbar = ({parentClassName,linkClassName}) => {
           <div className="hidden lg:block">
             <a
               href="/products"
-              className="inline-flex items-center rounded-xl px-4 py-2 text-white shadow-sm
-                         bg-gradient-to-r from-[#1d74bf] to-[#0D99FF] hover:opacity-90
+              className="inline-flex items-center rounded-lg px-4 py-2 text-white shadow-sm
+                         bg-[#0D99FF] hover:opacity-90
                          focus:outline-none focus:ring-2 focus:ring-[#1d74bf]/30 transition"
             >
               Try Our Products
