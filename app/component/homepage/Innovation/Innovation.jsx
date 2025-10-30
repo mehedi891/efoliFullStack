@@ -20,8 +20,8 @@ const Innovation = () => {
         <div className="my-5 flex flex-wrap items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]">
           <div className="max-w-[550px]">
             <div className="flex items-center gap-2">
-              <img src={mvIcon} alt="Multivariants" className="max-w-[60px] h-auto" />
-              <h4 className="text-3xl text-[#13181E] font-bold font-display">MultiVariants ‑ Bulk Order</h4>
+              <img src={mvIcon} alt="Multivariants" className="max-w-[42px] h-auto" />
+              <h4 className="text-2xl text-[#13181E] font-bold font-display">MultiVariants ‑ Bulk Order</h4>
             </div>
             <p className="text-base/[1.75] text-[#4B5154] py-4">Privilege your clients with one-click bulk order placing system, apply business rules and win more sales with MultiVariants.</p>
             <Link to={"https://multivariants.com"} target="_blank" className="flex text-base font-[600] items-center gap-2 border-b max-w-max">
@@ -43,8 +43,8 @@ const Innovation = () => {
           <div className=" flex flex-wrap flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-[603px]">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
-                <img src={pbIcon} alt="Multivariants" className="max-w-[60px] h-auto rounded-sm" />
-                <h4 className="text-3xl text-[#13181E] font-bold font-display">Push Bundle ‑ Build a Box</h4>
+                <img src={pbIcon} alt="Multivariants" className="max-w-[42px] h-auto rounded-sm" />
+                <h4 className="text-2xl text-[#13181E] font-bold font-display">Push Bundle ‑ Build a Box</h4>
               </div>
               <p className="text-base/[1.75] text-[#4B5154] py-4">Privilege your clients with one-click bulk order placing system, apply business rules and win more sales with MultiVariants.</p>
               <Link to={"https://pushbundle.com"} target="_blank" className="flex text-base font-[600] items-center gap-2 border-b max-w-max">
@@ -64,8 +64,8 @@ const Innovation = () => {
           <div className=" flex flex-wrap flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-[603px]">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
-                <img src={drIcon} alt="Multivariants" className="max-w-[60px] h-auto" />
-                <h4 className="text-3xl text-[#13181E] font-bold font-display">DiscountRay ‑ B2B Custom Pricing</h4>
+                <img src={drIcon} alt="Multivariants" className="max-w-[42px] h-auto" />
+                <h4 className="text-2xl text-[#13181E] font-bold font-display">DiscountRay ‑ B2B Custom Pricing</h4>
               </div>
               <p className="text-base/[1.75] text-[#4B5154]  py-4">Privilege your clients with one-click bulk order placing system, apply business rules and win more sales with MultiVariants.</p>
               <Link to={"https://discountray.com"} target="_blank" className="flex text-base font-[600] items-center gap-2 border-b max-w-max">
@@ -87,8 +87,8 @@ const Innovation = () => {
         <div className="my-5 flex flex-wrap items-center justify-between shadow-2xl p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]">
           <div className="max-w-[550px]">
             <div className="flex items-center gap-2">
-              <img src={emIcon} alt="EmbedUp" className="max-w-[60px] h-auto" />
-              <h4 className="text-3xl text-[#13181E] font-bold font-display">Embedup - sell anywherer</h4>
+              <img src={emIcon} alt="EmbedUp" className="max-w-[42px] h-auto" />
+              <h4 className="text-2xl text-[#13181E] font-bold font-display">Embedup - sell anywherer</h4>
             </div>
             <p className="text-base/[1.75] text-[#4B5154] py-4">Turn any website or blog into a sales channel in minutes. Embed products on WordPress, Wix, Webflow, Squarespace & more.</p>
             <Link to={"https://embedup.com"} target="_blank" className="flex text-base font-[600] items-center gap-2 border-b max-w-max">
