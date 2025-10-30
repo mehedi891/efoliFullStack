@@ -32,7 +32,7 @@ export default function CounterText({
 
   return (
     <span ref={ref} className={className} aria-live="polite">
-      {value}
+      {value}+
     </span>
   );
 }

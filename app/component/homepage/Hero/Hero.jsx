@@ -81,25 +81,50 @@ export default function Hero() {
         <div
           className="
       grid gap-6
-      grid-cols-4
-       [grid-template-areas:'A_B_C_D''A_E_C_F']
+      md:grid-cols-4
+      grid-cols-1
+       md:[grid-template-areas:'A_B_C_D''A_E_C_F']
+       [grid-template-areas:'A']
+       place-center
         "
         >
 
           <div className="[grid-area:A]">
-              <img src={heroImg1} alt="Team" loading="lazy" className="object-cover h-full  lg:rounded-tr-[100px]"  />
+            <img src={heroImg1} alt="Team" loading="lazy" className="object-inherit w-auto h-full  md:rounded-tr-[100px] rounded-xl" />
           </div>
-          <div className="[grid-area:B] p-30 bg-amber-500 border">2</div>
-          <div className="[grid-area:C]">
-            <img src={heroImg3} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]"  />
+          <div className="[grid-area:B] md:block hidden">
+            <div className="bg-[#FFD4EE] w-full h-full rounded-tl-[100px] gap-3 flex flex-col items-center justify-center">
+              <CounterText
+                className="text-[80px]/[0.8] text-[#6F3055] tracking-[-2.4px] font-semibold font-display"
+                duration={1500}
+                start={0}
+                end={15}
+                once={true}
+              />
+              <p className="text-[22px] text-[#6F3055] font-semibold font-display">Years Of Solid Experience.</p>
+            </div>
           </div>
-          <div className="[grid-area:D]">
-             <img src={heroImg4} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tl-[100px]"  />
+          <div className="[grid-area:C] md:block hidden">
+            <img src={heroImg3} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]" />
           </div>
-          <div className="[grid-area:E]">
-            <img src={heroImg2} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]"  />
+          <div className="[grid-area:D] md:block hidden">
+            <img src={heroImg4} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tl-[100px]" />
           </div>
-          <div className="[grid-area:F]p-30 bg-amber-500 border">6</div>
+          <div className="[grid-area:E] md:block hidden">
+            <img src={heroImg2} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]" />
+          </div>
+          <div className="[grid-area:F] md:block hidden">
+            <div className="bg-[#D3FEE8] w-full h-full rounded-tr-[100px] gap-3 flex flex-col items-center justify-center">
+              <CounterText
+                className="text-[80px]/[0.8] text-[#235D3A] tracking-[-2.4px] font-semibold font-display"
+                duration={1500}
+                start={50}
+                end={180}
+                once={true}
+              />
+              <p className="text-[22px] text-[#235D3A] font-semibold font-display">Countries Reached</p>
+            </div>
+          </div>
         </div>
       </div>
 
