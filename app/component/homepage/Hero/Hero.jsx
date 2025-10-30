@@ -77,7 +77,7 @@ export default function Hero() {
       </div>
 
       {/* Image/Stats Mosaic */}
-      <div className="max-w-[1600px] mx-auto py-20">
+      <div className="max-w-[1800px] mx-auto py-20">
         <div
           className="
       grid gap-6
