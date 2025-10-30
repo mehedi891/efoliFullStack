@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useInView, animate } from "framer-motion";
 
+
 export default function CounterText({
   start = 1,
   end = 15,

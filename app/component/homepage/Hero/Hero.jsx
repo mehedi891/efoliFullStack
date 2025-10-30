@@ -18,7 +18,7 @@ export default function Hero() {
       {/* Top copy */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-12 sm:pt-16 lg:pt-20 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-sm font-medium text-amber-800 shadow-sm">
+        <div className="inline-flex items-center gap-2 rounded-full border border-[#F59E0B] bg-[linear-gradient(180deg,#FFF_0%,#FFFBEB_100%)] px-4 py-1.5 text-sm font-medium text-[#D97706] shadow-sm">
           <span aria-hidden>
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <g clipPath="url(#clip0_2298_2896)">
@@ -49,7 +49,7 @@ export default function Hero() {
         </h1>
 
         {/* Subcopy */}
-        <p className="mx-auto mt-5 max-w-3xl text-base sm:text-lg text-gray-600">
+        <p className="mx-auto mt-5 max-w-4xl text-xl/[1.9] text-[#4B5154]">
           EFOLI is a globally connected software company headquartered in Bangladesh, with
           <br className="hidden sm:block" />
           <span className="font-semibold"> 15+ years </span>
@@ -90,7 +90,7 @@ export default function Hero() {
         >
 
           <div className="[grid-area:A]">
-            <img src={heroImg1} alt="Team" loading="lazy" className="object-inherit w-auto h-full  md:rounded-tr-[100px] rounded-xl" />
+            <img src={heroImg1} alt="Team" loading="lazy" className="object-inherit w-auto h-full  md:rounded-tr-[100px] rounded-bt-xs sm:rounded-xl" />
           </div>
           <div className="[grid-area:B] md:block hidden">
             <div className="bg-[#FFD4EE] w-full h-full rounded-tl-[100px] gap-3 flex flex-col items-center justify-center">
