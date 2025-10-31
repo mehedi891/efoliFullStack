@@ -58,7 +58,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
                   to={l.href}
                   end={l.end}
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active text-[#1d74bf] font-bold" : `text-[#13181E] font-medium ${linkClassName}`
+                    isPending ? "pending" : isActive ? "active text-[#1d74bf]" : `text-[#13181E] font-medium ${linkClassName}`
                   }
                 >
                   <NavButton
