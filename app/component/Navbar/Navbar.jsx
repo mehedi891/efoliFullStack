@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "./logo.png";
+import Button from "../Button/Button";
+import NavButton from "./NavButton/NavButton";
 
 
 const navLinks = [
@@ -12,37 +14,31 @@ const navLinks = [
   { name: "Contact Us", href: "/contact-us/" },
 ];
 
-const base =
-  "group relative text-[16px] transition-colors";
-const idle =
-  "hover:text-[#1d74bf]";
-const active =
-  "text-[#1d74bf]";
-
-const linkClass = (isActive) => [base, isActive ? active : idle].join(" ");
 
 
 
-const Navbar = ({parentClassName,linkClassName}) => {
+
+
+const Navbar = ({ parentClassName, linkClassName }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <header className={`sticky top-0 z-50 ${parentClassName}`}>
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6">
+      <nav className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <img src={logo} alt="EFOLI, LLC" className="h-12 w-12" />
+            <img src={logo} alt="EFOLI, LLC" className="h-18 w-18" />
           </a>
 
           {/* Desktop links */}
-          <ul className="hidden lg:flex items-center gap-10">
+          <ul className="hidden lg:flex items-center gap-2">
             {navLinks.map((l) => (
               <li key={l.name}>
-                <NavLink
+                {/* <NavLink
                   to={l.href}
                   end={l.end}
-                  className={({ isActive }) => linkClass(isActive)+ " "+linkClassName}
+                  className={({ isActive }) => linkClass(isActive) + " " + linkClassName}
                 >
                   {({ isActive }) => (
                     <>
@@ -56,21 +52,36 @@ const Navbar = ({parentClassName,linkClassName}) => {
                       />
                     </>
                   )}
+                </NavLink> */}
+
+                <NavLink
+                  to={l.href}
+                  end={l.end}
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active text-[#1d74bf] font-bold" : `text-[#13181E] font-medium ${linkClassName}`
+                  }
+                >
+                  <NavButton
+                    text={l.name}
+                  />
                 </NavLink>
+
+
               </li>
             ))}
           </ul>
 
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <a
-              href="/products"
-              className="inline-flex items-center rounded-lg px-4 py-2 text-white shadow-sm
-                         bg-[#0D99FF] hover:opacity-90
-                         focus:outline-none focus:ring-2 focus:ring-[#1d74bf]/30 transition"
+            <Link
+              to="/#efProducts"
             >
-              Try Our Products
-            </a>
+              <Button
+                pClass="rounded-lg px-5 py-2.5 font-medium text-white shadow-sm bg-[#0D99FF]"
+                text1="Try Our Products"
+                text2="Try Our Products"
+              />
+            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -135,15 +146,15 @@ const Navbar = ({parentClassName,linkClassName}) => {
 
 
           <div className="pt-3">
-            <a
-              href="/products"
-              onClick={() => setOpen(false)}
-              className="flex w-full items-center justify-center rounded-xl px-4 py-2 text-white shadow-sm
-                         bg-gradient-to-r from-[#0D99FF] to-[#1098f7] hover:opacity-90
-                         focus:outline-none focus:ring-2 focus:ring-[#1d74bf]/30 transition"
+            <Link
+              to="/#efProducts"
             >
-              Try Our Products
-            </a>
+              <Button
+                pClass="rounded-lg px-5 py-2.5 font-medium text-white shadow-sm bg-[#0D99FF]"
+                text1="Try Our Products"
+                text2="Try Our Products"
+              />
+            </Link>
           </div>
         </div>
       </div>

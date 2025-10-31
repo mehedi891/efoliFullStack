@@ -3,6 +3,7 @@ import cHero from "./contactHero.webp";
 import { useFetcher } from "react-router";
 import FormsubmitSuccessModal from "../FormsubmitSuccessModal/FormsubmitSuccessModal";
 import { useEffect, useState } from "react";
+import Button from "../../Button/Button";
 
 const ContactHero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,13 +30,13 @@ const ContactHero = () => {
     reset();
   };
 
-  useEffect(()=>{
-    if(fetcher?.data?.success && fetcher?.data?.message){
+  useEffect(() => {
+    if (fetcher?.data?.success && fetcher?.data?.message) {
       setIsModalOpen(true);
     }
-  },[fetcher?.data?.success, fetcher?.data?.message]);
+  }, [fetcher?.data?.success, fetcher?.data?.message]);
 
-  
+
 
   const service = watch("service");
   const isPlaceholder = service === "";
@@ -171,18 +172,27 @@ const ContactHero = () => {
               )}
             </div>
 
-            <button
+            {/* <button
               type="submit"
               disabled={fetcher?.state !== "idle"}
               className="px-10 py-2 max-w-max bg-[#fff] text-[#020202] text-xl rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 cursor-pointer"
             >
               {fetcher?.state !== "idle" ? "Submitting..." : "Submit"}
-            </button>
+            </button> */}
+
+           
+              <Button
+                type="submit"
+                pClass="px-10 py-2 max-w-max bg-[#fff] text-[#020202] text-xl rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60"
+                text1={fetcher?.state !== "idle" ? "Submitting..." : "Submit"}
+                text2={fetcher?.state !== "idle" ? "Submitting..." : "Submit"}
+              />
+            
 
           </form>
         </div>
       </div>
-     
+
       <FormsubmitSuccessModal
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

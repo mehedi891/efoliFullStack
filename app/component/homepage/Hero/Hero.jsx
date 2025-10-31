@@ -10,12 +10,14 @@ import t4 from "./t4.png";
 import { motion } from "motion/react"
 import CounterText from "../../CounterText/CounterText";
 import LogoMarquee from "../../LogoMarquee/LogoMarquee";
+import Button from "../../Button/Button";
 
 
 export default function Hero() {
   return (
     <section className="relative">
       {/* Top copy */}
+      
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-12 sm:pt-16 lg:pt-20 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 rounded-full border border-[#F59E0B] bg-[linear-gradient(180deg,#FFF_0%,#FFFBEB_100%)] px-4 py-1.5 text-sm font-medium text-[#D97706] shadow-sm">
@@ -59,19 +61,25 @@ export default function Hero() {
         {/* CTAs */}
         <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
           <Link
-            to="/products"
-            className="inline-flex items-center rounded-lg px-5 py-3 font-medium text-white shadow-sm
-                       bg-[#0D99FF] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#0D99FF]/30"
+            to="/#efProducts"
           >
-            Try Our Products
+            <Button
+                pClass="rounded-lg px-6 py-3.5 font-medium text-white shadow-sm bg-[#0D99FF]"
+                text1="Try Our Products"
+                text2="Try Our Products"
+            />
           </Link>
+
+
+
           <Link
-            to="/contact"
-            className="inline-flex items-center rounded-lg px-5 py-3 font-medium
-                       text-[#0D99FF] border border-[#0D99FF] hover:bg-[#1d74bf]/5
-                       focus:outline-none focus:ring-2 focus:ring-[#1d74bf]/20"
+            to="/contact-us/"
           >
-            Request Info
+            <Button
+                pClass="rounded-lg px-6 py-3.5 font-medium text-[#0D99FF] border border-[#0D99FF]"
+                text1="Request Info"
+                text2="Request Info"
+            />
           </Link>
         </div>
       </div>

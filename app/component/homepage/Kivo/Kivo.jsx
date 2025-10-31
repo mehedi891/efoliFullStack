@@ -1,9 +1,10 @@
 import { Link } from "react-router";
 import kivoImg from "./kivo.webp";
 import kivoBg from "./service_bg.webp";
+import Button from "../../Button/Button";
 const Kivo = () => {
   return (
-    <section  style={{ backgroundImage: `url(${kivoBg})` }} className={`py-8 bg-no-repeat bg-cover bg-center`}>
+    <section style={{ backgroundImage: `url(${kivoBg})` }} className={`py-8 bg-no-repeat bg-cover bg-center`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 mt-10">
         <h3 className="text-lg text-center text-blue-500 font-[600]">Our Service</h3>
         <h2 className="font-display text-5xl/normal font-bold text-center py-3 line">KivoSupport - white label <br /> customer support</h2>
@@ -24,14 +25,18 @@ const Kivo = () => {
             </div>
 
             <div className="mt-6">
-              <Link 
+
+              <Link
                 to={"https://calendly.com/efolisupport"}
                 target="_blank"
               >
-                  <button
-                  className="bg-[#0D99FF] py-3 px-4 rounded-2xl text-white font-[600] cursor-pointer hover:bg-[#0964a5] ease-in-out duration-500"
-                  >Schedule a Call</button>
+                <Button
+                  pClass="rounded-lg px-6 py-3.5 font-medium text-white shadow-sm bg-[#0D99FF]"
+                  text1="Schedule a Call"
+                  text2="Schedule a Call"
+                />
               </Link>
+
             </div>
 
           </div>

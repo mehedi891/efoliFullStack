@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import Button from "../../Button/Button"
 
 const Jobs = () => {
   const jobsArr = [
@@ -48,8 +49,17 @@ const Jobs = () => {
                 <p className="text-base">Open roles: <strong>{job.open}</strong></p>
               </div>
               <div>
-                <Link to={job.applyLink} target="_blank">
-                  <button className="bg-[#0D99FF] rounded-xl px-8 py-3 text-white cursor-pointer text-sm font-bold font-display">Apply</button>
+
+
+                <Link
+                  to={job.applyLink}
+                  target="_blank"
+                >
+                  <Button
+                    pClass="bg-[#0D99FF] rounded-xl px-8 py-3 text-white cursor-pointer text-sm font-bold font-display"
+                    text1="Apply"
+                    text2="Apply"
+                  />
                 </Link>
               </div>
             </div>

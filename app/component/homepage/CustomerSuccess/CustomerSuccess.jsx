@@ -1,7 +1,8 @@
 import startImg from "./starIcon.svg";
 import shopifyImg from "./shopifyImg.png";
 import { Link } from "react-router";
-import {motion} from "motion/react";
+import { motion } from "motion/react";
+import Button from "../../Button/Button";
 const CustomerSuccess = () => {
 
   return (
@@ -349,17 +350,23 @@ const CustomerSuccess = () => {
 
       </div>
 
-      <div className="flex justify-center items-center absolute w-full bg-[linear-gradient(223deg,rgba(249,250,251,0.10)_-19.9%,rgba(249,250,251,0.50)_58.82%)] bottom-[100px] h-60">
+      <div
+        className="flex justify-center items-center absolute w-full  
+            bg-[linear-gradient(180deg,#0F172A00_0%,#0F172A33_25%,#0F172A1F_55%,#FFFFFFB3_85%,#FFFFFFFF_100%)]
+
+      bottom-[0px] h-[70vh]">
+
+
         <Link
           to="https://apps.shopify.com/multivariants/reviews?sort_by=newest"
           target="_blank"
           rel="noreferrer"
         >
-          <button
-            className="cursor-pointer rounded-lg bg-white px-6 py-3.5 font-semibold text-[#13181E]"
-          >
-            Meet our customers
-          </button>
+          <Button
+            pClass="rounded-lg bg-white px-6 py-3.5 font-semibold text-[#13181E]"
+            text1="Meet our customers"
+            text2="Meet our customers"
+          />
         </Link>
       </div>
 

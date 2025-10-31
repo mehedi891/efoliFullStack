@@ -12,14 +12,11 @@
   font-family: var(--font-display);
 }
 
-html,
-body {
-   @apply antialiased text-gray-900 font-sans; /* Inter everywhere by default */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-/* .timelineSectionIcon svg{
-  max-width: 15px;
-  max-height: 15px;
-} */
+
+
+
+
+
+
+

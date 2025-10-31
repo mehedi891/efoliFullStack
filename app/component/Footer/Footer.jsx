@@ -4,8 +4,8 @@ import logo from "./footerLogo.png";
 import partner from "./partner.png";
 import basis from "./basis.png";
 import { Link } from "react-router";
-
-const Footer = ({isDark}) => {
+import Button from "../Button/Button";
+const Footer = ({ isDark }) => {
   return (
     <footer style={!isDark ? { backgroundImage: `url(${footerBg})` } : undefined} className={`relative ${isDark ? 'pt-20 mt-10 bg-[#010A1E] text-white' : 'mt-30 text-[#13181E]'}`}>
 
@@ -17,11 +17,16 @@ const Footer = ({isDark}) => {
           </div>
           <div className="max-w-[410px]">
             <p className="text-base text-white pb-7">Mission to help fast-growing start-ups and creative enterprises to achieve their goals faster.</p>
-            <Link>
-              <button className="px-4 py-2 bg-white text-[#0D99FF] font-semibold rounded-md hover:bg-gray-200 transition ease-in-out duration-300 cursor-pointer">
-                Let’s Discuss
-              </button>
+            <Link
+              to="/contact-us/"
+            >
+              <Button
+                pClass="px-7 py-3 bg-white text-[#0D99FF] text-lg font-semibold rounded-lg"
+                text1="Let’s Discuss"
+                text2="Let’s Discuss"
+              />
             </Link>
+
           </div>
         </div>
       </div>
@@ -30,9 +35,9 @@ const Footer = ({isDark}) => {
         <div className="max-w-lg">
           <img src={logo} alt="eFoli" className="max-w-[100px] object-contain" />
           <p className="text-[18px]/[1.7]  pt-5 pb-7">Crafting B2B eCommerce Solutions, Empowering Success EFOLI is a Bangladeshi software company with 15+ years of experience, specializing in cutting-edge solutions for eCommerce businesses.</p>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <img src={partner} alt="eFoli" className="max-w-[200px] object-contain" />
-            <img src={basis} alt="eFoli" className="max-w-[120px] object-contain ml-5" />
+            <img src={basis} alt="eFoli" className="max-w-[120px] object-contain " />
           </div>
         </div>
 
