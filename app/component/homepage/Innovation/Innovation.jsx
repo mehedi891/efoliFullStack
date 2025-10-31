@@ -99,7 +99,7 @@ const Innovation = () => {
             </Link>
           </div>
 
-          <div className="max-w-[400px]">
+          <div className="max-w-[500px]">
             <img className="object-cover" src={em_demo} alt="EmbedUp" />
           </div>
 

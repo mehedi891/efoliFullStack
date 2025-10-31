@@ -16,49 +16,35 @@ const JoinTeam = () => {
             </svg>
           </Link>
         </div>
-        <div className="flex gap-5 mt-8">
-          <div>
-            <img src={careerImg1} alt="Career Image 1" loading="lazy" className="max-h-[601px] object-contain rounded-2xl" />
+
+        <div className="grid grid-cols-12 gap-6 mt-8 [grid-template-areas:'A_A_A_A_B_B_B_C_C_C_C_C''A_A_A_A_D_D_D_D_D_E_E_E']">
+          <div className="[grid-area:A]">
+            <img src={careerImg1} alt="Career Image 1" loading="lazy" className="h-full w-full object-fill rounded-2xl" />
           </div>
-
-          <div className="flex flex-col gap-5">
-            <div className="flex gap-5">
-
-              <div className="rounded-xl bg-[#D7FBEA] p-8 sm:p-10">
-                <div className="h-full flex flex-col justify-between">
-                  <div className="mt-2 text-gray-700 font-medium">Team Members</div>
-                  <div className="text-6xl font-bold text-gray-900">30+</div>
-                </div>
+          <div className="[grid-area:B]">
+            <div className="rounded-[20px] bg-[#D7FBEA] p-8 sm:p-10 w-full h-full">
+              <div className="h-full flex flex-col justify-between">
+                <div className="mt-2 text-gray-700 font-medium">Team Members</div>
+                <div className="text-6xl font-bold text-gray-900">30+</div>
               </div>
-
-              <div>
-                <img src={careerImg2} alt="Career Image 2" loading="lazy" className="max-h-[295px] object-contain rounded-2xl max-w-[558px]" />
-              </div>
-
-            </div>
-
-            <div className="flex gap-5">
-              <div>
-                <img src={careerImg3} alt="Career Image 3" loading="lazy" className="max-h-[295px] object-contain max-w-[558px] rounded-2xl" />
-              </div>
-
-              <div className="rounded-xl bg-[#FFD4EE] p-2 sm:p-3">
-                <div className="h-full flex flex-col justify-between">
-                  <div className="mt-2 text-[#6F3055] font-[600] text-xl font-display">Years In Business</div>
-                  <div className="text-6xl font-bold text-gray-900">15+</div>
-                </div>
-              </div>
-
-
-
             </div>
           </div>
-
-
-          <div>
-
+          <div className="[grid-area:C]">
+            <img src={careerImg2} alt="Career Image 2" loading="lazy" className="rounded-2xl w-full h-full" />
+          </div>
+          <div className="[grid-area:D]">
+            <img src={careerImg3} alt="Career Image 3" loading="lazy" className="  h-full rounded-2xl" />
+          </div>
+          <div className="[grid-area:E]">
+            <div className="rounded-[20px] bg-[#FFD4EE] p-10 sm:p-10 w-full h-full">
+              <div className="h-full flex flex-col justify-between">
+                <div className="mt-2 text-[#6F3055] font-[600] text-xl font-display">Years In Business</div>
+                <div className="text-6xl font-bold text-gray-900">15+</div>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   )
