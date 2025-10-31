@@ -77,7 +77,7 @@ export default function Hero() {
       </div>
 
       {/* Image/Stats Mosaic */}
-      <div className="max-w-[1800px] mx-auto py-20">
+      <div className="max-w-1/1 mx-auto py-20">
         <div
           className="
       grid gap-6
@@ -114,15 +114,18 @@ export default function Hero() {
             <img src={heroImg2} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]" />
           </div>
           <div className="[grid-area:F] md:block hidden">
-            <div className="bg-[#D3FEE8] w-full h-full rounded-tr-[100px] gap-3 flex flex-col items-center justify-center">
-              <CounterText
-                className="text-[80px]/[0.8] text-[#235D3A] tracking-[-2.4px] font-semibold font-display"
-                duration={1500}
-                start={50}
-                end={180}
-                once={true}
-              />
-              <p className="text-[22px] text-[#235D3A] font-semibold font-display">Countries Reached</p>
+            <div className="w-full h-full pr-4">
+              <div className="bg-[#D3FEE8] w-full h-full rounded-tr-[100px] gap-3 flex flex-col items-center justify-center">
+                <CounterText
+                  className="text-[80px]/[0.8] text-[#235D3A] tracking-[-2.4px] font-semibold font-display"
+                  duration={1500}
+                  start={50}
+                  end={180}
+                  once={true}
+                />
+                <p className="text-[22px] text-[#235D3A] font-semibold font-display">Countries Reached</p>
+              </div>
+
             </div>
           </div>
         </div>
