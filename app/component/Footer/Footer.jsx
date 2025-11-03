@@ -10,11 +10,13 @@ import Button from "../Button/Button";
 const Footer = ({ isDark, isBannerHide = false }) => {
   return (
     <footer style={!isDark ? { backgroundImage: `url(${footerBg})` } : undefined} className={`relative ${isDark ? 'pt-20 mt-10 bg-[#010A1E] text-white' : 'mt-30 text-[#13181E]'}`}>
-      { !isBannerHide &&
-        <div style={{ backgroundImage: `url(${ctaBg})` }} className={`py-24 bg-no-repeat bg-cover bg-center max-w-7xl mx-auto rounded-2xl ${isDark ? 'static' : 'absolute'} top-[-120px] left-0 right-0 px-6`}>
-          <div className="max-w-6xl mx-auto flex  items-center justify-evenly gap-6">
+      {!isBannerHide &&
+        <div style={{ backgroundImage: `url(${ctaBg})` }} className={`md:py-24 py-10 mx-2 bg-no-repeat bg-cover bg-center max-w-7xl md:mx-auto rounded-2xl ${isDark ? 'static' : 'absolute'} top-[-120px] left-0 right-0 px-6`}>
+          <div className="max-w-6xl mx-auto flex flex-wrap  items-center justify-evenly gap-6">
             <div className="max-w-[400px]">
-              <h3 className="text-6xl font-display font-bold text-white pb-3">Let's Make <br /> a Real Impact</h3>
+              <h3 className="md:text-6xl font-display font-bold text-white pb-3 hidden md:block">Let's Make <br /> a Real Impact</h3>
+              <h3 className="text-3xl font-display font-bold text-white pb-3 md:hidden">Let's Make a Real Impact</h3>
+
               <a href="mailto:info@efoli.com" className="text-[18px] text-white">info@efoli.com</a>
             </div>
             <div className="max-w-[410px]">
@@ -34,7 +36,7 @@ const Footer = ({ isDark, isBannerHide = false }) => {
         </div>
       }
 
-      <div className={`max-w-7xl mx-auto ${isDark && !isBannerHide ? 'pt-20' : !isDark && !isBannerHide ? 'pt-80' : 'pt-1'} pb-10 flex justify-between px-6 gap-10 flex-wrap lg:flex-nowrap items-start`}>
+      <div className={`max-w-7xl mx-auto ${isDark && !isBannerHide ? 'pt-20' : !isDark && !isBannerHide ? 'md:pt-80 pt-60' : 'pt-1'} pb-10 flex justify-between px-6 gap-10 flex-wrap lg:flex-nowrap items-start`}>
         <div className="max-w-lg">
           <img src={logo} alt="eFoli" className="max-w-[100px] object-contain" />
           <p className="text-[18px]/[1.7]  pt-5 pb-7">Crafting B2B eCommerce Solutions, Empowering Success EFOLI is a Bangladeshi software company with 15+ years of experience, specializing in cutting-edge solutions for eCommerce businesses.</p>
