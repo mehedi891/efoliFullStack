@@ -77,7 +77,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
               to="/#efProducts"
             >
               <Button
-                pClass="rounded-full text-sm px-5 py-2.5 font-medium text-white shadow-sm bg-[#0D99FF]"
+                pClass="rounded-lg text-sm px-5 py-2.5 font-medium text-white shadow-sm bg-[#0D99FF]"
                 text1="Try Our Products"
                 text2="Try Our Products"
               />
