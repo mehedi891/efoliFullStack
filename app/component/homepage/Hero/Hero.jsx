@@ -98,7 +98,9 @@ export default function Hero() {
         >
 
           <div className="[grid-area:A]">
-            <img src={heroImg1} alt="Team" loading="lazy" className="object-inherit w-auto h-full  md:rounded-tr-[100px] rounded-bt-xs sm:rounded-xl" />
+           <div className="w-full h-full pl-5">
+             <img src={heroImg1} alt="Team" loading="lazy" className=" w-auto h-full  md:rounded-tr-[100px] rounded-bt-xs sm:rounded-xl" />
+           </div>
           </div>
           <div className="[grid-area:B] md:block hidden">
             <div className="bg-[#FFD4EE] w-full h-full rounded-tl-[100px] gap-3 flex flex-col items-center justify-center">
@@ -116,13 +118,15 @@ export default function Hero() {
             <img src={heroImg3} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]" />
           </div>
           <div className="[grid-area:D] md:block hidden">
-            <img src={heroImg4} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tl-[100px]" />
+            <div className="w-full h-full pr-5">
+              <img src={heroImg4} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tl-[100px]" />
+            </div>
           </div>
           <div className="[grid-area:E] md:block hidden">
             <img src={heroImg2} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]" />
           </div>
           <div className="[grid-area:F] md:block hidden">
-            <div className="w-full h-full pr-4">
+            <div className="w-full h-full pr-5">
               <div className="bg-[#D3FEE8] w-full h-full rounded-tr-[100px] gap-3 flex flex-col items-center justify-center">
                 <CounterText
                   className="text-[80px]/[0.8] text-[#235D3A] tracking-[-2.4px] font-semibold font-display"
