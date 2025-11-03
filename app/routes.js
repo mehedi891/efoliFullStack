@@ -6,6 +6,7 @@ export default [
     route("about-us/", "routes/about.jsx"),
     route("career/", "routes/career.jsx"),
     route("contact-us/", "routes/contact.jsx"),
+    route("service/", "routes/service.jsx"),
     route("*", "routes/404.jsx"),
     // route("contact", "routes/contact.jsx"),
   ]),

@@ -9,7 +9,7 @@ const CustomerSuccess = () => {
     <section className="bg-[#F9FAFB] py-8 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 mt-10">
         <h3 className="text-lg text-center text-blue-500 font-[600]">Testimonials</h3>
-        <h2 className="font-display text-5xl/normal font-bold text-center py-3 line">Customer success stories</h2>
+        <h2 className="font-display text-5xl/normal font-bold text-center line mb-15 mt-2">Customer success stories</h2>
 
         {/* <div className="grid grid-cols-3 gap-6">
           <div className="space-y-3 py-7 px-6 bg-white rounded-xl max-h-max">

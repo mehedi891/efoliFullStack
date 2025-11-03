@@ -4,29 +4,31 @@ import Footer from "../component/Footer/Footer"
 
 
 const Layout = () => {
-   const matches = useMatches();
+  const matches = useMatches();
   const darkFooter = matches.some(m => m.handle?.darkFooter === true);
   const darkHeader = matches.some(m => m.handle?.darkHeader === true);
+  const isBannerHide = matches.some(m => m.handle?.isBannerHide === true);
   return (
     <div>
       <Navbar
-      parentClassName={
-            darkHeader
-              ? "bg-black/90"
-              : "bg-white/90 backdrop-blur border-b border-gray-100"
-          }
-      linkClassName={
-            darkHeader
-              ? "text-white"
-              : "text-[#4b5154]"
-          }
+        parentClassName={
+          darkHeader
+            ? "bg-black/90"
+            : "bg-white/90 backdrop-blur border-b border-gray-100"
+        }
+        linkClassName={
+          darkHeader
+            ? "text-white"
+            : "text-[#4b5154]"
+        }
       />
-      <Outlet/>
+      <Outlet />
       <Footer
-      isDark={darkFooter}
+        isDark={darkFooter}
+        isBannerHide={isBannerHide }
 
       />
-      </div>
+    </div>
   )
 }
 

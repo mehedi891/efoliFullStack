@@ -3,7 +3,7 @@ const NavButton = ({text="Home"}) => {
   // className="overflow-hidden w-32 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
   return (
     <button
-      className="overflow-hidden px-4 py-0 h-9.5 border-none rounded-md text-base cursor-pointer relative z-10 group"
+      className="overflow-hidden px-4 py-0 h-9.5 border-none rounded-md text-base font-normal cursor-pointer relative z-10 group"
     >
       {text}
       <span

@@ -10,7 +10,7 @@ const navLinks = [
   { name: "About Us", href: "/about-us/" },
   { name: "Blog", href: "/blog" },
   { name: "Career", href: "/career/" },
-  { name: "Services", href: "/services/" },
+  { name: "Service", href: "/service/" },
   { name: "Contact Us", href: "/contact-us/" },
 ];
 
@@ -58,7 +58,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
                   to={l.href}
                   end={l.end}
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
+                    isPending ? "pending text-[#1d74bf] font-medium" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
                   }
                 >
                   <NavButton
@@ -77,7 +77,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
               to="/#efProducts"
             >
               <Button
-                pClass="rounded-lg px-5 py-2.5 font-medium text-white shadow-sm bg-[#0D99FF]"
+                pClass="rounded-full text-sm px-5 py-2.5 font-medium text-white shadow-sm bg-[#0D99FF]"
                 text1="Try Our Products"
                 text2="Try Our Products"
               />
