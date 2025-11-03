@@ -3,6 +3,7 @@ import heroImg1 from "./heroImg1.webp";
 import heroImg2 from "./heroImg2.webp";
 import heroImg3 from "./heroImg3.webp";
 import heroImg4 from "./heroImg4.webp";
+
 import t1 from "./t1.png";
 import t2 from "./t2.png";
 import t3 from "./t3.png";
@@ -99,7 +100,7 @@ export default function Hero() {
 
           <div className="[grid-area:A]">
            <div className="w-full h-full pl-5">
-             <img src={heroImg1} alt="Team" loading="lazy" className=" w-auto h-full  md:rounded-tr-[100px] rounded-bt-xs sm:rounded-xl" />
+             <img src={heroImg1} alt="Team" loading="lazy" className="object-cover w-auto h-full  md:rounded-tr-[100px] rounded-bt-xs sm:rounded-xl" />
            </div>
           </div>
           <div className="[grid-area:B] md:block hidden">
