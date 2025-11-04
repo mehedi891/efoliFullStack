@@ -56,7 +56,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
 
                 <NavLink
                   to={l.href}
-                 
+
                   end={l.end}
                   className={({ isActive, isPending }) =>
                     isPending ? "pending text-[#1d74bf] font-medium" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
@@ -106,46 +106,80 @@ const Navbar = ({ parentClassName, linkClassName }) => {
           <ul className="space-y-1">
             {navLinks.map((l) => (
               <li key={l.name}>
-                <NavLink to={l.href} end={l.end} onClick={() => {
-                  setOpen(false);
-                  if(l.name === "Blog"){
-                    window.open(l.href, "_top");
-                  }
-                  }}>
+                {l.name === "Blog" ? 
+                <a href={l.href}  rel="noopener noreferrer" >
                   {({ isActive }) => (
-                    <div
-                      className={[
-                        "group flex items-center justify-between rounded-lg px-3 py-2 transition-colors",
-                        "text-[16px]",
-                        isActive
-                          ? "text-[#1d74bf] bg-[#1d74bf]/5"
-                          : `${linkClassName} hover:text-[#1d74bf] hover:bg-gray-50`,
-                      ].join(" ")}
-                    >
-                      <span className="relative">
-                        {l.name}
-                        <span
-                          className={[
-                            "pointer-events-none absolute left-0 right-0 -bottom-1 h-[2px] rounded bg-[#1d74bf]",
-                            "origin-left transition-transform duration-200 ease-out",
-                            // 👇 start hidden unless active; show on hover via group
-                            isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100",
-                          ].join(" ")}
-                        />
-                      </span>
-
-                      <svg
-                        className="h-4 w-4 opacity-60 group-hover:opacity-100 "
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
+                      <div
+                        className={[
+                          "group flex items-center justify-between rounded-lg px-3 py-2 transition-colors",
+                          "text-[16px]",
+                          isActive
+                            ? "text-[#1d74bf] bg-[#1d74bf]/5"
+                            : `${linkClassName} hover:text-[#1d74bf] hover:bg-gray-50`,
+                        ].join(" ")}
                       >
-                        <path d="M9 18l6-6-6-6" />
-                      </svg>
-                    </div>
-                  )}
-                </NavLink>
+                        <span className="relative">
+                          {l.name}
+                          <span
+                            className={[
+                              "pointer-events-none absolute left-0 right-0 -bottom-1 h-[2px] rounded bg-[#1d74bf]",
+                              "origin-left transition-transform duration-200 ease-out",
+                              // 👇 start hidden unless active; show on hover via group
+                              isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100",
+                            ].join(" ")}
+                          />
+                        </span>
+
+                        <svg
+                          className="h-4 w-4 opacity-60 group-hover:opacity-100 "
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
+                          <path d="M9 18l6-6-6-6" />
+                        </svg>
+                      </div>
+                    )}
+                </a> :
+
+
+                  <NavLink to={l.href} end={l.end} onClick={() => setOpen(false)}>
+                    {({ isActive }) => (
+                      <div
+                        className={[
+                          "group flex items-center justify-between rounded-lg px-3 py-2 transition-colors",
+                          "text-[16px]",
+                          isActive
+                            ? "text-[#1d74bf] bg-[#1d74bf]/5"
+                            : `${linkClassName} hover:text-[#1d74bf] hover:bg-gray-50`,
+                        ].join(" ")}
+                      >
+                        <span className="relative">
+                          {l.name}
+                          <span
+                            className={[
+                              "pointer-events-none absolute left-0 right-0 -bottom-1 h-[2px] rounded bg-[#1d74bf]",
+                              "origin-left transition-transform duration-200 ease-out",
+                              // 👇 start hidden unless active; show on hover via group
+                              isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100",
+                            ].join(" ")}
+                          />
+                        </span>
+
+                        <svg
+                          className="h-4 w-4 opacity-60 group-hover:opacity-100 "
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
+                          <path d="M9 18l6-6-6-6" />
+                        </svg>
+                      </div>
+                    )}
+                  </NavLink>
+                }
               </li>
             ))}
           </ul>
