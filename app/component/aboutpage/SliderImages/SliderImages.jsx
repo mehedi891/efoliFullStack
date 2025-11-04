@@ -8,16 +8,16 @@ export default function SliderImages() {
   const images = useMemo(() => [img1, img2, img1, img2, img1, img2], []);
   return (
     <section className="bg-[#0A0C00] text-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-full mx-auto">
         <h2 className="text-5xl/[1.25] font-bold font-display text-center py-20">
           A culture of creativity, <br /> collaboration, and growth
         </h2>
         <div className="pb-20">
           <FMMarquee
             images={images}
-            slotWidth={360}   // px width of each slide "lane"
-            slotGap={-16}      // px horizontal gap between slides
-            itemHeight={360}  // px image height (keeps aspect with object-contain)
+            slotWidth={500}   // px width of each slide "lane"
+            slotGap={-90}      // px horizontal gap between slides
+            itemHeight={400}  // px image height (keeps aspect with object-contain)
             speedPx={30}     // pixels per second
             bg="#fff"      // for edge fade (optional)
             edgeFade

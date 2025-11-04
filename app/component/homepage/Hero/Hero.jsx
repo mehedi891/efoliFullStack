@@ -100,7 +100,7 @@ export default function Hero() {
 
           <div className="[grid-area:A]">
            <div className="w-full h-full pl-5">
-             <img src={heroImg1} alt="Team" loading="lazy" className="object-cover w-auto h-full  md:rounded-tr-[100px] rounded-bt-xs sm:rounded-xl" />
+             <img src={heroImg1} alt="Team" loading="lazy" className="object-cover w-auto h-full  md:rounded-tr-[100px] rounded-xs" />
            </div>
           </div>
           <div className="[grid-area:B] md:block hidden">

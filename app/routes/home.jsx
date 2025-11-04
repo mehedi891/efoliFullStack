@@ -25,7 +25,9 @@
 //   return { posts  };
 // }
 
+import { useNavigation } from "react-router";
 import Homepage from "../component/homepage/homepage";
+import ElegantFloatingText from "../component/Loader/ElegantFloatingText";
 export function meta() {
   return [
     { title: "efoli" },
@@ -34,7 +36,15 @@ export function meta() {
 }
 
 export default function Home() {
+  
   // const {posts} = useLoaderData();
   // console.log('postsss:',posts.length);
-  return <Homepage/>;
+   const navigation = useNavigation();
+  return (navigation.state === "loading" ?
+    <div className="h-lvh w-lvw bg-blue-50 flex items-center justify-center">
+      <ElegantFloatingText text={"Loading..."} />
+    </div>
+    :
+  <Homepage/>
+);
 }

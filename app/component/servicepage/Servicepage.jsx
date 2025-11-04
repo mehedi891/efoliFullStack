@@ -2,10 +2,18 @@ import ServiceHero from "./ServiceHero/ServiceHero"
 
 const Servicepage = () => {
   return (
-   <>
-   <ServiceHero/>
-   </>
+    <>
+      <ServiceHero/>
+      
+    </>
   )
 }
 
+
+
+
+
 export default Servicepage
+
+
+

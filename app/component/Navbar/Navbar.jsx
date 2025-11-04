@@ -8,7 +8,7 @@ import NavButton from "./NavButton/NavButton";
 const navLinks = [
   { name: "Home", href: "/", end: true },
   { name: "About Us", href: "/about-us/" },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "https://staging.efoli.com/blog/", target: "_blank" },
   { name: "Career", href: "/career/" },
   { name: "Service", href: "/service/" },
   { name: "Contact Us", href: "/contact-us/" },

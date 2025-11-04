@@ -2,6 +2,7 @@ import { Link } from "react-router"
 import blogImg1 from "./efoliBlog1.webp"
 import blogImg2 from "./efoliBlog2.webp"
 import blogImg3 from "./efoliBlog3.webp"
+import ButtonWithIcon from "../../ButtonWithIcon/ButtonWithIcon"
 
 const Blogs = () => {
   return (
@@ -9,12 +10,10 @@ const Blogs = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 pt-10">
         <div className="flex items-end justify-between">
           <h2 className="md:text-5xl/snug text-3xl max-w-[500px] font-bold font-display">Latest blog to boost your productivity</h2>
-          <Link to="/career" className="flex text-base font-[600] items-center gap-2 border-b max-w-max">
-            <p>View all Articles</p>
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.7525 3.97035L2.0955 12.6274L0.673004 11.2049L9.33004 2.54786H1.69981V0.536133H12.7643V11.6006H10.7525V3.97035Z" fill="#13181E" />
-            </svg>
+          <Link to="/career">
+            <ButtonWithIcon text1="View all Articles" text2="View all Articles" pClass="text-base font-semibold" />
           </Link>
+
         </div>
         <div className="pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Link>

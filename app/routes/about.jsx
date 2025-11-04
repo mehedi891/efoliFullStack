@@ -1,4 +1,6 @@
+import { useNavigation } from "react-router";
 import Aboutpage from "../component/aboutpage/Aboutpage"
+import ElegantFloatingText from "../component/Loader/ElegantFloatingText";
 
 export function meta() {
   return [
@@ -10,8 +12,13 @@ export function meta() {
 export const handle = { darkFooter: true, darkHeader: true };
 
 const About = () => {
-  return (
-    <div><Aboutpage/></div>
+   const navigation = useNavigation();
+  return (navigation.state === "loading" ?
+    <div className="h-lvh w-lvw bg-blue-50 flex items-center justify-center">
+      <ElegantFloatingText text={"Loading..."} />
+    </div>
+    :
+    <Aboutpage/>
   )
 }
 

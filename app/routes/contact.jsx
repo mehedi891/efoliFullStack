@@ -1,6 +1,8 @@
+import { useNavigation } from "react-router";
 import { ContactEmailTemplate } from "../component/contactpage/contactEmailTemplate/contactEmailTemplate";
 import Contactpage from "../component/contactpage/Contactpage";
 import nodemailer from "nodemailer";
+import ElegantFloatingText from "../component/Loader/ElegantFloatingText";
 
 export function meta() {
   return [
@@ -9,7 +11,12 @@ export function meta() {
   ];
 }
 const Contact = () => {
-  return (
+    const navigation = useNavigation();
+  return (navigation.state === "loading" ?
+    <div className="h-lvh w-lvw bg-blue-50 flex items-center justify-center">
+      <ElegantFloatingText text={"Loading..."} />
+    </div>
+    :
     <Contactpage />
   )
 }
