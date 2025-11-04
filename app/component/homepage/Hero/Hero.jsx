@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="font-display mt-6 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold  leading-[1.1] text-gray-900 tracking-[-2.3px]">
+        <h1 className="font-display mt-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold  leading-[1.1] text-gray-900 tracking-[-2.3px]">
           <motion.span
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
