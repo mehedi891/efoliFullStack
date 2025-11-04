@@ -32,27 +32,10 @@ const Navbar = ({ parentClassName, linkClassName }) => {
           </a>
 
           {/* Desktop links */}
-          <ul className="hidden lg:flex items-center gap-2">
+          <ul className="hidden lg:flex items-center gap-6">
             {navLinks.map((l) => (
               <li key={l.name}>
-                {/* <NavLink
-                  to={l.href}
-                  end={l.end}
-                  className={({ isActive }) => linkClass(isActive) + " " + linkClassName}
-                >
-                  {({ isActive }) => (
-                    <>
-                      {l.name}
-                      <span
-                        className={[
-                          "pointer-events-none absolute inset-x-0 -bottom-1 h-[2px] rounded bg-[#1d74bf]",
-                          "origin-center transition-transform duration-200 ease-out",
-                          isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100",
-                        ].join(" ")}
-                      />
-                    </>
-                  )}
-                </NavLink> */}
+                
 
                 {
                   l.name === "Blog" ?
@@ -60,8 +43,9 @@ const Navbar = ({ parentClassName, linkClassName }) => {
                     className={`font-medium ${linkClassName}`}
                      rel="noopener noreferrer">
 
-                      <NavButton
-                        text={l.name}
+                      <Button
+                        text1={l.name}
+                        text2={l.name}
                       />
                     </a> :
 
@@ -73,8 +57,9 @@ const Navbar = ({ parentClassName, linkClassName }) => {
                         isPending ? "pending text-[#1d74bf] font-medium" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
                       }
                     >
-                      <NavButton
-                        text={l.name}
+                      <Button
+                        text1={l.name}
+                        text2={l.name}
                       />
                     </NavLink>
 
