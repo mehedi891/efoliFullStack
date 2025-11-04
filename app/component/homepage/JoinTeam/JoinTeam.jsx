@@ -9,7 +9,7 @@ const JoinTeam = () => {
     <section className="pt-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 pt-10">
         <div className="flex items-end justify-between">
-          <h2 className="md:text-5xl/snug text-3xl max-w-[637px] font-bold font-display">A culture of creativity, collaboration, and growth</h2>
+          <h2 className="md:text-5xl/snug text-3xl max-w-[637px] font-bold font-display">A Culture of Creativity, Collaboration, And Growth</h2>
           <Link to="/career">
             <ButtonWithIcon text1="Join The Team" text2="Join The Team" pClass="text-base font-semibold" />
           </Link>

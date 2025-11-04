@@ -17,7 +17,7 @@ const Innovation = () => {
     <section style={{ backgroundImage: `url(${bg_gradient})` }} className={`py-8 bg-no-repeat bg-cover bg-center`}>
       <div id="efProducts" className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 mt-10">
         <h3 className="text-lg text-center text-blue-500 font-[600]">Products</h3>
-        <h2 className="font-display md:text-5xl text-3xl font-bold text-center py-3">Our innovative shopify apps</h2>
+        <h2 className="font-display md:text-5xl text-3xl font-bold text-center pt-2 mb-10">Our Innovative Shopify Apps</h2>
 
         <div className="my-5 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]">
           <div className="max-w-[550px]">

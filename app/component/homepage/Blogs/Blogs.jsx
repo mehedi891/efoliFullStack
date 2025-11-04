@@ -9,7 +9,7 @@ const Blogs = () => {
     <section className="pt-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 pt-10">
         <div className="flex items-end justify-between">
-          <h2 className="md:text-5xl/snug text-3xl max-w-[500px] font-bold font-display">Latest blog to boost your productivity</h2>
+          <h2 className="md:text-5xl/snug text-3xl max-w-[500px] font-bold font-display">Latest Blog To Boost Your Productivity</h2>
           <Link to="/career">
             <ButtonWithIcon text1="View all Articles" text2="View all Articles" pClass="text-base font-semibold" />
           </Link>
