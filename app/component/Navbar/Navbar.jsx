@@ -54,18 +54,33 @@ const Navbar = ({ parentClassName, linkClassName }) => {
                   )}
                 </NavLink> */}
 
-                <NavLink
-                  to={l.href}
+                {
+                  l.name === "Blog" ?
+                    <a href={l.href}
+                    className={`font-medium ${linkClassName}`}
+                     rel="noopener noreferrer">
 
-                  end={l.end}
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending text-[#1d74bf] font-medium" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
-                  }
-                >
-                  <NavButton
-                    text={l.name}
-                  />
-                </NavLink>
+                      <NavButton
+                        text={l.name}
+                      />
+                    </a> :
+
+                    <NavLink
+                      to={l.href}
+
+                      end={l.end}
+                      className={({ isActive, isPending }) =>
+                        isPending ? "pending text-[#1d74bf] font-medium" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
+                      }
+                    >
+                      <NavButton
+                        text={l.name}
+                      />
+                    </NavLink>
+
+                }
+
+
 
 
               </li>
@@ -106,9 +121,9 @@ const Navbar = ({ parentClassName, linkClassName }) => {
           <ul className="space-y-1">
             {navLinks.map((l) => (
               <li key={l.name}>
-                {l.name === "Blog" ? 
-                <a href={l.href}  rel="noopener noreferrer" >
-                  {({ isActive }) => (
+                {l.name === "Blog" ?
+                  <a href={l.href} rel="noopener noreferrer">
+                    {({ isActive }) => (
                       <div
                         className={[
                           "group flex items-center justify-between rounded-lg px-3 py-2 transition-colors",
@@ -141,7 +156,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
                         </svg>
                       </div>
                     )}
-                </a> :
+                  </a> :
 
 
                   <NavLink to={l.href} end={l.end} onClick={() => setOpen(false)}>
