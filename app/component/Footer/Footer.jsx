@@ -80,8 +80,8 @@ const Footer = ({ isDark, isBannerHide = false }) => {
 
       </div>
 
-      <div className="max-w-7xl mx-auto py-5">
-        <p className="text-xl">©eFoli 2011 - 2025. All rights reserved</p>
+      <div className="max-w-7xl mx-auto pb-5 pt-10 text-center">
+        <p className="text-base">©eFoli 2011 - 2025. All rights reserved</p>
       </div>
 
     </footer>
