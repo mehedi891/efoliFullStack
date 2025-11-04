@@ -1,6 +1,6 @@
 import startImg from "./starIcon.svg";
 import shopifyImg from "./shopifyImg.png";
-import blurImg from "./blur.png";
+import blurImg from "./blur.webp";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import Button from "../../Button/Button";

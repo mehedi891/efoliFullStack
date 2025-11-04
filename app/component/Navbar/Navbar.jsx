@@ -56,6 +56,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
 
                 <NavLink
                   to={l.href}
+                 
                   end={l.end}
                   className={({ isActive, isPending }) =>
                     isPending ? "pending text-[#1d74bf] font-medium" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
@@ -105,7 +106,12 @@ const Navbar = ({ parentClassName, linkClassName }) => {
           <ul className="space-y-1">
             {navLinks.map((l) => (
               <li key={l.name}>
-                <NavLink to={l.href} end={l.end} onClick={() => setOpen(false)}>
+                <NavLink to={l.href} end={l.end} onClick={() => {
+                  setOpen(false);
+                  if(l.name === "Blog"){
+                    window.open(l.href, "_top");
+                  }
+                  }}>
                   {({ isActive }) => (
                     <div
                       className={[
