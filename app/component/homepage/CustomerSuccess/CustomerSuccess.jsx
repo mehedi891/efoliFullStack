@@ -1,5 +1,6 @@
 import startImg from "./starIcon.svg";
 import shopifyImg from "./shopifyImg.png";
+import blurImg from "./blur.png";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import Button from "../../Button/Button";
@@ -351,9 +352,11 @@ const CustomerSuccess = () => {
       </div>
 
       <div
+      // bg-[linear-gradient(180deg,#0F172A00_0%,#0F172A33_25%,#0F172A1F_55%,#FFFFFFB3_85%,#FFFFFFFF_100%)]
+        style={{backgroundImage: `url(${blurImg})`}}
         className="flex justify-center items-center absolute w-full  
-             bg-[linear-gradient(180deg,#0F172A00_0%,#0F172A33_25%,#0F172A1F_55%,#FFFFFFB3_85%,#FFFFFFFF_100%)]
-            bottom-[0px] h-[70vh]">
+             object-cover 
+            bottom-[0px] h-[40vh]">
 
 
         <Link
