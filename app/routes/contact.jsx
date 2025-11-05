@@ -1,7 +1,6 @@
 import { useNavigation } from "react-router";
 import { ContactEmailTemplate } from "../component/contactpage/contactEmailTemplate/contactEmailTemplate";
 import Contactpage from "../component/contactpage/Contactpage";
-import nodemailer from "nodemailer";
 import ElegantFloatingText from "../component/Loader/ElegantFloatingText";
 
 export function meta() {
@@ -24,23 +23,13 @@ const Contact = () => {
 export default Contact
 
 export const action = async ({ request }) => {
+  const nodemailer = (await import("nodemailer")).default;
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
 
-  console.log({host:process.env.SMTP_HOST, port:process.env.SMTP_PORT, secure:true, auth:{user:process.env.SMTP_USER, pass:process.env.SMTP_PASS}});
+  // console.log({host:process.env.SMTP_HOST, port:process.env.SMTP_PORT, secure:true, auth:{user:process.env.SMTP_USER, pass:process.env.SMTP_PASS}});
 
 
-  //console.log('data:',data);
-
-if(!process.env.SMTP_HOST || !process.env.SMTP_PORT || !process.env.SMTP_USER || !process.env.SMTP_PASS){
-  console.log('from not found');
-  return {
-    success: false,
-    notFound: {host:process.env.SMTP_HOST, port:process.env.SMTP_PORT, secure:true, auth:{user:process.env.SMTP_USER, pass:process.env.SMTP_PASS},
-    message: "Something went wrong. Please try again later."
-  }
-  }
-}
   const mailer = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,

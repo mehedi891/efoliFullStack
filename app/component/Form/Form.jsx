@@ -32,8 +32,6 @@ const Form = ({fClass='',btnClass='bg-[#fff] text-[#020202]',btnTxt='Submit'}) =
   useEffect(() => {
     if (fetcher?.data?.success && fetcher?.data?.message) {
       setIsModalOpen(true);
-    }else if(fetcher?.data?.notFound){
-      console.log('env not found');
     }
   }, [fetcher?.data?.success, fetcher?.data?.message]);
 
