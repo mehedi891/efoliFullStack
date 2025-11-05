@@ -1,4 +1,6 @@
 import aboutHero from './aboutHero.webp';
+import circleImg from './circle.png';
+import circleImg2 from './circle2.png';
 import { motion } from "motion/react"
 
 const Hero = () => {
@@ -19,9 +21,18 @@ const Hero = () => {
           <p className="text-center text-xl">We are adaptive and affable. You will find us like your own team in collaboration. We are committed to bringing your business success to the next elevation.</p>
         </div>
       </div>
+
+      <div className='absolute right-[-3%] top-[-12%] rotateCircleAbout'>
+        <img className='object-contain max-w-[200px]' src={circleImg2} alt="About Us" />
+      </div>
+
+      <div className='absolute left-[-3%] bottom-[-12%] rotateCircleAbout'>
+        <img className='object-contain max-w-[230px]' src={circleImg} alt="About Us" />
+      </div>
       <div className='max-w-7xl mx-auto absolute bottom-[-75%] left-0 right-0'>
         <img className='object-contain' src={aboutHero} alt="About Us" />
       </div>
+      
     </section>
   )
 }
