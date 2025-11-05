@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const Hero = () => {
   return (
-    <section className="bg-black/90 text-white relative scrollbar-hide">
+    <section className="bg-black/90 text-white relative">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-[980px] mx-auto flex flex-col gap-5 pb-60 pt-30">
           <h3 className="text-center text-[18px]">About Us</h3>

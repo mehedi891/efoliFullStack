@@ -2,7 +2,7 @@ import circleImg from './circle.png';
 import circleImg2 from './circle2.png';
 const Digitalproduct = () => {
   return (
-    <section className="py-30 bg-[#0A0C00] text-white relative">
+    <section className="py-30 bg-[#0A0C00] text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-start gap-6 md:gap-30 ">
           <h2 className="text-3xl md:text-5xl/[1.25] font-bold font-display tracking-[-1.44px] max-w-[380px]">Why Partner with eFoli for Your Digital Product ?</h2>
