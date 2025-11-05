@@ -1,8 +1,13 @@
+import aboutHero from './aboutHero.webp';
+
 import ceoImg from "./ceoJA.webp";
 const Family = () => {
   return (
-    <section className="mt-135 lg:mb-20 mb-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="lg:mb-20 mb-6 relative">
+       <div  className='max-w-7xl mx-auto -mt-45'>
+          <img className='object-contain' src={aboutHero} alt="About Us" />
+        </div>
+      <div  className="max-w-7xl mx-auto mt-30">
         <div className="flex flex-wrap lg:gap-40 gap-4">
           <div className="max-w-[850px]">
             <h2 className="text-5xl font-bold font-display">We are the eFoli Family</h2>
@@ -43,6 +48,7 @@ const Family = () => {
           </div>
         </div>
       </div>
+     
     </section>
   )
 }

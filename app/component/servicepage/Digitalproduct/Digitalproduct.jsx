@@ -27,7 +27,7 @@ const Digitalproduct = () => {
                 <p className="text-base md:text-xl/[1.6] text-[#9FA5A7]">Brand identity design a the have to success whether you breath onfire quanta agency.</p>
               </div>
             </div>
-            <hr />
+            <div className='border border-[#3F4141]'></div>
 
             <div className="flex items-start justify-between w-full">
               <div className="max-w-[332px]">
@@ -49,7 +49,7 @@ const Digitalproduct = () => {
               </div>
             </div>
 
-            <hr />
+            <div className='border border-[#3F4141]'></div>
 
             <div className="flex items-start justify-between w-full">
               <div className="max-w-[332px]">

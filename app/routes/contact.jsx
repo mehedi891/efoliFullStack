@@ -30,6 +30,9 @@ export const action = async ({ request }) => {
   // console.log({host:process.env.SMTP_HOST, port:process.env.SMTP_PORT, secure:true, auth:{user:process.env.SMTP_USER, pass:process.env.SMTP_PASS}});
 
 
+  //console.log('data:',data);
+
+
   const mailer = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
@@ -45,7 +48,15 @@ export const action = async ({ request }) => {
       from: data?.email,
       to: "mehedi@efoli.com",
       subject: "New Contact Submission from Efoli Website",
-      html: ContactEmailTemplate(data),
+      // html: ContactEmailTemplate(data),:
+      replyTo: data?.email,
+      text:`
+        Name: ${data?.name}
+        Company: ${data?.company}
+        Email: ${data?.email}
+        Service: ${data?.service}
+        Message: ${data?.message}
+      `
     });
     console.log('sendEMail:', sendMail);
     if (sendMail?.accepted?.length > 0) {

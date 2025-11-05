@@ -13,7 +13,7 @@ const Layout = () => {
       <Navbar
         parentClassName={
           darkHeader
-            ? "bg-black/90"
+            ? "bg-[#0A0C00]"
             : "bg-white/90 backdrop-blur border-b border-gray-100"
         }
         linkClassName={
