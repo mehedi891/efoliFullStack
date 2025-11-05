@@ -43,7 +43,7 @@ const Innovation = () => {
 
         <div className="flex flex-wrap gap-5 justify-between">
 
-          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-[603px]">
+          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[48%]">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
                 <img src={pbIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto rounded-sm" />
@@ -61,7 +61,7 @@ const Innovation = () => {
 
           </div>
 
-          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-[603px]">
+          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[48%]">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
                 <img src={drIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto" />

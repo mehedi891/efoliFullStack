@@ -353,19 +353,20 @@ const CustomerSuccess = () => {
 
       <div
       // bg-[linear-gradient(180deg,#0F172A00_0%,#0F172A33_25%,#0F172A1F_55%,#FFFFFFB3_85%,#FFFFFFFF_100%)]
-        style={{backgroundImage: `url(${blurImg})`}}
+        style={{backgroundImage: `linear-gradient(223deg, rgba(249, 250, 251, 0.10) -19.9%, rgba(249, 250, 251, 0.50) 58.82%)`}}
         className="flex justify-center items-center absolute w-full  
              object-cover 
-            bottom-[0px] h-[40vh]">
-
+            bottom-[0px] h-[45vh]">
+             
 
         <Link
           to="https://apps.shopify.com/multivariants/reviews?sort_by=newest"
           target="_blank"
           rel="noreferrer"
+         
         >
           <Button
-            pClass="rounded-lg bg-white px-6 py-3.5 font-semibold text-[#13181E]"
+            pClass="rounded-lg bg-white px-6 py-3.5 font-semibold text-[#13181E] shadow-2xl"
             text1="Meet our customers"
             text2="Meet our customers"
           />
