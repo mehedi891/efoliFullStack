@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='absolute right-[-3%] top-[-12%] rotateCircleAbout'>
+      <div className='absolute right-[-3%] top-[-11%] rotateCircleAbout'>
         <img className='object-contain max-w-[200px]' src={circleImg2} alt="About Us" />
       </div>
 

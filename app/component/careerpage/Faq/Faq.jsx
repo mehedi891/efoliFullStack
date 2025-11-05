@@ -1,9 +1,7 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+
+import Generalfaq from "../../Generalfaq/Generalfaq";
 
 const Faq = () => {
-   const [showFaq, setShowFaq] = useState(null);
-  const handleShowFaq = (index) => setShowFaq(showFaq === index ? null : index);
   const faqsArr = [
     {
       id: 1,
@@ -42,7 +40,7 @@ const Faq = () => {
             Questions and <br /> answers
           </h2>
 
-          <div className="max-w-[800px] w-full flex flex-col gap-5">
+          {/* <div className="max-w-[800px] w-full flex flex-col gap-5">
             {faqsArr?.length > 0 &&
               faqsArr.map((faq, index) => {
                 const open = showFaq === index;
@@ -84,7 +82,9 @@ const Faq = () => {
                   </div>
                 );
               })}
-          </div>
+          </div> */}
+
+          <Generalfaq faqsArr={faqsArr} fClass="max-w-[800px]" />
         </div>
       </div>
     </section>
