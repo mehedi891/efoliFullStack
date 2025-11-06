@@ -16,7 +16,7 @@ const FormsubmitSuccessModal = ({isModalOpen, setIsModalOpen}) => {
         <div className="w-full flex items-end justify-end">
           <RxCross1
             className="p-2 text-[2.5rem] bg-black/45 hover:bg-[#656363] rounded-full transition-all duration-300 cursor-pointer"
-            onClick={() => setIsModalOpen(false)}
+            onClick={() => {setIsModalOpen(false);}}
           />
         </div>
         <div className="w-full flex items-center justify-center flex-col">

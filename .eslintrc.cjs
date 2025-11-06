@@ -20,6 +20,7 @@ module.exports = {
     "no-undef": "error",
     "import/no-unresolved": "error",
     "react-hooks/rules-of-hooks": "error",
+    "react/no-unescaped-entities": "off",
 
     // quiet down everything else
     "react/prop-types": "off",

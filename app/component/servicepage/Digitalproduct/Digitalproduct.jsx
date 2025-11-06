@@ -2,12 +2,20 @@ import circleImg from './circle.png';
 import circleImg2 from './circle2.png';
 const Digitalproduct = () => {
   return (
-    <section className="py-30 bg-[#0A0C00] text-white relative overflow-hidden">
+    <section className="py-30 bg-[#0A0C00] text-white relative ">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute right-[-1%] top-[-7%] rotateCircleAbout">
+          <img className="object-contain max-w-[200px]" src={circleImg2} alt="" />
+        </div>
+        <div className="absolute left-[-2%] bottom-[-7%] rotateCircleAbout">
+          <img className="object-contain max-w-[230px]" src={circleImg} alt="" />
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-start gap-6 md:gap-30 ">
-          <h2 className="text-3xl md:text-5xl/[1.25] font-bold font-display tracking-[-1.44px] max-w-[380px]">Why Partner with eFoli for Your Digital Product ?</h2>
+        <div className="flex items-start gap-6 md:gap-30">
+          <h2 className="text-3xl md:text-5xl/[1.25] font-bold font-display tracking-[-1.44px] max-w-[380px] sticky top-28">Why Partner with eFoli for Your Digital Product ?</h2>
 
-          <div className="flex-grow-1 flex flex-col gap-20">
+          <div className="flex-1 flex flex-col gap-20">
             <div className="flex items-start justify-between w-full">
               <div className="max-w-[332px]">
                 <svg className="w-12 h-12 md:mb-15 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" fill="none">
@@ -75,13 +83,7 @@ const Digitalproduct = () => {
         </div>
       </div>
 
-      <div className='absolute right-[-1%] top-[-7%] rotateCircleAbout'>
-        <img className='object-contain max-w-[200px]' src={circleImg2} alt="About Us" />
-      </div>
 
-      <div className='absolute left-[-2%] bottom-[-7%] rotateCircleAbout'>
-        <img className='object-contain max-w-[230px]' src={circleImg} alt="About Us" />
-      </div>
     </section>
   )
 }

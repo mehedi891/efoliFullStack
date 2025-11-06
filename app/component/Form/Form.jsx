@@ -1,7 +1,7 @@
 import { useFetcher } from "react-router";
 import { useEffect, useState } from "react";
 import FormsubmitSuccessModal from "../contactpage/FormsubmitSuccessModal/FormsubmitSuccessModal"
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import Button from "../Button/Button";
 
 const Form = ({fClass='',btnClass='bg-[#fff] text-[#020202]',btnTxt='Submit'}) => {
@@ -12,6 +12,7 @@ const Form = ({fClass='',btnClass='bg-[#fff] text-[#020202]',btnTxt='Submit'}) =
     handleSubmit,
     reset,
     watch,
+    control,
     formState: { errors, isDirty, isSubmitting }
   } = useForm({
     defaultValues: {
@@ -23,22 +24,28 @@ const Form = ({fClass='',btnClass='bg-[#fff] text-[#020202]',btnTxt='Submit'}) =
     },
   });
 
+  const service = useWatch({ control, name: "service" });
+  const isPlaceholder = service === "";
+
   const onSubmit = (data) => {
     //console.log("Form data:", data);
     fetcher.submit(data, { method: "post", action: "/contact-us" });
     reset();
   };
 
+
+
+  const success = Boolean(fetcher?.data?.success && fetcher?.data?.message);
+
+
   useEffect(() => {
-    if (fetcher?.data?.success && fetcher?.data?.message) {
-      setIsModalOpen(true);
-    }
-  }, [fetcher?.data?.success, fetcher?.data?.message]);
+  if (success) {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsModalOpen(true);
+  }
+}, [success]);
 
 
-
-  const service = watch("service");
-  const isPlaceholder = service === "";
   return (
     <div className={`${fClass}`}>
       <form onSubmit={handleSubmit(onSubmit)} className={`flex flex-col gap-5 lg:gap-15 max-w-full w-full`}>
