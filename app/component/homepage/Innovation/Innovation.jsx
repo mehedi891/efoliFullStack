@@ -19,7 +19,7 @@ const Innovation = () => {
         <h3 className="text-lg text-center text-blue-500 font-[600]">Products</h3>
         <h2 className="font-display md:text-5xl text-3xl font-bold text-center pt-2 mb-10">Our Innovative Shopify Apps</h2>
 
-        <div className="my-5 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]">
+        <div className="my-5 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl">
           <div className="max-w-[550px]">
             <div className="flex items-center gap-2">
               <img src={mvIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto" />
@@ -43,7 +43,9 @@ const Innovation = () => {
 
         <div className="flex flex-wrap gap-5 justify-between">
 
-          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[48%]">
+          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[49%]
+          transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl
+          ">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
                 <img src={pbIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto rounded-sm" />
@@ -61,7 +63,9 @@ const Innovation = () => {
 
           </div>
 
-          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[48%]">
+          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[49%]
+          transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl
+          ">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
                 <img src={drIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto" />
@@ -81,7 +85,9 @@ const Innovation = () => {
 
         </div>
 
-        <div className="my-5 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-2xl p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]">
+        <div className="my-5 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-2xl p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]
+        transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl
+        ">
           <div className="max-w-[550px]">
             <div className="flex items-center gap-2">
               <img src={emIcon} alt="EmbedUp" className="md:max-w-[42px] max-w-[35px] h-auto" />

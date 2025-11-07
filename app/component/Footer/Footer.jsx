@@ -49,32 +49,32 @@ const Footer = ({ isDark, isBannerHide = false }) => {
         <div>
           <h3 className="text-xl font-bold font-display mb-5">Company</h3>
           <ul className="text-[18px]/[1.7] ">
-            <li className="mb-3"><Link to="/">Home</Link></li>
-            <li className="mb-3"><Link to="/">Work</Link></li>
-            <li className="mb-3"><Link to="/">Services</Link></li>
-            <li className="mb-3"><Link to="/">About Us</Link></li>
-            <li className="mb-3"><Link to="/">Contact</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/">Home</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/">Work</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/service">Services</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/about-us">About Us</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/contact-us">Contact</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="text-xl font-bold font-display mb-5">Products</h3>
           <ul className="text-[18px]/[1.7] ">
-            <li className="mb-3"><Link to="https://multivariants.com" target="_blak">MultiVariants</Link></li>
-            <li className="mb-3"><Link to="https://discountray.com" target="_blak">DiscountRay</Link></li>
-            <li className="mb-3"><Link to="https://pushbundle.com" target="_blak">Push Bundle</Link></li>
-            <li className="mb-3"><Link to="https://embedup.com" target="_blak">EmbedUp</Link></li>
-            <li className="mb-3"><Link to="https://kivosupport.com" target="_blak">Kivo Support</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="https://multivariants.com" target="_blak">MultiVariants</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="https://discountray.com" target="_blak">DiscountRay</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="https://pushbundle.com" target="_blak">Push Bundle</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="https://embedup.com" target="_blak">EmbedUp</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="https://kivosupport.com" target="_blak">Kivo Support</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="text-xl font-bold font-display mb-5">Follow</h3>
           <ul className="text-[18px]/[1.7] ">
-            <li className="mb-3"><Link to="https://www.facebook.com/eFoli.llc" target="_blak">Facebook</Link></li>
-            <li className="mb-3"><Link to="https://www.linkedin.com/company/efoli" target="_blak">Linkedin</Link></li>
-            <li className="mb-3"><Link to="/" target="_blak">Twitter</Link></li>
-            <li className="mb-3"><Link to="/" target="_blak">Reddit</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="https://www.facebook.com/eFoli.llc" target="_blak">Facebook</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="https://www.linkedin.com/company/efoli" target="_blak">Linkedin</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/" target="_blak">Twitter</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/" target="_blak">Reddit</Link></li>
           </ul>
         </div>
 
