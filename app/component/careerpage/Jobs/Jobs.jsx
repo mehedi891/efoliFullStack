@@ -39,7 +39,7 @@ const Jobs = () => {
         <div className="mt-10 flex flex-col gap-5">
 
           {jobsArr.length > 0 && jobsArr.map((job, index) => (
-            <div key={index} className={`flex  gap-5 justify-between items-center text-[#13181E] pb-4 border-b border-[#c5c5c5] ${index === 0 ? 'pt-4 border-t' : ''}`}>
+            <div key={index} className={`flex  gap-6 justify-between items-center text-[#13181E] pb-6 border-b border-[#c5c5c5] ${index === 0 ? 'pt-4 border-t' : ''}`}>
               <div className="flex flex-col gap-1">
                 <h4 className="text-[22px]/[1.36] font-bold font-display">{job.title}</h4>
                 <p className="text-base">{job.location}</p>
