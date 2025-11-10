@@ -1,9 +1,9 @@
 import Button from "../../Button/Button";
-import bgImg from "./serviceHeroBg.webp";
+import bgImg from "./sHero.webp";
 import bgImg2 from "./serviceHeroBg2.webp";
 const ServiceHero = () => {
   return (
-    <section style={{ backgroundImage: `url(${bgImg2})`, backgroundSize: "cover" }} className="py-15 text-white object-cover">
+    <section style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }} className="py-15 text-white object-cover">
       <div className="max-w-7xl mx-auto py-15">
         <div className="flex flex-col gap-6 max-w-[980px]">
           <h1 className="font-display font-bold text-7xl/[1.13] tracking-[-2.16px]">Product Development &<br />  App Support Solutions</h1>
