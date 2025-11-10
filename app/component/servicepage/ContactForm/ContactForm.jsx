@@ -13,7 +13,7 @@ const ContactForm = () => {
           <div className="w-full md:w-1/2">
             <Form
             fClass="w-full bg-white p-8 rounded-sm"
-            btnClass="bg-[#0D99FF] text-white px-6 py-3"
+            btnClass="bg-[#0D99FF] text-white px-6 py-3.5"
             btnTxt='Submit Message'
             />
           </div>

@@ -32,7 +32,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
           </a>
 
           {/* Desktop links */}
-          <ul className="hidden lg:flex items-center gap-6">
+          <ul className="hidden lg:flex items-center gap-9">
             {navLinks.map((l) => (
               <li key={l.name}>
 
