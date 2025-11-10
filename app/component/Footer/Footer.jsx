@@ -41,8 +41,8 @@ const Footer = ({ isDark, isBannerHide = false }) => {
           <img src={logo} alt="eFoli" className="max-w-[100px] object-contain" />
           <p className="text-[18px]/[1.7]  pt-5 pb-7">Crafting B2B eCommerce Solutions, Empowering Success EFOLI is a Bangladeshi software company with 15+ years of experience, specializing in cutting-edge solutions for eCommerce businesses.</p>
           <div className="flex items-center gap-4">
-            <img src={partner} alt="eFoli" className="max-w-[200px] object-contain" />
-            <img src={basis} alt="eFoli" className="max-w-[120px] object-contain " />
+            <img src={partner} alt="eFoli" className="max-w-[200px] h-[60px] object-contain" />
+            <img src={basis} alt="eFoli" className="max-w-[120px] h-[60px] object-contain " />
           </div>
         </div>
 

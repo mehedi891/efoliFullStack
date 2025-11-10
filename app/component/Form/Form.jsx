@@ -170,7 +170,7 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit'}) => {
 
         <Button
           type="submit"
-          pClass={`max-w-max  text-xl rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 -mt-8 ${btnClass}`}
+          pClass={`max-w-max  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 -mt-8 ${btnClass}`}
           text1={fetcher?.state !== "idle" ? "Submitting..." : btnTxt}
           text2={fetcher?.state !== "idle" ? "Submitting..." : btnTxt}
         />
