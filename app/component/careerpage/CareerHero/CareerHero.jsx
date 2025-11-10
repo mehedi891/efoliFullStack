@@ -3,7 +3,7 @@ const CareerHero = () => {
   return (
     <section>
       <div className="max-w-7xl mx-auto py-30">
-        <h1 className="text-7xl/[1.138] text-[#13181E] font-bold font-display">Join our company and start <br /> your career journey</h1>
+        <h1 className="text-7xl/[1.138] text-[#13181E] font-bold font-display">Join Our Company And Start <br /> Your Career Journey</h1>
         <div className="mt-15 flex items-start">
           <img src={heroImg} alt="Career" loading="lazy" className="max-w-[100%] object-contain rounded-xl" />
           {/* <p className="flex items-center gap-4 min-w-min h-max text-[18px] whitespace-nowrap text-[#0f0f0f] rotate-90 translate-y-[190%]">

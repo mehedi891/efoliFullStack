@@ -13,7 +13,7 @@
 }
 
 .rotateCircleAbout>img{
-  animation: rotation 15s infinite linear;
+  animation: rotation 18s infinite linear;
 }
 @keyframes rotation {
   from {

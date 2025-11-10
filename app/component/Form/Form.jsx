@@ -4,7 +4,7 @@ import FormsubmitSuccessModal from "../contactpage/FormsubmitSuccessModal/Formsu
 import { useForm, useWatch } from "react-hook-form";
 import Button from "../Button/Button";
 
-const Form = ({fClass='',btnClass='bg-[#fff] text-[#020202]',btnTxt='Submit'}) => {
+const Form = ({fClass='',btnClass='',btnTxt='Submit'}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const fetcher = useFetcher();
   const {
@@ -47,7 +47,7 @@ const Form = ({fClass='',btnClass='bg-[#fff] text-[#020202]',btnTxt='Submit'}) =
 
 
   return (
-    <div className={`${fClass}`}>
+    <div className={`${fClass} pb-12`}>
       <form onSubmit={handleSubmit(onSubmit)} className={`flex flex-col gap-5 lg:gap-15 max-w-full w-full`}>
 
         <div>
@@ -170,7 +170,7 @@ const Form = ({fClass='',btnClass='bg-[#fff] text-[#020202]',btnTxt='Submit'}) =
 
         <Button
           type="submit"
-          pClass={`px-10 py-2 max-w-max  text-xl rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 ${btnClass}`}
+          pClass={`max-w-max  text-xl rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 -mt-8 ${btnClass}`}
           text1={fetcher?.state !== "idle" ? "Submitting..." : btnTxt}
           text2={fetcher?.state !== "idle" ? "Submitting..." : btnTxt}
         />

@@ -35,7 +35,7 @@ const Jobs = () => {
   return (
     <section>
       <div className="max-w-7xl mx-auto pb-30">
-        <h2 className="text-5xl/[1.192] font-bold font-display">Current opportunities <br /> waiting for you</h2>
+        <h2 className="text-5xl/[1.192] font-bold font-display">Current Opportunities <br /> Waiting For You</h2>
         <div className="mt-10 flex flex-col gap-5">
 
           {jobsArr.length > 0 && jobsArr.map((job, index) => (

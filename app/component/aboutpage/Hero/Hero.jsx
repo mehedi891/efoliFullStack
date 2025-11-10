@@ -7,25 +7,25 @@ const Hero = () => {
   return (
     <section className="bg-[#0A0C00] text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative">
-        <div className="max-w-[980px] mx-auto flex flex-col gap-5 pb-60 pt-30">
+        <div className="max-w-[980px] mx-auto flex flex-col gap-0 pb-60 pt-30">
           <h3 className="text-center text-[18px]">About Us</h3>
           <motion.h1
-            className="text-center font-bold text-5xl sm:text-6xl lg:text-7xl font-display mt-3 leading-tight"
+            className="text-center font-bold text-5xl sm:text-6xl lg:text-7xl font-display mb-5 leading-tight"
             initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
-            The all-in-one b2b solution <br /> to scale your business
+            The All-In-One B2b Solution <br /> To Scale Your Business
           </motion.h1>
 
-          <p className="text-center text-xl">We are adaptive and affable. You will find us like your own team in collaboration. We are committed to bringing your business success to the next elevation.</p>
+          <p className="text-center text-xl/[1.9]">We are adaptive and affable. You will find us like your own team in collaboration. We are committed to bringing your business success to the next elevation.</p>
         </div>
 
         
 
       </div>
 
-      <div className='absolute right-[-3%] top-[-11%] rotateCircleAbout'>
+      <div className='absolute right-[-3%] top-[-0%] rotateCircleAbout'>
         <img className='object-contain max-w-[200px]' src={circleImg2} alt="About Us" />
       </div>
 

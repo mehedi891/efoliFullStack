@@ -3,17 +3,17 @@ import aboutHero from './aboutHero.webp';
 import ceoImg from "./ceoJA.webp";
 const Family = () => {
   return (
-    <section className="lg:mb-20 mb-6 relative">
+    <section className="lg:mb-30 mb-6 relative">
        <div  className='max-w-7xl mx-auto -mt-45'>
           <img className='object-contain' src={aboutHero} alt="About Us" />
         </div>
       <div  className="max-w-7xl mx-auto mt-30">
         <div className="flex flex-wrap lg:gap-40 gap-4">
           <div className="max-w-[850px]">
-            <h2 className="text-5xl font-bold font-display">We are the eFoli Family</h2>
-            <div className="flex flex-col gap-4 mt-4">
+            <h2 className="md:text-5xl/[1.2] text-3xl font-bold font-display">We are the eFoli Family</h2>
+            <div className="flex flex-col gap-4 mt-5">
               <p className="lg:text-[18px]/[1.67] text-[#4B5154]">At eFoli, our journey began more than 10 years ago with a simple yet powerful mission—to create solutions that blend innovation, creativity, and real-world impact. Over the years, we’ve expanded our expertise across multiple industries, building a reputation for delivering value-driven results that help businesses grow and thrive.</p>
-              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">What makes eFoli unique is our people. We are a family of passionate professionals, designers, developers, and strategists who share a common vision: to transform challenges into opportunities. Whether it’s designing intuitive digital experiences, developing scalable SaaS products, or crafting business strategies, we approach every project with dedication, precision, and care.</p>
+              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">What makes eFoli unique is our people. We are a family of passionate professionals, designers, developers, and strategists who share a common vision: to transform challenges into opportunities. Whether it’s designing intuitive digital experiences, developing scalable SaaS products, or crafting business strategies, we approach every project with dedication, precision, and care.Building a reputation for delivering value-driven results that help businesses grow and thrive.</p>
               <p className="lg:text-[18px]/[1.67] text-[#4B5154]">At eFoli, we don’t just look at the present—we design for the future.</p>
             </div>
           </div>

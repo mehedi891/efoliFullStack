@@ -26,6 +26,8 @@ const ContactHero = () => {
 
          <Form
          fClass=""
+         btnClass="px-6 py-3 bg-[#fff] text-[#020202]"
+         btnTxt="Submit Message"
          />
 
           

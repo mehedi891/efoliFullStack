@@ -8,7 +8,7 @@ const ShowOffImg = () => {
   const images = useMemo(() => [img1, img2, img3, img4, img2, img4], []);
   return (
     <section>
-      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 pt-1">
+      <div className="mx-auto max-w-full px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 pt-1">
           <div>
             
             <div className="pb-20">
