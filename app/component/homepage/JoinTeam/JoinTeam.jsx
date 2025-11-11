@@ -3,10 +3,12 @@ import careerImg1 from "./1.webp"
 import careerImg2 from "./2.webp"
 import careerImg3 from "./3.webp"
 import ButtonWithIcon from "../../ButtonWithIcon/ButtonWithIcon"
+import AnimatedSection from "../../AnimatedSection/AnimatedSection"
 
 const JoinTeam = () => {
   return (
     <section className="pt-10">
+      <AnimatedSection>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 pt-10">
         <div className="flex items-end justify-between">
           <h2 className="md:text-5xl/snug text-3xl max-w-[637px] font-bold font-display">A Culture of Creativity, Collaboration, And Growth</h2>
@@ -54,6 +56,7 @@ const JoinTeam = () => {
         </div>
 
       </div>
+      </AnimatedSection>
     </section>
   )
 }

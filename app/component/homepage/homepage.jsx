@@ -8,7 +8,7 @@ import PBVideo from "./PBVideo/PBVideo"
 
 
 
-const Homepage = () => {
+const Homepage = ({posts}) => {
 
   return (
     <>
@@ -18,7 +18,7 @@ const Homepage = () => {
       <CustomerSuccess/>
       <PBVideo/>
       <JoinTeam/>
-      <Blogs/>
+      <Blogs posts={posts}/>
     </>
   )
 }

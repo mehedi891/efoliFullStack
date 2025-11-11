@@ -10,11 +10,13 @@ import em_demo from "./emDemo.webp";
 import { Link } from "react-router";
 import Button from "../../Button/Button";
 import ButtonWithIcon from "../../ButtonWithIcon/ButtonWithIcon";
+import AnimatedSection from "../../AnimatedSection/AnimatedSection";
 
 const Innovation = () => {
 
   return (
     <section style={{ backgroundImage: `url(${bg_gradient})` }} className={`md:py-30 py-10 bg-no-repeat bg-cover bg-center`}>
+      <AnimatedSection>
       <div id="efProducts" className="mx-auto max-w-7xl px-4 md:px-0 ">
         <h3 className="text-lg text-center text-blue-500 font-[600]">Products</h3>
         <h2 className="font-display md:text-5xl text-3xl font-bold text-center pt-2 md:mb-20 mb-10">Our Innovative Shopify Apps</h2>
@@ -106,6 +108,7 @@ const Innovation = () => {
         </div>
 
       </div>
+      </AnimatedSection>
 
     </section>
   )

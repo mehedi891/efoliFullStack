@@ -12,6 +12,11 @@
   font-family: var(--font-display);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .rotateCircleAbout>img{
   animation: rotation 18s infinite linear;
 }
