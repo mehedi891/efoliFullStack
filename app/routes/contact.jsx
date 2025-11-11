@@ -47,7 +47,7 @@ export const action = async ({ request }) => {
       to: process.env.SMTP_USER,
       replyTo: data?.email,
       subject: "New Contact Submission from Efoli Website",
-      //html: ContactEmailTemplate(data),
+      //html:ContactEmailTemplate(data),
 
       text:`
         Name: ${data?.name}
