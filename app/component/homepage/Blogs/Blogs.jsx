@@ -1,7 +1,7 @@
 import { Link } from "react-router"
-import blogImg1 from "./efoliBlog1.webp"
-import blogImg2 from "./efoliBlog2.webp"
-import blogImg3 from "./efoliBlog3.webp"
+// import blogImg1 from "./efoliBlog1.webp"
+// import blogImg2 from "./efoliBlog2.webp"
+// import blogImg3 from "./efoliBlog3.webp"
 import ButtonWithIcon from "../../ButtonWithIcon/ButtonWithIcon"
 import AnimatedSection from "../../AnimatedSection/AnimatedSection"
 

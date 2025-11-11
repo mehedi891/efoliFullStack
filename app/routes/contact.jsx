@@ -1,7 +1,7 @@
 import { useNavigation } from "react-router";
 import { ContactEmailTemplate } from "../component/contactpage/contactEmailTemplate/contactEmailTemplate";
 import Contactpage from "../component/contactpage/Contactpage";
-import  { createTransport } from "nodemailer";
+import { createTransport } from "nodemailer";
 import ElegantFloatingText from "../component/Loader/ElegantFloatingText";
 
 export function meta() {
@@ -11,7 +11,7 @@ export function meta() {
   ];
 }
 const Contact = () => {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
   return (navigation.state === "loading" ?
     <div className="h-lvh w-lvw bg-blue-50 flex items-center justify-center">
       <ElegantFloatingText text={"Loading..."} />
@@ -43,11 +43,12 @@ export const action = async ({ request }) => {
 
   try {
     const sendMail = await mailer.sendMail({
-      from: data?.email,
-      to: "mehedi@efoli.com",
-      subject: "New Contact Submission from Efoli Website",
-      // html: ContactEmailTemplate(data),:
+      from: `${data?.name} <${data?.email}>`,
+      to: process.env.SMTP_USER,
       replyTo: data?.email,
+      subject: "New Contact Submission from Efoli Website",
+      //html: ContactEmailTemplate(data),
+
       text:`
         Name: ${data?.name}
         Company: ${data?.company}
