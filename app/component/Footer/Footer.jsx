@@ -1,6 +1,6 @@
 import footerBg from "./footerBg.webp";
 import ctaBg from "./ctaBg.webp";
-import logo from "./footerLogo.png";
+import logo from "./logo.svg";
 import partner from "./partner.png";
 import basis from "./basis.png";
 import { Link } from "react-router";

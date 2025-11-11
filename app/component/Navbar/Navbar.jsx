@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router";
-import logo from "./logo.png";
+import logo from "./logo.svg";
 import Button from "../Button/Button";
 //import NavButton from "./NavButton/NavButton";
 
