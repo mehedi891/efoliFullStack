@@ -51,7 +51,7 @@ const Blogs = ({ posts }) => {
             </div>
           ) :
             <div className="pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Link>
+              {/* <Link>
                 <article className="flex flex-col gap-2 group">
                   <img src={blogImg1} alt="Blog 1" loading="lazy" className="max-h-[300px] mb-3 h-[240px] md:h-[300px] object-cover rounded-2xl max-w-[558px]
               transition ease-initial duration-600
@@ -91,7 +91,9 @@ const Blogs = ({ posts }) => {
               ">Building a Secure Storefront: How to Protect Your Business from Ecommerce Fraud</h3>
                   <p className="text-base text-[#4B5154]">── August 22, 2024</p>
                 </article>
-              </Link>
+              </Link> */}
+
+              <h3 className="text-2xl font-medium font-display text-red-500">No blog posts found</h3>
 
             </div>
           }

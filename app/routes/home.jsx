@@ -45,7 +45,7 @@ export function meta() {
 export default function Home() {
   
   const {posts} = useLoaderData();
-  //console.log('posttt:',posts);
+  console.log('posttt:',posts);
    const navigation = useNavigation();
   return (navigation.state === "loading" ?
     <div className="h-lvh w-lvw bg-blue-50 flex items-center justify-center">
