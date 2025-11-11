@@ -19,7 +19,7 @@ const navLinks = [
 
 
 
-const Navbar = ({ parentClassName, linkClassName }) => {
+const Navbar = ({ parentClassName, linkClassName ,isDark}) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -55,7 +55,7 @@ const Navbar = ({ parentClassName, linkClassName }) => {
                       to={l.href}
                       end={l.end}
                       className={({ isActive, isPending }) =>
-                        isPending ? "pending text-[#1d74bf] font-medium" : isActive ? "active text-[#1d74bf] font-medium" : `text-[#13181E] font-medium ${linkClassName}`
+                        isPending ? "pending text-[#1d74bf] font-medium" : isActive ? `active ${isDark ? "text-[#a3d4ff]" : "text-[#0D99FF]"} font-medium` : `text-[#13181E] font-medium ${linkClassName}`
                       }
                     >
                       <Button

@@ -14,12 +14,12 @@ import ButtonWithIcon from "../../ButtonWithIcon/ButtonWithIcon";
 const Innovation = () => {
 
   return (
-    <section style={{ backgroundImage: `url(${bg_gradient})` }} className={`py-8 bg-no-repeat bg-cover bg-center`}>
-      <div id="efProducts" className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 mt-10">
+    <section style={{ backgroundImage: `url(${bg_gradient})` }} className={`md:py-30 py-10 bg-no-repeat bg-cover bg-center`}>
+      <div id="efProducts" className="mx-auto max-w-7xl px-4 md:px-0 ">
         <h3 className="text-lg text-center text-blue-500 font-[600]">Products</h3>
-        <h2 className="font-display md:text-5xl text-3xl font-bold text-center pt-2 mb-10">Our Innovative Shopify Apps</h2>
+        <h2 className="font-display md:text-5xl text-3xl font-bold text-center pt-2 md:mb-20 mb-10">Our Innovative Shopify Apps</h2>
 
-        <div className="my-5 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl">
+        <div className="mb-7 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl">
           <div className="max-w-[550px]">
             <div className="flex items-center gap-2">
               <img src={mvIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto" />
@@ -41,10 +41,10 @@ const Innovation = () => {
 
         </div>
 
-        <div className="flex flex-wrap gap-5 justify-between">
+        <div className="flex flex-wrap gap-7 justify-between">
 
-          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[49%]
-          transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl
+          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[50%] flex-1
+          transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl 
           ">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
@@ -63,8 +63,8 @@ const Innovation = () => {
 
           </div>
 
-          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[49%]
-          transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl
+          <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[50%]
+          transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl flex-1
           ">
             <div className="max-w-[550px]">
               <div className="flex items-center gap-2">
@@ -85,7 +85,7 @@ const Innovation = () => {
 
         </div>
 
-        <div className="my-5 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-2xl p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]
+        <div className="mt-7 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-2xl p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa]
         transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl
         ">
           <div className="max-w-[550px]">

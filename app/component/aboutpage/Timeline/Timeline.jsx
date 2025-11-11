@@ -8,13 +8,13 @@ export default function Timeline() {
   ];
 
   return (
-    <section className="py-16 sm:py-20">
+    <section className="md:py-30 py-20">
       <div className="mx-auto max-w-5xl px-4">
         <h2 className="text-center font-display text-5xl font-bold">
           Our Journey Through The Years
         </h2>
 
-        <div className="relative mt-10 sm:mt-14">
+        <div className="relative md:mt-20 mt-10">
           {/* Vertical dotted line: left on mobile, centered on md+ */}
           <div className="pointer-events-none absolute top-0 h-full left-6 md:left-1/2 md:-translate-x-1/2 border-l-2 border-dotted border-zinc-300" />
 

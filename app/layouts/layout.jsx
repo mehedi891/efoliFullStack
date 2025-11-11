@@ -21,6 +21,7 @@ const Layout = () => {
             ? "text-white"
             : "text-[#4b5154]"
         }
+        isDark={darkHeader}
       />
       <Outlet />
       <Footer

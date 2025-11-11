@@ -23,7 +23,7 @@ const JoinTeam = () => {
           <div className="[grid-area:B] hidden md:block">
             <div className="rounded-[20px] bg-[#D7FBEA] p-6 w-full h-full">
               <div className="h-full flex flex-col justify-between">
-                <div className=" text-[#235D3A] text-xl font-medium font-display">Team Members</div>
+                <div className=" text-[#235D3A] text-xl font-semibold font-display">Team Members</div>
                 <div className="text-4xl md:text-6xl font-bold text-[#235D3A] font-display">30+</div>
               </div>
             </div>
@@ -37,7 +37,7 @@ const JoinTeam = () => {
           <div className="[grid-area:E] md:w-full w-[45%]">
             <div className="rounded-[20px] bg-[#FFD4EE] md:p-6 p-4 w-full h-full">
               <div className="h-full flex flex-col justify-between">
-                <div className=" text-[#6F3055] font-[600] text-base md:text-xl font-display">Years In Business</div>
+                <div className=" text-[#6F3055] font-semibold text-base md:text-xl font-display">Years In Business</div>
                 <div className="md:text-6xl text-4xl font-bold text-[#6F3055] font-display">15+</div>
               </div>
             </div>
