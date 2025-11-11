@@ -73,7 +73,7 @@ const TextwithImage = () => {
                   />
               </div>
           </div>
-          <hr />
+         <div className="border border-[#e5e5e5]"></div>
           <div className="flex items-start justify-between gap-7 sm:flex-wrap md:flex-nowrap md:gap-25 mt-25">
 
               <div className="md:w-[48%] ">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import plusImg from "./plus.svg";
 import minusImg from "./minus.svg";
+import Generalfaq from "../../Generalfaq/Generalfaq";
 
 const Faqs = () => {
   const [showFaq, setShowFaq] = useState(0);
@@ -37,7 +38,7 @@ const Faqs = () => {
     <section>
       <div className="max-w-7xl mx-auto py-30">
         <h2 className="text-5xl font-bold font-display text-[#13181E] text-center">Have Questions?</h2>
-        <div className="mt-15">
+        {/* <div className="mt-15">
           <div className="max-w-5xl mx-auto w-full flex flex-col gap-5">
             {faqsArr?.length > 0 &&
               faqsArr.map((faq, index) => {
@@ -82,7 +83,14 @@ const Faqs = () => {
                 );
               })}
           </div>
-        </div>
+        </div> */}
+
+        <Generalfaq
+          faqsArr={faqsArr}
+          fClass="mt-20 "
+          defaultOpen={0}
+          actionBtnType="plusMinus"
+        />
       </div>
     </section>
   )

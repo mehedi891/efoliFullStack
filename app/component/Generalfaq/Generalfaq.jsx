@@ -1,32 +1,43 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import plusImg from "./plus.svg";
+import minusImg from "./minus.svg";
 
-const Generalfaq = ({ faqsArr = [],fClass = "" }) => {
-    const [showFaq, setShowFaq] = useState(null);
+//actionBtnType: 'arrow' | 'plusminus'
+
+const Generalfaq = ({ faqsArr = [],fClass = "",defaultOpen = null,actionBtnType='arrow' }) => {
+    const [showFaq, setShowFaq] = useState(defaultOpen);
     const handleShowFaq = (index) => setShowFaq(showFaq === index ? null : index);
     
   return (
-    <div className={`flex flex-col gap-5 w-full ${fClass}`}>
+    <div className={`flex flex-col gap-0 w-full ${fClass}`}>
       {faqsArr?.length > 0 &&
         faqsArr.map((faq, index) => {
           const open = showFaq === index;
           return (
             <div
               key={index}
-              className={`py-1 border-b ${index === 0 ? "border-t pt-5" : ""} border-[#e5e5e5]`}
+              className={`md:py-4 py-3 border-b ${index === 0 ? "border-t" : ""} border-[#e5e5e5]`}
             >
               <div
                 onClick={() => handleShowFaq(index)}
-                className="flex justify-between items-center cursor-pointer pb-4 gap-5"
+                className="flex justify-between items-center cursor-pointer pb-0 gap-5"
               >
-                <h4 className="text-[22px] font-bold font-display">{faq?.question}</h4>
-                <svg
+                <h4 className="text-xl font-bold font-display">{faq?.question}</h4>
+                { actionBtnType === 'arrow' ?
+                  <svg
                   className={`${open ? "rotate-180" : ""} transition-transform duration-200`}
                   width="28" height="28" viewBox="0 0 28 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M14.0007 15.3667L19.7755 9.59204L21.4254 11.242L14.0007 18.6666L6.57617 11.242L8.22608 9.59204L14.0007 15.3667Z" fill="#13181E" />
                 </svg>
+                : open ? (
+                  <img src={minusImg} alt="minus" className="w-10 h-10" />
+                ) : (
+                  <img src={plusImg} alt="plus" className="w-10 h-10" />
+                )
+                }
               </div>
 
               <AnimatePresence initial={false}>
@@ -39,7 +50,7 @@ const Generalfaq = ({ faqsArr = [],fClass = "" }) => {
                     transition={{ duration: 0.25, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="text-base pb-2 max-w-[600px]">
+                    <p className="text-base pb-2 max-w-11/12">
                       {faq?.answer}
                     </p>
                   </motion.div>
