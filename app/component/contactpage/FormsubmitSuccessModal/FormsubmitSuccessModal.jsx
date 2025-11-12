@@ -1,7 +1,7 @@
 import {RxCross1} from "react-icons/rx";
 import {IoCheckmarkDoneCircleOutline} from "react-icons/io5";
 
-const FormsubmitSuccessModal = ({isModalOpen, setIsModalOpen}) => {
+const FormsubmitSuccessModal = ({isModalOpen, setIsModalOpen,text1="Form submitted successfully.",text2="We will get back to you soon."}) => {
   return (
     <div
       className={`${isModalOpen ? " visible" : " invisible"
@@ -26,8 +26,8 @@ const FormsubmitSuccessModal = ({isModalOpen, setIsModalOpen}) => {
 
           <IoCheckmarkDoneCircleOutline className="p-2 text-[6rem] text-[#2cac9f]" />
           <p className="text-[1.5rem] text-gray-900 text-center mt-4 mb-2">
-            Form submitted successfully. <br />
-            <span className="font-[600] ">We will get back to you soon.</span>
+            <span className="font-[600] ">{text1}</span> <br />
+            <span className="font-[600] ">{text2}</span>
           </p>
         </div>
       </div>

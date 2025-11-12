@@ -21,7 +21,9 @@ import t1 from "./discount.png";
 import { AnimatePresence, motion } from "motion/react"
 import { useMemo, useState } from "react"
 import SliderMarque from "../SliderMarque/SliderMarque"
+import FormsubmitSuccessModal from "../contactpage/FormsubmitSuccessModal/FormsubmitSuccessModal"
 const Offerpage = () => {
+  const [copyCodeSuccess, setCopyCodeSuccess] = useState(false);
   const [showFaq, setShowFaq] = useState(0);
   const handleShowFaq = (index) => setShowFaq(showFaq === index ? null : index);
   const images = useMemo(() => [t1, t1, t1, t1, t1, t1], []);
@@ -55,9 +57,9 @@ const Offerpage = () => {
       id: 6,
       question: "Will my discounts and bundles work with Shopify checkout during Black Friday?",
       answer: "Yes. All eFoli apps are fully compatible with Shopify’s checkout system and discount engine, so your Black Friday deals apply automatically and reliably."
-    ,
-  },
-  {
+      ,
+    },
+    {
       id: 7,
       question: "Can I promote my Black Friday products outside Shopify?",
       answer: "Yes. EmbedUp lets you embed products or collections directly on external websites, blogs, or partner pages, helping you reach new customers while keeping Shopify’s secure checkout."
@@ -69,6 +71,11 @@ const Offerpage = () => {
     }
   ];
 
+  const handleCopyCode = () => {  
+    navigator.clipboard.writeText("BFCM30");
+    setCopyCodeSuccess(true);
+  };
+
   return (
     <>
       <section className="">
@@ -76,13 +83,48 @@ const Offerpage = () => {
           <img src={hero} alt="Offerpage Hero" className="w-full h-auto col-start-1 row-start-1" />
           <div className="col-start-1 row-start-1 z-10 place-self-center pt-100">
             <Timer3 endDate="2025-11-29T00:00:00Z" persistKey="bfcm-countdown" />
-            <Link to={"/offer/#efProducts"} >
-              <Button
-                text1="Explore Our Products"
-                text2="Explore Our Products"
-                pClass="bg-[#0D99FF] py-4.5 px-7 text-[#fff] rounded-lg mt-10 mb-10 mx-auto block shadow-md text-xl"
-              />
-            </Link>
+            <div className="flex items-center gap-4">
+              <Link to={"/offer/#efProducts"} >
+                <Button
+                  text1="Explore Our Products"
+                  text2="Explore Our Products"
+                  pClass="bg-[#0D99FF] py-4.5 px-7 text-[#fff] rounded-lg mt-10 mb-10 mx-auto block shadow-md text-xl"
+                />
+              </Link>
+              <button
+              onClick={handleCopyCode}
+                className="
+    relative inline-flex items-center justify-center
+    px-10 py-5 text-2xl text-white
+    rounded-[10px] cursor-pointer overflow-hidden bg-transparent
+
+    /* spinning rainbow border (behind) */
+    before:content-[''] before:absolute
+    before:top-[-50%] before:left-[-50%]
+    before:w-[200%] before:h-[200%]
+    before:bg-[conic-gradient(red,yellow,lime,aqua,blue,magenta,red)]
+    before:animate-[spin_2s_linear_infinite]
+    before:z-[-2]
+
+    /* inner black panel (above ::before, below content) */
+    after:content-[''] after:absolute
+    after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px]
+    after:bg-black after:rounded-[8px]
+    after:z-[-1]
+  "
+              >
+                Copy Discount Code BFCM30
+              </button>
+
+              {/* keyframes for the conic spin */}
+              <style>{`
+  @keyframes spin { 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+  }
+`}</style>
+
+            </div>
           </div>
         </div>
 
@@ -348,6 +390,13 @@ const Offerpage = () => {
           </div>
         </div>
       </section>
+
+      <FormsubmitSuccessModal
+        isModalOpen={copyCodeSuccess}
+        setIsModalOpen={setCopyCodeSuccess}
+        text1="Discount Code copied successfully."
+        text2=""
+      />
 
     </>
   )
