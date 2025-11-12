@@ -337,7 +337,7 @@ const Offerpage = () => {
           <h2 className="font-display md:text-5xl/[1.25] text-3xl font-bold text-center pt-2 mb-0">Grab The Best Deal And Crush <br /> Your Sales In 2025</h2>
           <div className="pt-8 object-cover" style={{ backgroundImage: `url(${shape})` }}>
             <p className="text-lg/[1.66] max-w-[831px] mx-auto mb-10">No advanced setup is needed. All eFoli apps are plug-and-play and optimized for Shopify 2.0, so you can launch your Black Friday campaigns quickly and focus on sales.</p>
-            <Link to={"/offer/#efProducts"} target="_blank" >
+            <Link to={"/offer/#efProducts"} >
               <Button
                 text1="Explore Our Products"
                 text2="Explore Our Products"
