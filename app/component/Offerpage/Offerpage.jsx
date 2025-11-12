@@ -60,11 +60,13 @@ const Offerpage = () => {
           <img src={hero} alt="Offerpage Hero" className="w-full h-auto col-start-1 row-start-1" />
           <div className="col-start-1 row-start-1 z-10 place-self-center pt-100">
             <Timer3 durationDays={30} persistKey="bfcm-countdown" />
-            <Button
-              text1="Explore Our Products"
-              text2="Explore Our Products"
-              pClass="bg-[#0D99FF] py-4.5 px-7 text-[#fff] rounded-lg mt-10 mb-10 mx-auto block shadow-md text-xl"
-            />
+            <Link to={"/offer/#efProducts"} >
+              <Button
+                text1="Explore Our Products"
+                text2="Explore Our Products"
+                pClass="bg-[#0D99FF] py-4.5 px-7 text-[#fff] rounded-lg mt-10 mb-10 mx-auto block shadow-md text-xl"
+              />
+            </Link>
           </div>
         </div>
 
@@ -86,7 +88,7 @@ const Offerpage = () => {
                   <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">MultiVariants ‑ Bulk Order</h4>
                 </div>
                 <div className="mt-6 mb-4 text-[#13181E]">
-                  <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                  <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off (Code: BFCM30)</span></h4>
                   <p className="font-semibold">Top Features:</p>
                   <ul className="mt-2 pl-5 space-y-2 list-disc">
                     <li><span className="font-semibold">Grid & List Layouts:</span> Let customers add multiple variants to the cart in one click.</li>
@@ -96,7 +98,7 @@ const Offerpage = () => {
                   </ul>
                 </div>
 
-                <Link to={"https://multivariants.com"} target="_blank" >
+                <Link to={"https://apps.shopify.com/multivariants/"} target="_blank" >
                   <Button
                     text1="👉 Get the Offer"
                     text2="👉 Get the Offer"
@@ -126,7 +128,7 @@ const Offerpage = () => {
                     <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">DiscountRay ‑ B2B Custom Pricing</h4>
                   </div>
                   <div className="mt-6 mb-4 text-[#13181E]">
-                    <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                    <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off (Code: BFCM30)</span></h4>
                     <p className="font-semibold">Top Features:</p>
                     <ul className="mt-2 pl-5 space-y-2 list-disc">
                       <li><span className="font-semibold">Tiered & Quantity Discounts: </span>Tiered & Quantity Discounts: Reward bulk buyers automatically.</li>
@@ -136,7 +138,7 @@ const Offerpage = () => {
                     </ul>
                   </div>
 
-                  <Link to={"https://discountray.com"} target="_blank" >
+                  <Link to={"https://apps.shopify.com/discountray/"} target="_blank" >
                     <Button
                       text1="👉 Get the Offer"
                       text2="👉 Get the Offer"
@@ -160,7 +162,7 @@ const Offerpage = () => {
                     <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">Push Bundle ‑ Build a Box</h4>
                   </div>
                   <div className="mt-6 mb-4 text-[#13181E]">
-                    <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                    <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off (Code: BFCM30)</span></h4>
                     <p className="font-semibold">Top Features:</p>
                     <ul className="mt-2 pl-5 space-y-2 list-disc">
                       <li><span className="font-semibold"> Mix & Match Bundles: </span>Combine products or variants into one box.</li>
@@ -170,7 +172,7 @@ const Offerpage = () => {
                     </ul>
                   </div>
 
-                  <Link to={"https://pushbundle.com"} target="_blank" >
+                  <Link to={"https://apps.shopify.com/push-bundle/"} target="_blank" >
                     <Button
                       text1="👉 Get the Offer"
                       text2="👉 Get the Offer"
@@ -198,7 +200,7 @@ const Offerpage = () => {
                   <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">Embedup - sell anywherer</h4>
                 </div>
                 <div className="mt-6 mb-4 text-[#13181E]">
-                  <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                  <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off (Code: BFCM30)</span></h4>
                   <p className="font-semibold">Top Features:</p>
                   <ul className="mt-2 pl-5 space-y-2 list-disc">
                     <li><span className="font-semibold">Embed Products or Collections: </span> Add shoppable sections to any webpage.</li>
@@ -208,7 +210,7 @@ const Offerpage = () => {
                   </ul>
                 </div>
 
-                <Link to={"https://embedup.com"} target="_blank" >
+                <Link to={"https://apps.shopify.com/embedup/"} target="_blank" >
                   <Button
                     text1="👉 Get the Offer"
                     text2="👉 Get the Offer"
@@ -317,7 +319,7 @@ const Offerpage = () => {
       <section className="py-30 bg-[#010A1E] text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="font-display md:text-5xl/[1.25] text-3xl font-bold text-center pt-2 mb-0">Grab The Best Deal And Crush <br /> Your Sales In 2025</h2>
-          <div className="pt-8 object-cover" style={{backgroundImage:`url(${shape})`}}>
+          <div className="pt-8 object-cover" style={{ backgroundImage: `url(${shape})` }}>
             <p className="text-lg/[1.66] max-w-[831px] mx-auto mb-10">No advanced setup is needed. All eFoli apps are plug-and-play and optimized for Shopify 2.0, so you can launch your Black Friday campaigns quickly and focus on sales.</p>
             <Link to={"https://efoli.io/contact"} target="_blank" >
               <Button
