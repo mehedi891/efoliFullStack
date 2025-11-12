@@ -4,7 +4,7 @@ import FormsubmitSuccessModal from "../contactpage/FormsubmitSuccessModal/Formsu
 import { useForm, useWatch } from "react-hook-form";
 import Button from "../Button/Button";
 
-const Form = ({fClass='',btnClass='',btnTxt='Submit'}) => {
+const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const fetcher = useFetcher();
   const {
@@ -19,7 +19,7 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit'}) => {
       name: "",
       company: "",
       email: "",
-      service: "",
+      service: "Other",
       message: "",
     },
   });
@@ -110,6 +110,8 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit'}) => {
           )}
         </div>
 
+        { !hideService &&
+
         <div>
           <label
 
@@ -137,6 +139,7 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit'}) => {
             <p className="mt-2 text-sm text-red-300">{errors.service.message}</p>
           )}
         </div>
+}
 
         <div>
           <label

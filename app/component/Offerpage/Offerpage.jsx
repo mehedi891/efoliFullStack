@@ -13,7 +13,46 @@ import mv_demo from "./mv_demo.png";
 import em_demo from "./emDemo.webp";
 import currveBg from "./sectionBg.png"
 import { Link } from "react-router";
+import Form from "../Form/Form"
+import plusImg from "./plus.svg";
+import minusImg from "./minus.svg";
+import shape from "./shape.png";
+import t1 from "./discount.png";
+import { AnimatePresence, motion } from "motion/react"
+import { useMemo, useState } from "react"
+import SliderMarque from "../SliderMarque/SliderMarque"
 const Offerpage = () => {
+  const [showFaq, setShowFaq] = useState(0);
+  const handleShowFaq = (index) => setShowFaq(showFaq === index ? null : index);
+  const images = useMemo(() => [t1, t1, t1, t1, t1, t1], []);
+  const faqsArr = [
+    {
+      id: 1,
+      question: "How can eFoli apps help me get ready for Black Friday?",
+      answer: "Help you conclude where you want to be after twenty or thirty years. It takes you a step closer to your dreams. It allows you to achieve your financial goals within a specific period."
+    },
+    {
+      id: 2,
+      question: "Can you work with wireframes or our existing designs?",
+      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+    },
+    {
+      id: 3,
+      question: "Can you work with wireframes or our existing designs?",
+      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+    },
+    {
+      id: 4,
+      question: "Can you work with wireframes or our existing designs?",
+      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+    },
+    {
+      id: 5,
+      question: "Can you work with wireframes or our existing designs?",
+      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+    }
+  ];
+
   return (
     <>
       <section className="">
@@ -34,10 +73,11 @@ const Offerpage = () => {
         </div>
       </section>
 
-      <section className="bg-[#0D0827] py-30">
+      <section className="bg-[#0D0827] py-30 relative top-[-1px]">
         <AnimatedSection>
           <div id="efProducts" className="mx-auto max-w-7xl px-4 md:px-0 ">
-            <h2 className="font-display md:text-5xl text-3xl text-[#fff] font-bold text-center pt-2 md:mb-20 mb-10">Dominate Black Friday with the <br /> Power of eFoli</h2>
+            <h2 className="font-display md:text-5xl/[1.25] text-3xl text-[#fff] font-bold text-center pt-2 md:mb-3 mb-4">Dominate Black Friday with the <br /> Power of eFoli</h2>
+            <p className="text-lg/[1.66] text-[#fff] max-w-[801px] mx-auto md:mb-20 mb-10 text-center">eFoli turns complex selling into simple experiences this Black Friday. Achieve smooth bulk ordering, tailored discounts, irresistible bundles, and effortless multi-channel sales.</p>
 
             <div className="mb-7 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-lg p-10 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl">
               <div className="max-w-[550px]">
@@ -185,6 +225,110 @@ const Offerpage = () => {
 
           </div>
         </AnimatedSection>
+      </section>
+
+      <section className="bg-[#15112E] py-30 z-20 relative">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between">
+            <div className="md:max-w-[45%] w-full">
+              <h5 className="text-lg text-[#0D99FF] mb-2.5 font-semibold">GET IN TOUCH</h5>
+              <h2 className="text-3xl md:text-5xl/[1.25] font-bold font-display tracking-[-1.44px] max-w-[660px] text-white">Contact Our Support Team To Grow Your Business</h2>
+              <p className="text-base md:text-xl/[1.6] mt-6 text-white">We'll schedule a call to discuss your idea. After discovery sessions, we'll send a proposal, and upon approval, we'll get started.</p>
+            </div>
+
+            <div className="w-full md:w-1/2">
+              <Form
+                fClass="w-full bg-white p-8 rounded-sm"
+                btnClass="bg-[#0D99FF] text-white px-6 py-3.5 font-medium"
+                btnTxt='Submit Message'
+                hideService={true}
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#0D0827] py-30">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-lg text-[#0D99FF] mb-2.5 font-semibold text-center">Faq</p>
+          <h2 className="font-display md:text-5xl text-3xl text-[#fff] font-bold text-center pt-2 md:mb-20 mb-6">Frequently Asked Questions</h2>
+          <div className={`flex flex-col gap-6 w-full text-white max-w-[965px] mx-auto`}>
+            {faqsArr?.length > 0 &&
+              faqsArr.map((faq, index) => {
+                const open = showFaq === index;
+                return (
+                  <div
+                    key={index}
+                    className={`md:py-6 py-8 flex flex-col justify-start items-start  bg-[#15112E] border border-[#221D39] px-4 rounded-2xl`}
+                  >
+                    <div
+                      onClick={() => handleShowFaq(index)}
+                      className="flex flex-row-reverse items-center cursor-pointer pb-0 gap-5"
+                    >
+                      <h4 className="text-[22px] font-semibold tracking-[-0.44px] font-display">{faq?.question}</h4>
+
+                      {open ? (
+                        <img src={minusImg} alt="minus" className="w-10 h-10" />
+                      ) : (
+                        <img src={plusImg} alt="plus" className="w-10 h-10" />
+                      )
+                      }
+
+                    </div>
+
+                    <AnimatePresence initial={false}>
+                      {open && (
+                        <motion.div
+                          key="content"
+                          initial={{ height: 0, opacity: 0, y: -4 }}
+                          animate={{ height: "auto", opacity: 1, y: 0 }}
+                          exit={{ height: 0, opacity: 0, y: -4 }}
+                          transition={{ duration: 0.25, ease: "easeOut" }}
+                          className="overflow-hidden"
+                        >
+                          <p className="text-base pt-3 md:text-lg pl-16 max-w-11/12">
+                            {faq?.answer}
+                          </p>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              })}
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <SliderMarque
+          images={images}
+          slotWidth={350}   // px width of each slide "lane"
+          slotGap={10}      // px horizontal gap between slides
+          itemHeight={'auto'}
+          speedPx={30}
+          containerCls="bg-[#09D6F6] py-5"
+          bg="#fff"
+          edgeFade
+        />
+      </section>
+
+      <section className="py-30 bg-[#010A1E] text-white">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="font-display md:text-5xl/[1.25] text-3xl font-bold text-center pt-2 mb-0">Grab The Best Deal And Crush <br /> Your Sales In 2025</h2>
+          <div className="pt-8 object-cover" style={{backgroundImage:`url(${shape})`}}>
+            <p className="text-lg/[1.66] max-w-[831px] mx-auto mb-10">No advanced setup is needed. All eFoli apps are plug-and-play and optimized for Shopify 2.0, so you can launch your Black Friday campaigns quickly and focus on sales.</p>
+            <Link to={"https://efoli.io/contact"} target="_blank" >
+              <Button
+                text1="Explore Our Products"
+                text2="Explore Our Products"
+                pClass="bg-[#0D99FF] py-4.5 px-7 text-[#fff] rounded-lg shadow-md text-xl mx-auto"
+              />
+            </Link>
+            <p className="text-sm mt-5">Terms and conditions apply. Offer valid for annual plans only.</p>
+          </div>
+        </div>
       </section>
 
     </>
