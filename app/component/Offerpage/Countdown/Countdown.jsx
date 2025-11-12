@@ -1,29 +1,57 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-
-const Timer3 = ({ durationDays = 30, persistKey }) => {
+/**
+ * Timer3 props
+ *  - endDate: string | number | Date  (required)
+ *      Examples:
+ *        "2026-01-01T00:00:00Z"      // UTC ISO
+ *        "2026-01-01 00:00:00"       // local time (see interpretAsLocal)
+ *        Date.now() + 30*864e5       // timestamp ms
+ *        new Date("2026-01-01T00:00:00Z")
+ *  - interpretAsLocal: boolean (default false)
+ *      If true and endDate is a string w/o timezone, treat as local time.
+ *  - onComplete: () => void (optional)
+ */
+const Timer3 = ({ endDate, interpretAsLocal = false, onComplete }) => {
   const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    days: 0, hours: 0, minutes: 0, seconds: 0,
   });
 
-  useEffect(() => {
-    // Determine (or restore) the end timestamp
-    let endTs;
-    if (persistKey) {
-      const saved = localStorage.getItem(persistKey);
-      endTs = saved ? parseInt(saved, 10) : Date.now() + durationDays * 24 * 60 * 60 * 1000;
-      if (!saved) localStorage.setItem(persistKey, String(endTs));
-    } else {
-      endTs = Date.now() + durationDays * 24 * 60 * 60 * 1000;
+  // Parse endDate once
+  const endTs = useMemo(() => {
+    if (endDate instanceof Date) return endDate.getTime();
+    if (typeof endDate === "number") return endDate;
+
+    if (typeof endDate === "string") {
+      // If string has 'Z' or timezone offset, Date will parse as absolute.
+      // If no timezone and interpretAsLocal = true, coerce to local by replacing
+      // space with 'T' and not appending 'Z'.
+      const looksLikeLocal = interpretAsLocal && !/[zZ]|[+\-]\d{2}:?\d{2}$/.test(endDate);
+      if (looksLikeLocal) {
+        // Accept "YYYY-MM-DD HH:mm[:ss]" -> "YYYY-MM-DDTHH:mm[:ss]"
+        const normalized = endDate.trim().replace(" ", "T");
+        const d = new Date(normalized);
+        return isNaN(d.getTime()) ? NaN : d.getTime();
+      }
+      const d = new Date(endDate);
+      return isNaN(d.getTime()) ? NaN : d.getTime();
     }
 
-    const calc = () => {
+    return NaN;
+  }, [endDate, interpretAsLocal]);
+
+  useEffect(() => {
+    if (!endTs || Number.isNaN(endTs)) {
+      console.warn("Timer3: invalid endDate", endDate);
+      setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      return;
+    }
+
+    const tick = () => {
       const diff = endTs - Date.now();
       if (diff <= 0) {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        if (onComplete) onComplete();
         return true; // finished
       }
       const days = Math.floor(diff / 86400000);
@@ -34,61 +62,42 @@ const Timer3 = ({ durationDays = 30, persistKey }) => {
       return false;
     };
 
-    // Initial run & ticking
-    calc();
+    // initial + interval
+    const doneInitially = tick();
+    if (doneInitially) return;
     const id = setInterval(() => {
-      const done = calc();
+      const done = tick();
       if (done) clearInterval(id);
     }, 1000);
 
     return () => clearInterval(id);
-  }, [durationDays, persistKey]);
+  }, [endTs, endDate, onComplete]);
 
   const pad = (n) => String(n).padStart(2, "0");
 
   return (
     <div className="flex justify-center gap-3 sm:gap-8">
       {/* Days */}
-      <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex flex-col justify-center gap-3 items-center bg-[#00000080] rounded-lg">
-        <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-          {pad(timeLeft.days)}
-        </span>
-        <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-          {timeLeft.days === 1 ? "Day" : "Days"}
-        </span>
-      </div>
-
+      <Box label={timeLeft.days === 1 ? "Day" : "Days"} value={pad(timeLeft.days)} />
       {/* Hours */}
-      <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex flex-col justify-center gap-3 items-center bg-[#00000080] rounded-lg">
-        <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-          {pad(timeLeft.hours)}
-        </span>
-        <span className="text-[#8486A9] text-xs sm:text-2xl text-center font-medium">
-          {timeLeft.hours === 1 ? "Hour" : "Hours"}
-        </span>
-      </div>
-
+      <Box label={timeLeft.hours === 1 ? "Hour" : "Hours"} value={pad(timeLeft.hours)} />
       {/* Minutes */}
-      <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex flex-col justify-center gap-3 items-center bg-[#00000080] rounded-lg">
-        <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-          {pad(timeLeft.minutes)}
-        </span>
-        <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-          {timeLeft.minutes === 1 ? "Minute" : "Minutes"}
-        </span>
-      </div>
-
+      <Box label={timeLeft.minutes === 1 ? "Minute" : "Minutes"} value={pad(timeLeft.minutes)} />
       {/* Seconds */}
-      <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex flex-col justify-center gap-3 items-center bg-[#00000080] rounded-lg">
-        <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-          {pad(timeLeft.seconds)}
-        </span>
-        <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-          {timeLeft.seconds === 1 ? "Second" : "Seconds"}
-        </span>
-      </div>
+      <Box label={timeLeft.seconds === 1 ? "Second" : "Seconds"} value={pad(timeLeft.seconds)} />
     </div>
   );
 };
+
+const Box = ({ value, label }) => (
+  <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex flex-col justify-center gap-3 items-center bg-[#00000080] rounded-lg">
+    <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
+      {value}
+    </span>
+    <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
+      {label}
+    </span>
+  </div>
+);
 
 export default Timer3;

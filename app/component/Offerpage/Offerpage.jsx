@@ -75,7 +75,7 @@ const Offerpage = () => {
         <div className="grid ">
           <img src={hero} alt="Offerpage Hero" className="w-full h-auto col-start-1 row-start-1" />
           <div className="col-start-1 row-start-1 z-10 place-self-center pt-100">
-            <Timer3 durationDays={30} persistKey="bfcm-countdown" />
+            <Timer3 endDate="2025-11-29T00:00:00Z" persistKey="bfcm-countdown" />
             <Link to={"/offer/#efProducts"} >
               <Button
                 text1="Explore Our Products"
