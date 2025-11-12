@@ -29,27 +29,43 @@ const Offerpage = () => {
     {
       id: 1,
       question: "How can eFoli apps help me get ready for Black Friday?",
-      answer: "Help you conclude where you want to be after twenty or thirty years. It takes you a step closer to your dreams. It allows you to achieve your financial goals within a specific period."
+      answer: "eFoli apps are built to help Shopify merchants handle high traffic and large orders during Black Friday. You can set up discounts, create product bundles, and manage bulk orders in minutes. No coding required."
     },
     {
       id: 2,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "Can I run multiple Black Friday deals at the same time?",
+      answer: "Yes. With DiscountRay, you can schedule and stack different discounts, like bulk, tiered, or personalized offers, to run together or separately during your Black Friday campaign."
     },
     {
       id: 3,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "How do I manage large Black Friday orders efficiently?",
+      answer: "MultiVariants makes it easy to handle bulk or wholesale orders by letting customers add multiple variants to their cart at once and apply quantity restrictions to keep stock organized."
     },
     {
       id: 4,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "What’s included in the 25% Black Friday offer?",
+      answer: "During the campaign, you’ll receive 25% off all eFoli Shopify apps, which are MultiVariants, DiscountRay, PushBundle, and EmbedUp. The offer applies to all paid plans for both new and existing merchants."
     },
     {
       id: 5,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: " Can I use PushBundle to create Black Friday gift bundles?",
+      answer: "Absolutely. PushBundle lets you design “Buy More, Save More” or “Gift Box” bundles that drive higher order values. You can mix products, set discounts, and show live savings instantly."
+    },
+    {
+      id: 6,
+      question: "Will my discounts and bundles work with Shopify checkout during Black Friday?",
+      answer: "Yes. All eFoli apps are fully compatible with Shopify’s checkout system and discount engine, so your Black Friday deals apply automatically and reliably."
+    ,
+  },
+  {
+      id: 7,
+      question: "Can I promote my Black Friday products outside Shopify?",
+      answer: "Yes. EmbedUp lets you embed products or collections directly on external websites, blogs, or partner pages, helping you reach new customers while keeping Shopify’s secure checkout."
+    },
+    {
+      id: 8,
+      question: "Do I need any technical setup before Black Friday?",
+      answer: "No advanced setup is needed. All eFoli apps are plug-and-play and optimized for Shopify 2.0, so you can launch your Black Friday campaigns quickly and focus on sales."
     }
   ];
 
