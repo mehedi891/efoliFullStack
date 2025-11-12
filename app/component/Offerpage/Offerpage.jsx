@@ -34,11 +34,10 @@ const Offerpage = () => {
         </div>
       </section>
 
-      <section className="bg-[#0D0827]">
+      <section className="bg-[#0D0827] py-30">
         <AnimatedSection>
           <div id="efProducts" className="mx-auto max-w-7xl px-4 md:px-0 ">
-            <h3 className="text-lg text-center text-blue-500 font-[600]">Products</h3>
-            <h2 className="font-display md:text-5xl text-3xl font-bold text-center pt-2 md:mb-20 mb-10">Our Innovative Shopify Apps</h2>
+            <h2 className="font-display md:text-5xl text-3xl text-[#fff] font-bold text-center pt-2 md:mb-20 mb-10">Dominate Black Friday with the <br /> Power of eFoli</h2>
 
             <div className="mb-7 flex md:flex-wrap flex-wrap-reverse items-center justify-between shadow-lg p-10 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl">
               <div className="max-w-[550px]">
@@ -47,7 +46,7 @@ const Offerpage = () => {
                   <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">MultiVariants ‑ Bulk Order</h4>
                 </div>
                 <div className="mt-6 mb-4 text-[#13181E]">
-                  <h4 className="text-lg text-[#13181E] font-medium mb-8">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                  <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
                   <p className="font-semibold">Top Features:</p>
                   <ul className="mt-2 pl-5 space-y-2 list-disc">
                     <li><span className="font-semibold">Grid & List Layouts:</span> Let customers add multiple variants to the cart in one click.</li>
@@ -87,7 +86,7 @@ const Offerpage = () => {
                     <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">DiscountRay ‑ B2B Custom Pricing</h4>
                   </div>
                   <div className="mt-6 mb-4 text-[#13181E]">
-                    <h4 className="text-lg text-[#13181E] font-medium mb-8">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                    <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
                     <p className="font-semibold">Top Features:</p>
                     <ul className="mt-2 pl-5 space-y-2 list-disc">
                       <li><span className="font-semibold">Tiered & Quantity Discounts: </span>Tiered & Quantity Discounts: Reward bulk buyers automatically.</li>
@@ -121,7 +120,7 @@ const Offerpage = () => {
                     <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">Push Bundle ‑ Build a Box</h4>
                   </div>
                   <div className="mt-6 mb-4 text-[#13181E]">
-                    <h4 className="text-lg text-[#13181E] font-medium mb-8">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                    <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
                     <p className="font-semibold">Top Features:</p>
                     <ul className="mt-2 pl-5 space-y-2 list-disc">
                       <li><span className="font-semibold"> Mix & Match Bundles: </span>Combine products or variants into one box.</li>
@@ -159,7 +158,7 @@ const Offerpage = () => {
                   <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">Embedup - sell anywherer</h4>
                 </div>
                 <div className="mt-6 mb-4 text-[#13181E]">
-                  <h4 className="text-lg text-[#13181E] font-medium mb-8">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
+                  <h4 className="text-lg text-[#13181E] font-medium mb-6">Black Friday Offer: <span className="text-xl font-bold">Get 30% Off</span></h4>
                   <p className="font-semibold">Top Features:</p>
                   <ul className="mt-2 pl-5 space-y-2 list-disc">
                     <li><span className="font-semibold">Embed Products or Collections: </span> Add shoppable sections to any webpage.</li>
