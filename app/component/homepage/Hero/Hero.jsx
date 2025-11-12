@@ -3,6 +3,7 @@ import heroImg1 from "./heroImg1.webp";
 import heroImg2 from "./heroImg2.webp";
 import heroImg3 from "./heroImg3.webp";
 import heroImg4 from "./heroImg4.webp";
+import mobHero from "../../../images/mobHero.webp"
 
 import t1 from "./t1.png";
 import t2 from "./t2.png";
@@ -18,7 +19,7 @@ export default function Hero() {
   return (
     <section className="relative">
       {/* Top copy */}
-      
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-12 sm:pt-16 lg:pt-20 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 rounded-full border border-[#F59E0B] bg-[linear-gradient(180deg,#FFF_0%,#FFFBEB_100%)] px-4 py-1.5 text-sm font-medium text-[#D97706] shadow-sm">
@@ -48,15 +49,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.25 }}
-            className="block">Empowering Success.</motion.span>
+            className="block">To Empower Growth.</motion.span>
         </h1>
 
         {/* Subcopy */}
         <p className="mx-auto mt-5 max-w-4xl text-xl/[1.9] text-[#4B5154]">
-          EFOLI is a globally connected software company headquartered in Bangladesh, with
+          EFOLI is a globally trusted software company with over<span className="font-semibold"> 15+ years </span> of experience in building
           <br className="hidden sm:block" />
-          <span className="font-semibold"> 15+ years </span>
-          of experience delivering cutting-edge B2B eCommerce solutions.
+          scalable, high-impact B2B eCommerce solutions for merchants worldwide.
         </p>
 
         {/* CTAs */}
@@ -65,9 +65,9 @@ export default function Hero() {
             to="/#efProducts"
           >
             <Button
-                pClass="rounded-lg px-6 py-3.5 font-medium text-white shadow-sm bg-[#0D99FF]"
-                text1="Try Our Products"
-                text2="Try Our Products"
+              pClass="rounded-lg px-6 py-3.5 font-medium text-white shadow-sm bg-[#0D99FF]"
+              text1="Try Our Products"
+              text2="Try Our Products"
             />
           </Link>
 
@@ -77,33 +77,34 @@ export default function Hero() {
             to="/contact-us/"
           >
             <Button
-                pClass="rounded-lg px-6 py-3.5 font-medium text-[#0D99FF] border border-[#0D99FF]"
-                text1="Request Info"
-                text2="Request Info"
+              pClass="rounded-lg px-6 py-3.5 font-medium text-[#0D99FF] border border-[#0D99FF]"
+              text1="Request Info"
+              text2="Request Info"
             />
           </Link>
         </div>
       </div>
 
       {/* Image/Stats Mosaic */}
-      <div className="max-w-1/1 mx-auto py-20">
+      <div className="max-w-1/1 mx-auto py-10 md:py-20">
         <div
           className="
-      grid gap-6
+      md:grid gap-6
       md:grid-cols-4
       grid-cols-1
        md:[grid-template-areas:'A_B_C_D''A_E_C_F']
        [grid-template-areas:'A']
        place-center
+        hidden
         "
         >
 
           <div className="[grid-area:A]">
-           <div className="w-full h-full pl-5">
-             <img src={heroImg1} alt="Team" loading="lazy" className="object-cover w-auto h-full  md:rounded-tr-[100px] rounded-xs" />
-           </div>
+            <div className="w-full h-full pl-5">
+              <img src={heroImg1} alt="Team" loading="lazy" className="object-cover w-auto h-full  md:rounded-tr-[100px] rounded-xs" />
+            </div>
           </div>
-          <div className="[grid-area:B] md:block hidden">
+          <div className="[grid-area:B]">
             <div className="bg-[#FFD4EE] w-full h-full rounded-tl-[100px] gap-3 flex flex-col items-center justify-center">
               <CounterText
                 className="text-[80px]/[0.8] text-[#6F3055] tracking-[-2.4px] font-semibold font-display"
@@ -115,18 +116,18 @@ export default function Hero() {
               <p className="text-[22px] text-[#6F3055] font-semibold font-display">Years Of Solid Experience.</p>
             </div>
           </div>
-          <div className="[grid-area:C] md:block hidden">
+          <div className="[grid-area:C]">
             <img src={heroImg3} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]" />
           </div>
-          <div className="[grid-area:D] md:block hidden">
+          <div className="[grid-area:D]">
             <div className="w-full h-full pr-5">
               <img src={heroImg4} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tl-[100px]" />
             </div>
           </div>
-          <div className="[grid-area:E] md:block hidden">
+          <div className="[grid-area:E]">
             <img src={heroImg2} alt="Team" loading="lazy" className="object-cover h-full rounded-xs lg:rounded-tr-[100px]" />
           </div>
-          <div className="[grid-area:F] md:block hidden">
+          <div className="[grid-area:F]">
             <div className="w-full h-full pr-5">
               <div className="bg-[#D3FEE8] w-full h-full rounded-tr-[100px] gap-3 flex flex-col items-center justify-center">
                 <CounterText
@@ -140,6 +141,34 @@ export default function Hero() {
               </div>
 
             </div>
+          </div>
+        </div>
+
+        <div className="md:hidden flex flex-col gap-6 px-4">
+          <img src={mobHero} alt="Team" loading="lazy" className="object-inherit w-full h-auto rounded-xs" />
+          <div className="flex gap-6">
+            <div className="bg-[#FFD4EE] w-full h-full gap-3 flex flex-col items-center justify-center rounded-xl px-2 py-4">
+              <CounterText
+                className="text-2xl text-[#6F3055] font-semibold font-display"
+                duration={1500}
+                start={0}
+                end={15}
+                once={true}
+              />
+              <p className="text-base text-[#6F3055] font-semibold font-display">Years Of Experience.</p>
+            </div>
+
+            <div className="bg-[#D3FEE8] w-full h-full gap-3 flex flex-col items-center justify-center rounded-xl px-2 py-4">
+              <CounterText
+                className="text-2xl text-[#235D3A] font-semibold font-display"
+                duration={1500}
+                start={50}
+                end={180}
+                once={true}
+              />
+              <p className="text-base text-[#235D3A] font-semibold font-display">Countries Reached</p>
+            </div>
+
           </div>
         </div>
       </div>

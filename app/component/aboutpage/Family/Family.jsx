@@ -4,17 +4,17 @@ import ceoImg from "./ceoJA.webp";
 const Family = () => {
   return (
     <section className="lg:mb-30 mb-6 relative">
-       <div  className='max-w-7xl mx-auto -mt-45'>
+       <div  className='max-w-7xl mx-auto md:-mt-45 mt-10 md:px-0 px-4'>
           <img className='object-contain' src={aboutHero} alt="About Us" />
         </div>
-      <div  className="max-w-7xl mx-auto mt-30">
+      <div  className="max-w-7xl mx-auto md:mt-30 mt-10 md:px-0 px-4">
         <div className="flex flex-wrap lg:gap-40 gap-4">
           <div className="max-w-[850px]">
             <h2 className="md:text-5xl/[1.2] text-3xl font-bold font-display">We are the eFoli Family</h2>
             <div className="flex flex-col gap-4 mt-5">
-              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">At eFoli, our journey began more than 10 years ago with a simple yet powerful mission—to create solutions that blend innovation, creativity, and real-world impact. Over the years, we’ve expanded our expertise across multiple industries, building a reputation for delivering value-driven results that help businesses grow and thrive.</p>
-              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">What makes eFoli unique is our people. We are a family of passionate professionals, designers, developers, and strategists who share a common vision: to transform challenges into opportunities. Whether it’s designing intuitive digital experiences, developing scalable SaaS products, or crafting business strategies, we approach every project with dedication, precision, and care.Building a reputation for delivering value-driven results that help businesses grow and thrive.</p>
-              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">At eFoli, we don’t just look at the present—we design for the future.</p>
+              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">More than 15 years ago, eFoli was founded with a clear purpose: to create solutions that merge innovation, creativity, and real-world impact. Since then, we’ve expanded our expertise across industries, building a global reputation for delivering technology that helps businesses grow, evolve, and thrive in an ever-changing digital world.</p>
+              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">Our greatest strength is our people - a team of passionate professionals, designers, and strategists who share one vision: to turn challenges into opportunities. From intuitive user experiences to scalable SaaS products, every project we craft reflects collaboration, precision, and care, ensuring that each solution we deliver drives long-term success.</p>
+              <p className="lg:text-[18px]/[1.67] text-[#4B5154]">At eFoli, we don’t just focus on what’s now - we build what’s next.</p>
             </div>
           </div>
 

@@ -36,7 +36,7 @@ const Footer = ({ isDark, isBannerHide = false }) => {
         </div>
       }
 
-      <div className={`max-w-7xl mx-auto ${isDark && !isBannerHide ? 'pt-20' : !isDark && !isBannerHide ? 'md:pt-80 pt-60' : 'pt-20'} pb-10 flex justify-between px-6 gap-10 flex-wrap lg:flex-nowrap items-start`}>
+      <div className={`max-w-7xl mx-auto ${isDark && !isBannerHide ? 'pt-20' : !isDark && !isBannerHide ? 'md:pt-80 pt-40' : 'pt-20'} pb-10 flex justify-between px-6 gap-10 flex-wrap lg:flex-nowrap items-start`}>
         <div className="max-w-lg">
           <img src={logo} alt="eFoli" className="max-w-[100px] object-contain" />
           <p className="text-[18px]/[1.7]  pt-5 pb-7">Crafting B2B eCommerce Solutions, Empowering Success EFOLI is a Bangladeshi software company with 15+ years of experience, specializing in cutting-edge solutions for eCommerce businesses.</p>

@@ -5,39 +5,40 @@ const Faq = () => {
   const faqsArr = [
     {
       id: 1,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "What kind of roles does eFoli hire for?",
+      answer: "We hire across multiple teams, including development, design, marketing, QA, customer success, and technical support. We value creativity, curiosity, and problem-solving over titles, so if you’re passionate about innovation, there’s a place for you here."
     },
     {
       id: 2,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "Does eFoli offer remote or hybrid work opportunities?",
+      answer: "Many of our team members work in hybrid setups."
     },
     {
       id: 3,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "How can I partner with eFoli?",
+      answer: "If you’re an agency, app developer, or tech collaborator, you can partner with us through product integrations, affiliate programs, or joint marketing initiatives. Simply reach out via partnership@efoli.com to start the conversation."
     },
-     {
+    {
       id: 4,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "What type of companies does eFoli typically work with?",
+      answer: "We work with global eCommerce brands, SaaS businesses, and Shopify merchants, from startups to enterprise-level organizations, helping them scale with automation, personalization, and seamless user experiences."
     },
      {
       id: 5,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "Why should I join or collaborate with eFoli?",
+      answer: "eFoli isn’t just a workplace, it’s a community of innovators building tools that empower thousands of businesses worldwide. Whether you join the team or partner with us, you become part of a mission that’s shaping the future of digital commerce."
     }
+     
   ];
 
  
 
   return (
     <section>
-      <div className="max-w-7xl mx-auto pb-20 text-[#13181E]">
+      <div className="max-w-7xl mx-auto md:pb-20 pb-0 text-[#13181E] md:px-0 px-4">
         <div className="flex flex-wrap justify-between">
-          <h2 className="text-5xl/[1.192] font-display font-bold max-w-[400px]">
-            Questions and <br /> answers
+          <h2 className="md:text-5xl/[1.192] text-3xl md:text-left text-center font-display font-bold md:max-w-[500px]  max-w-full md:flex-none flex-1 md:mb-0 mb-10">
+            Frequently Asked <br />Questions
           </h2>
 
           {/* <div className="max-w-[800px] w-full flex flex-col gap-5">
@@ -84,7 +85,7 @@ const Faq = () => {
               })}
           </div> */}
 
-          <Generalfaq faqsArr={faqsArr} fClass="max-w-[800px]" />
+          <Generalfaq faqsArr={faqsArr} fClass="max-w-[750px]" />
         </div>
       </div>
     </section>

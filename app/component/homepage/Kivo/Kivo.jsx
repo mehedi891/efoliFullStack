@@ -15,15 +15,15 @@ const Kivo = () => {
             <div className="max-w-[550px]">
               <div className="pb-7 border-b border-[#e5e5e5]">
                 <h3 className="font-display text-lg md:text-2xl font-bold">24/7 Technical Support</h3>
-                <p className="pt-2 text-[#4b5154]">Round-the-clock support for your Shopify app users. Never miss a bug report, question, or opportunity to impress.</p>
+                <p className="pt-2 text-[#4b5154]">Round-the-clock technical care for your Shopify app users. Never miss a bug report, issue, or chance to impress.</p>
               </div>
               <div className="pb-7 border-b border-[#e5e5e5]">
                 <h3 className="mt-6 font-display text-lg md:text-2xl font-bold">Live Chat, Call & Email Support</h3>
-                <p className="pt-2 text-[#4b5154]">Round-the-clock support for your Shopify app users. Never miss a bug report, question, or opportunity to impress.</p>
+                <p className="pt-2 text-[#4b5154]">Real-time help through chat, calls, and emails, ensuring every customer gets the response they need, when they need it.</p>
               </div>
               <div className="pb-7">
                 <h3 className="mt-6 font-display text-lg md:text-2xl font-bold">Documentation & Custom Support</h3>
-                <p className="pt-2 text-[#4b5154]">We create helpful docs, FAQs, and tailored support flows that scale with your app and reduce tickets.</p>
+                <p className="pt-2 text-[#4b5154]">We craft detailed docs, FAQs, and tailored support flows that grow with your app and reduce repetitive tickets.</p>
               </div>
 
               <div className="mt-2">

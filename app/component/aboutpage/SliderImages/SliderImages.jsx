@@ -7,10 +7,10 @@ import img2 from "./slider2.png";
 export default function SliderImages() {
   const images = useMemo(() => [img1, img2, img1, img2, img1, img2], []);
   return (
-    <section className="bg-[#0A0C00] text-white py-30">
+    <section className="bg-[#0A0C00] text-white md:py-30 py-15">
       <div className="max-w-full mx-auto">
-        <h2 className="text-5xl/[1.25] font-bold font-display text-center pb-20">
-          A culture of creativity, <br /> collaboration, and growth
+        <h2 className="md:text-5xl/[1.25] text-3xl font-bold font-display text-center pb-20">
+           A Culture Built on Creativity,<br /> Collaboration and Growth
         </h2>
         <div className="">
           <FMMarquee

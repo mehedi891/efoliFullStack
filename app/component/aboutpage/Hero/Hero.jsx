@@ -7,29 +7,29 @@ const Hero = () => {
   return (
     <section className="bg-[#0A0C00] text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative">
-        <div className="max-w-[980px] mx-auto flex flex-col gap-0 pb-60 pt-30">
+        <div className="max-w-max mx-auto flex flex-col gap-0 md:pb-60 pb-10 md:pt-30 pt-10">
           <h3 className="text-center text-[18px]">About Us</h3>
           <motion.h1
-            className="text-center font-bold text-5xl sm:text-6xl lg:text-7xl font-display mb-5 leading-tight"
+            className="text-center font-bold text-5xl md:text-7xl font-display mb-5 leading-tight"
             initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
-            The All-In-One B2b Solution <br /> To Scale Your Business
+            Your Complete B2B Solution<br />For Sustainable Business Growth
           </motion.h1>
 
-          <p className="text-center text-xl/[1.9]">We are adaptive and affable. You will find us like your own team in collaboration. We are committed to bringing your business success to the next elevation.</p>
+          <p className="text-center text-xl/[1.9] max-w-[700px] mx-auto">Collaborative, reliable, and dedicated. We help you elevate your business through innovation and partnership.</p>
         </div>
 
         
 
       </div>
 
-      <div className='absolute right-[-3%] top-[-0%] rotateCircleAbout'>
-        <img className='object-contain max-w-[200px]' src={circleImg2} alt="About Us" />
+      <div className='absolute right-[-3%] top-[-5%] md:top-[-0%] rotateCircleAbout'>
+        <img className='object-contain md:max-w-[200px] max-w-[100px]' src={circleImg2} alt="About Us" />
       </div>
 
-      <div className='absolute left-[-3%] bottom-[-12%] rotateCircleAbout'>
+      <div className='hidden md:block absolute left-[-3%] bottom-[-12%] rotateCircleAbout'>
         <img className='object-contain max-w-[230px]' src={circleImg} alt="About Us" />
       </div>
       {/* <div className='max-w-7xl mx-auto absolute bottom-[-75%] left-0 right-0'>

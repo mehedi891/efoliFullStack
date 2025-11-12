@@ -27,7 +27,7 @@ const Innovation = () => {
               <img src={mvIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto" />
               <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">MultiVariants ‑ Bulk Order</h4>
             </div>
-            <p className="text-base/[1.75] text-[#4B5154] py-4">Privilege your clients with one-click bulk order placing system, apply business rules and win more sales with MultiVariants.</p>
+            <p className="text-base/[1.75] text-[#4B5154] py-4">Simplify bulk ordering with one click. Apply flexible business rules and watch your sales grow faster with MultiVariants.</p>
             <Link to={"https://multivariants.com"} target="_blank" >
               <ButtonWithIcon text1="Go to product" text2="Go to product" pClass="text-base font-semibold" />
             </Link>
@@ -53,7 +53,7 @@ const Innovation = () => {
                 <img src={pbIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto rounded-sm" />
                 <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">Push Bundle ‑ Build a Box</h4>
               </div>
-              <p className="text-base/[1.75] text-[#4B5154] py-4">Privilege your clients with one-click bulk order placing system, apply business rules and win more sales with MultiVariants.</p>
+              <p className="text-base/[1.75] text-[#4B5154] py-4">Your one-stop bundling solution for Shopify. Build custom product bundles, control pricing rules, and boost your store’s AOV with ease.</p>
               <Link to={"https://pushbundle.com"} target="_blank">
                 <ButtonWithIcon text1="Go to product" text2="Go to product" pClass="text-base font-semibold" />
               </Link>
@@ -73,7 +73,7 @@ const Innovation = () => {
                 <img src={drIcon} alt="Multivariants" className="md:max-w-[42px] max-w-[35px] h-auto" />
                 <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">DiscountRay ‑ B2B Custom Pricing</h4>
               </div>
-              <p className="text-base/[1.75] text-[#4B5154]  py-4">Privilege your clients with one-click bulk order placing system, apply business rules and win more sales with MultiVariants.</p>
+              <p className="text-base/[1.75] text-[#4B5154]  py-4">Create personalized discounts for every customer segment. Define pricing tiers, create conditions, automate exclusive deals, and drive higher sales with DiscountRay.</p>
               <Link to={"https://discountray.com"} target="_blank">
                  <ButtonWithIcon text1="Go to product" text2="Go to product" pClass="text-base font-semibold" />
               </Link>
@@ -95,7 +95,7 @@ const Innovation = () => {
               <img src={emIcon} alt="EmbedUp" className="md:max-w-[42px] max-w-[35px] h-auto" />
               <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">Embedup - sell anywherer</h4>
             </div>
-            <p className="text-base/[1.75] text-[#4B5154] py-4">Turn any website or blog into a sales channel in minutes. Embed products on WordPress, Wix, Webflow, Squarespace & more.</p>
+            <p className="text-base/[1.75] text-[#4B5154] py-4">Turn any website or blog into a sales channel within minutes. Embed Shopify products seamlessly on WordPress, Wix, Webflow, Squarespace, and more.</p>
             <Link to={"https://embedup.com"} target="_blank" >
                <ButtonWithIcon text1="Go to product" text2="Go to product" pClass="text-base font-semibold" />
             </Link>

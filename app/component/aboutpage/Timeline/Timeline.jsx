@@ -1,16 +1,18 @@
 // app/components/Timeline.jsx
 export default function Timeline() {
   const items = [
-    { year: "2012", side: "right", colorFrom: "#a7f3d0", colorTo: "#34d399", title: 'Milestone Completed', descripton: 'At eFoli, our journey began more than 10 years ago with a simple yet powerful mission—to create solutions that blend innovation, creativity, and real-world impact...' },
-    { year: "2016", side: "left", colorFrom: "#fde68a", colorTo: "#f59e0b", title: 'Milestone Completed', descripton: 'At eFoli, our journey began more than 10 years ago with a simple yet powerful mission—to create solutions that blend innovation, creativity, and real-world impact...' },
-    { year: "2020", side: "right", colorFrom: "#bfdbfe", colorTo: "#3b82f6", title: 'Milestone Completed', descripton: 'At eFoli, our journey began more than 10 years ago with a simple yet powerful mission—to create solutions that blend innovation, creativity, and real-world impact...' },
-    { year: "2024", side: "left", colorFrom: "#e9d5ff", colorTo: "#8b5cf6", title: 'Milestone Completed', descripton: 'At eFoli, our journey began more than 10 years ago with a simple yet powerful mission—to create solutions that blend innovation, creativity, and real-world impact...' },
+    { year: "2010", side: "right", colorFrom: "#a7f3d0", colorTo: "#34d399", title: 'Simplifying eCommerce for All', descripton: 'Founded EFOLI with the mission of simplifying eCommerce for merchants by solving real business problems.' },
+    { year: "2012", side: "left", colorFrom: "#fde68a", colorTo: "#f59e0b", title: 'Expanding Creative Commerce', descripton: 'By 2012, we launched T-Shirt Designer v4.1, introducing affiliate shop creation and design-selling features. It also integrated with Magento and Joomla/VirtueMart platforms, expanding customization tools for online stores.' },
+    { year: "2016", side: "right", colorFrom: "#bfdbfe", colorTo: "#3b82f6", title: 'Reimagining Product Customization', descripton: 'We released a brand-new Product Configurator with advanced customization for jerseys, shoes, floor mats, and more. Additionally, we launched our WordPress/WooCommerce T-Shirt Customizer Plugin, opening new possibilities for print shops.' },
+    { year: "2020", side: "left", colorFrom: "#e9d5ff", colorTo: "#8b5cf6", title: 'Simplifying Bulk Buying', descripton: 'MultiVariants - Bulk Order was born to simplify complex variant sales. That same year, we won the prestigious BASIS National ICT Award, marking a major recognition of our innovation.' },
+     { year: "2024", side: "right", colorFrom: "#a7f3d0", colorTo: "#34d399", title: 'Powering Smarter Discounts', descripton: 'With 15+ years of experience, we expanded our Shopify ecosystem by launching DiscountRay. This app continues our mission to empower merchants with personalized discounts, volume bundling, and automation solutions.' },
+      { year: "2025", side: "left", colorFrom: "#fde68a", colorTo: "#f59e0b", title: 'Building a Connected Shopify Ecosystem', descripton: 'In 2025, we launched PushBundle and EmbedUp, expanding our Shopify app portfolio with new solutions for bundling and embedded commerce. We also introduced KivoSupport, our white-label customer support brand, now proudly supporting apps like Love Loyalty and helping Shopify apps deliver 24/7 human customer support.' },
   ];
 
   return (
-    <section className="md:py-30 py-20">
+    <section className="md:py-30 py-10">
       <div className="mx-auto max-w-5xl px-4">
-        <h2 className="text-center font-display text-5xl font-bold">
+        <h2 className="text-center font-display md:text-5xl text-3xl font-bold">
           Our Journey Through The Years
         </h2>
 

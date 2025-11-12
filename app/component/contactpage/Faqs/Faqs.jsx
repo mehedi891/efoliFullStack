@@ -36,8 +36,8 @@ const Faqs = () => {
   ];
   return (
     <section>
-      <div className="max-w-7xl mx-auto py-30">
-        <h2 className="text-5xl font-bold font-display text-[#13181E] text-center">Have Questions?</h2>
+      <div className="max-w-7xl mx-auto md:py-30 py-10 md:px-0 px-4">
+        <h2 className="md:text-5xl/[1.125] text-3xl font-bold font-display text-[#13181E] text-center">Have Questions?</h2>
         {/* <div className="mt-15">
           <div className="max-w-5xl mx-auto w-full flex flex-col gap-5">
             {faqsArr?.length > 0 &&
@@ -87,7 +87,7 @@ const Faqs = () => {
 
         <Generalfaq
           faqsArr={faqsArr}
-          fClass="mt-20 "
+          fClass="md:mt-20 mt-5"
           defaultOpen={0}
           actionBtnType="plusMinus"
         />

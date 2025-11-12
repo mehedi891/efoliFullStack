@@ -34,19 +34,19 @@ const Jobs = () => {
   ]
   return (
     <section>
-      <div className="max-w-7xl mx-auto pb-30">
-        <h2 className="text-5xl/[1.192] font-bold font-display">Current Opportunities <br /> Waiting For You</h2>
+      <div className="max-w-7xl mx-auto md:pb-30 pb-10 px-4">
+        <h2 className="md:text-5xl/[1.192] text-3xl md:text-left text-center font-bold font-display">Find the Right Role<br /> Made for You</h2>
         <div className="mt-10 flex flex-col gap-5">
 
           {jobsArr.length > 0 && jobsArr.map((job, index) => (
-            <div key={index} className={`flex  gap-6 justify-between items-center text-[#13181E] pb-6 border-b border-[#c5c5c5] ${index === 0 ? 'pt-4 border-t' : ''}`}>
+            <div key={index} className={`flex  md:gap-6 gap-4 justify-between items-center text-[#13181E] pb-6 border-b border-[#c5c5c5] ${index === 0 ? 'pt-4 border-t' : ''}`}>
               <div className="flex flex-col gap-1">
-                <h4 className="text-[22px]/[1.36] font-bold font-display">{job.title}</h4>
-                <p className="text-base">{job.location}</p>
+                <h4 className="md:text-[22px]/[1.36] text-base font-bold font-display">{job.title}</h4>
+                <p className="md:text-base text-sm">{job.location}</p>
               </div>
               <div className="flex flex-col gap-1">
-                <h4 className="text-[22px]/[1.36] font-bold font-display">{job.date}</h4>
-                <p className="text-base">Open roles: <strong>{job.open}</strong></p>
+                <h4 className="md:text-[22px]/[1.36] text-base font-bold font-display">{job.date}</h4>
+                <p className="md:text-base text-sm">Open roles: <strong>{job.open}</strong></p>
               </div>
               <div>
 

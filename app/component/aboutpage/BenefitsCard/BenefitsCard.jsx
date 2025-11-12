@@ -3,7 +3,7 @@ const BenefitsCard = () => {
   const cards = [
     {
       title: 'Seamless Support',
-      description: 'Enjoy unlimited features and lifetime support, ensuring your satisfaction.',
+      description: 'Get round-the-clock assistance and lifetime support. We’re always here when you need us.',
       Icon: () => (
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M17.5 46.5C17.5 49.2614 15.2614 51.5 12.5 51.5C6.97713 51.5 2.5 47.0229 2.5 41.5V36.5C2.5 30.9771 6.97713 26.5 12.5 26.5C15.2614 26.5 17.5 28.7386 17.5 31.5V46.5Z" stroke="#170B26" strokeWidth="2.28571" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -13,7 +13,7 @@ const BenefitsCard = () => {
     },
     {
       title: 'Affordable Pricing',
-      description: 'Enjoy unlimited features and lifetime support, ensuring your satisfaction.',
+      description: 'Access premium solutions at fair prices, designed to fit businesses of every size.',
       Icon: () => (
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_22_27695)">
@@ -32,7 +32,7 @@ const BenefitsCard = () => {
     },
     {
       title: 'Expert Professionals',
-      description: 'Enjoy unlimited features and lifetime support, ensuring your satisfaction.',
+      description: 'Work with a team of skilled specialists committed to excellence in every project.',
       Icon: () => (
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_22_27706)">
@@ -49,7 +49,7 @@ const BenefitsCard = () => {
     },
     {
       title: 'Custom Script & Coding',
-      description: 'Enjoy unlimited features and lifetime support, ensuring your satisfaction.',
+      description: 'Enjoy tailored development to meet your specific business needs and integrations.',
       Icon: () => (
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M41.9854 7.54884L55.0073 20.5708" stroke="#170B26" strokeWidth="2.28571" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -60,7 +60,7 @@ const BenefitsCard = () => {
     },
     {
       title: 'Smart Solutions',
-      description: 'Enjoy unlimited features and lifetime support, ensuring your satisfaction.',
+      description: 'Leverage innovative tools and strategies built to help your business scale efficiently.',
       Icon: () => (
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_22_27726)">
@@ -81,7 +81,7 @@ const BenefitsCard = () => {
     },
     {
       title: 'Budget-friendly plan',
-      description: 'Enjoy unlimited features and lifetime support, ensuring your satisfaction.',
+      description: 'Flexible plans crafted to deliver high value while keeping your costs under control.',
       Icon: () => (
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22 7.5H32M51.5 7.5H56.5C59.2614 7.5 61.5 9.73863 61.5 12.5V56.5C61.5 59.2614 59.2614 61.5 56.5 61.5H7.5C4.73863 61.5 2.5 59.2614 2.5 56.5V12.5C2.5 9.73863 4.73863 7.5 7.5 7.5H12.5" stroke="#170B26" strokeWidth="2.28571" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -100,9 +100,9 @@ const BenefitsCard = () => {
     },
   ];
   return (
-    <section className="bg-[#f4f4f7] py-20">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl/[1.25] font-bold font-display text-center">Unmatched Benefits for <br /> Your Success</h2>
+    <section className="bg-[#f4f4f7] md:py-20 py-10">
+      <div className="max-w-7xl mx-auto md:px-0 px-4">
+        <h2 className="md:text-5xl/[1.25] text-3xl font-bold font-display text-center"> Everything You Need to <br /> Succeed and Scale</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {cards.map(({ title, description, Icon }, index) => (
             <div key={index} className="flex flex-col gap-8 bg-white rounded-xl px-5 py-8">

@@ -2,12 +2,12 @@ import Form from "../../Form/Form"
 
 const ContactForm = () => {
   return (
-    <section className="py-15 bg-[#EBEEF0] text-[#13181E] z-20 relative">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between">
+    <section className="md:py-15 py-10 bg-[#EBEEF0] text-[#13181E] z-20 relative">
+      <div className="max-w-7xl mx-auto md:px-0 px-4">
+        <div className="flex justify-between md:flex-row flex-col md:gap-0 gap-10">
           <div className="md:max-w-2/6 w-full">
             <h2 className="text-3xl md:text-5xl/[1.25] font-bold font-display tracking-[-1.44px] max-w-[430px]">Have a project idea in mind? Let's get started.</h2>
-            <p className="text-base md:text-xl/[1.6] mt-6">We'll schedule a call to discuss your idea. After discovery sessions, we'll send a proposal, and upon approval, we'll get started.</p>
+            <p className="text-base md:text-xl/[1.6] mt-6">We’ll schedule a quick call to explore your vision. After our discovery session, we’ll share a tailored proposal. Once approved, we’ll begin turning your idea into reality.</p>
           </div>
 
           <div className="w-full md:w-1/2">
