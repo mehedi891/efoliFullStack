@@ -80,7 +80,7 @@ Thank You!`,
       <AnimatedSection>
         <div className="mx-auto max-w-7xl md:px-0 px-4">
           <h3 className="text-lg text-center text-blue-500 font-[600]">Testimonials</h3>
-          <h2 className="font-display text-3xl md:text-5xl/[1.1] font-bold text-center line md:mb-20 mb-10 mt-2">Stories of Success</h2>
+          <h2 className="font-display text-3xl md:text-5xl/[1.1] font-bold text-center line md:mb-15 mb-10 mt-2">Stories of Success</h2>
 
           {/* <div className="grid grid-cols-3 gap-6">
           <div className="space-y-3 py-7 px-6 bg-white rounded-xl max-h-max">

@@ -5,13 +5,13 @@ import Button from "../../Button/Button";
 import AnimatedSection from "../../AnimatedSection/AnimatedSection";
 const Kivo = () => {
   return (
-    <section style={{ backgroundImage: `url(${kivoBg})` }} className={`py-8 bg-no-repeat bg-cover bg-center`}>
+    <section style={{ backgroundImage: `url(${kivoBg})` }} className={`md:py-30 p-10 bg-no-repeat bg-cover bg-center`}>
       <AnimatedSection>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24 mt-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24">
           <h3 className="text-lg text-center text-blue-500 font-[600]">Our Service</h3>
           <h2 className="font-display md:text-5xl/[1.25] text-3xl font-bold text-center pt-3 line">KivoSupport - White Label <br /> Customer Support</h2>
 
-          <div className="mt-15 flex md:flex-wrap flex-wrap-reverse gap-6 md:gap-0 items-center justify-between">
+          <div className="md:mt-20 mt-15 flex md:flex-wrap flex-wrap-reverse gap-6 md:gap-0 items-center justify-between">
             <div className="max-w-[550px]">
               <div className="pb-7 border-b border-[#e5e5e5]">
                 <h3 className="font-display text-lg md:text-2xl font-bold">24/7 Technical Support</h3>

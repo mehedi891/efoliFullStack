@@ -88,8 +88,8 @@ const Navbar = ({ parentClassName, linkClassName ,isDark}) => {
             >
               <Button
                 pClass="rounded-lg text-sm px-5 py-2.5 font-medium text-white shadow-sm bg-[#0D99FF]"
-                text1="Try Our Products"
-                text2="Try Our Products"
+                text1="Explore Our Products"
+                text2="Explore Our Products"
               />
             </Link>
           </div>

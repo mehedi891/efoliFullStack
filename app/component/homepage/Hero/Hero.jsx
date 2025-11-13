@@ -71,8 +71,8 @@ export default function Hero() {
           >
             <Button
               pClass="rounded-lg px-6 py-3.5 font-medium text-white shadow-sm bg-[#0D99FF]"
-              text1="Try Our Products"
-              text2="Try Our Products"
+              text1="Explore Our Products"
+              text2="Explore Our Products"
             />
           </Link>
 
@@ -83,8 +83,8 @@ export default function Hero() {
           >
             <Button
               pClass="rounded-lg px-6 py-3.5 font-medium text-[#0D99FF] border border-[#0D99FF]"
-              text1="Request Info"
-              text2="Request Info"
+              text1="Book a Discovery Call"
+              text2="Book a Discovery Call"
             />
           </Link>
         </div>

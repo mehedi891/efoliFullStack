@@ -7,17 +7,17 @@ import AnimatedSection from "../../AnimatedSection/AnimatedSection"
 
 const JoinTeam = () => {
   return (
-    <section className="md:pt-10 pt-0">
+    <section className="md:pt-20 pt-0">
       <AnimatedSection>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-10 lg:pb-24 md:pt-10 pt-0">
           <div className="flex items-end md:justify-between  flex-wrap gap-4">
-            <h2 className="md:text-5xl/snug text-3xl/snug max-w-[637px] font-bold font-display text-left">Creative Minds, One Team,Endless Growth</h2>
+            <h2 className="md:text-5xl/[1.13] text-3xl/snug max-w-[637px] font-bold font-display text-left">Creative Minds, One Team,Endless Growth</h2>
             <Link to="/career/">
               <ButtonWithIcon text1="Join The Team" text2="Join The Team" pClass="text-base font-semibold" />
             </Link>
           </div>
 
-          <div className="md:grid flex flex-wrap grid-cols-12 gap-6 mt-8 [grid-template-areas:'A_A_A_A_B_B_B_C_C_C_C_C''A_A_A_A_D_D_D_D_D_E_E_E']">
+          <div className="md:grid flex flex-wrap grid-cols-12 gap-6 mt-8 md:mt-15 [grid-template-areas:'A_A_A_A_B_B_B_C_C_C_C_C''A_A_A_A_D_D_D_D_D_E_E_E']">
 
             <div className="[grid-area:A] hidden md:block">
               <img src={careerImg1} alt="Career Image 1" loading="lazy" className="h-full w-full object-fill rounded-2xl" />

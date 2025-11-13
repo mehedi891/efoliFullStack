@@ -17,11 +17,11 @@ const Blogs = ({ posts }) => {
 
 
   return (
-    <section className="md:pt-10 pt-0">
+    <section className="">
       <AnimatedSection>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-10 md:pb-24 md:pt-10">
           <div className="flex items-end md:justify-between flex-wrap gap-4">
-            <h2 className="md:text-5xl/snug text-3xl/snug text-left max-w-[500px] font-bold font-display">Discover Blogs That Help
+            <h2 className="md:text-5xl/[1.13] text-3xl/snug text-left max-w-[500px] font-bold font-display">Discover Blogs That Help
               You Sell Smarter</h2>
             <Link to="https://efoli.com/blog/" target="_blank">
               <ButtonWithIcon text1="View all Articles" text2="View all Articles" pClass="text-base font-semibold" />
@@ -29,7 +29,7 @@ const Blogs = ({ posts }) => {
 
           </div>
           {posts && posts.length > 0 ? (
-            <div className="pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="pt-8 md:pt-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {posts.map((post) => (
                 <Link key={post.id} to={post.link} target="_blank">
                   <article className="flex flex-col gap-2 group">
