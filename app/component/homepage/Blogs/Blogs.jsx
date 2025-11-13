@@ -20,8 +20,8 @@ const Blogs = ({ posts }) => {
     <section className="md:pt-10 pt-0">
       <AnimatedSection>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-10 md:pb-24 md:pt-10">
-          <div className="flex items-end md:justify-between justify-center flex-wrap gap-4">
-            <h2 className="md:text-5xl/snug text-3xl/snug md:text-left text-center max-w-[500px] font-bold font-display">Discover Blogs That Help
+          <div className="flex items-end md:justify-between flex-wrap gap-4">
+            <h2 className="md:text-5xl/snug text-3xl/snug text-left max-w-[500px] font-bold font-display">Discover Blogs That Help
               You Sell Smarter</h2>
             <Link to="https://efoli.com/blog/" target="_blank">
               <ButtonWithIcon text1="View all Articles" text2="View all Articles" pClass="text-base font-semibold" />

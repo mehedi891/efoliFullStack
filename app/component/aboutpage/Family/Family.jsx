@@ -42,7 +42,7 @@ const Family = () => {
           <div className="flex items-center gap-3 flex-wrap lg:gap-24 bg-[#F1F5F9] rounded-[20px]">
             <img src={ceoImg} loading="lazy" alt="JA" className="object-contain max-h-[460px]" />
             <div className="max-w-[505px]">
-              <h3 className="text-4xl/[1.38] text-[#13181E] tracking-[-0.72px] font-display font-semibold text-center">“Behind every feature is a real merchant, and behind every success is a team that listens and builds with care.”</h3>
+              <h3 className="md:text-4xl/[1.38] text-2xl text-[#13181E] tracking-[-0.72px] font-display font-semibold text-center">“Behind every feature is a real merchant, and behind every success is a team that listens and builds with care.”</h3>
               <p className="mt-4 text-center"><strong>Jahangir Alam</strong> / Founder & CEO</p>
             </div>
           </div>

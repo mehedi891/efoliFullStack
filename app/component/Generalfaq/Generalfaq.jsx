@@ -50,7 +50,7 @@ const Generalfaq = ({ faqsArr = [],fClass = "",defaultOpen = null,actionBtnType=
                     transition={{ duration: 0.25, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="text-base pb-2 max-w-11/12">
+                    <p className="text-base pb-2 pt-3 text-[#4B5154] max-w-11/12">
                       {faq?.answer}
                     </p>
                   </motion.div>

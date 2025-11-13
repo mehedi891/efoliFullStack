@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="max-w-max mx-auto flex flex-col gap-0 md:pb-60 pb-10 md:pt-15 pt-10">
           <h3 className="text-center text-[18px]">About Us</h3>
           <motion.h1
-            className="text-center font-bold text-5xl md:text-7xl font-display mb-5 leading-tight"
+            className="text-center font-bold text-3xl md:text-7xl font-display mb-5 leading-tight"
             initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, ease: "easeOut" }}

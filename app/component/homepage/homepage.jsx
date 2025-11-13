@@ -16,7 +16,7 @@ const Homepage = ({posts}) => {
       <Innovation/>
       <Kivo/>
       <CustomerSuccess/>
-      <PBVideo/>
+      {/* <PBVideo/> */}
       <JoinTeam/>
       <Blogs posts={posts}/>
     </>

@@ -10,8 +10,8 @@ const JoinTeam = () => {
     <section className="md:pt-10 pt-0">
       <AnimatedSection>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-10 lg:pb-24 md:pt-10 pt-0">
-          <div className="flex items-end md:justify-between justify-center flex-wrap gap-4">
-            <h2 className="md:text-5xl/snug text-3xl/snug max-w-[637px] font-bold font-display md:text-left text-center">Creative Minds, One Team,Endless Growth</h2>
+          <div className="flex items-end md:justify-between  flex-wrap gap-4">
+            <h2 className="md:text-5xl/snug text-3xl/snug max-w-[637px] font-bold font-display text-left">Creative Minds, One Team,Endless Growth</h2>
             <Link to="/career/">
               <ButtonWithIcon text1="Join The Team" text2="Join The Team" pClass="text-base font-semibold" />
             </Link>

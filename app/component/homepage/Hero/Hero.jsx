@@ -149,7 +149,7 @@ export default function Hero() {
           <div className="flex gap-6">
             <div className="bg-[#FFD4EE] w-full h-full gap-3 flex flex-col items-center justify-center rounded-xl px-2 py-4">
               <CounterText
-                className="text-2xl text-[#6F3055] font-semibold font-display"
+                className="text-2xl text-[#6F3055] font-bold font-display"
                 duration={1500}
                 start={0}
                 end={15}
@@ -160,7 +160,7 @@ export default function Hero() {
 
             <div className="bg-[#D3FEE8] w-full h-full gap-3 flex flex-col items-center justify-center rounded-xl px-2 py-4">
               <CounterText
-                className="text-2xl text-[#235D3A] font-semibold font-display"
+                className="text-2xl text-[#235D3A] font-bold font-display"
                 duration={1500}
                 start={50}
                 end={180}

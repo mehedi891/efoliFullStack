@@ -87,7 +87,7 @@ const Faqs = () => {
 
         <Generalfaq
           faqsArr={faqsArr}
-          fClass="md:mt-20 mt-5"
+          fClass="md:mt-20 mt-5 max-w-5xl mx-auto"
           defaultOpen={0}
           actionBtnType="plusMinus"
         />
