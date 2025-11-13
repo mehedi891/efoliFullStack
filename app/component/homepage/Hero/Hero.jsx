@@ -5,10 +5,15 @@ import heroImg3 from "./heroImg3.webp";
 import heroImg4 from "./heroImg4.webp";
 import mobHero from "../../../images/mobHero.webp"
 
-import t1 from "./t1.png";
-import t2 from "./t2.png";
-import t3 from "./t3.png";
-import t4 from "./t4.png";
+import t1 from "../../../images/c1.webp";
+import t2 from "../../../images/c2.webp";
+import t3 from "../../../images/c3.webp";
+import t4 from "../../../images/c4.webp";
+import t5 from "../../../images/c5.webp";
+import t6 from "../../../images/c6.webp";
+import t7 from "../../../images/c7.webp";
+import t8 from "../../../images/c8.webp";
+
 import { motion } from "motion/react"
 import CounterText from "../../CounterText/CounterText";
 import LogoMarquee from "../../LogoMarquee/LogoMarquee";
@@ -191,11 +196,11 @@ export default function Hero() {
       </div> */}
 
       <LogoMarquee
-        images={[t1, t2, t3, t4, t1, t2, t3, t4]}
+        images={[t1, t2, t3, t4, t5, t6, t7, t8]}
         slotWidth={180}
-        slotPad={16}
+        slotPad={60}
         logoHeight={48}
-        speedPx={90}
+        speedPx={30}
         bg="#ffffff"
       />
 
