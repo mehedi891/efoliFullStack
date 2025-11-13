@@ -11,11 +11,11 @@ const ContactHero = () => {
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex max-w-[100%] items-start md:gap-20 gap-10 flex-wrap">
-          <div className="flex flex-col gap-2 max-w-[520px]">
+          <div className="flex flex-col gap-2 max-w-[520px] md:sticky md:top-32">
             <h1 className="md:text-7xl/[1.125] text-3xl font-bold font-display md:tracking-[-3.2px]">
               Let’s Build  <br />Something Great Together.
             </h1>
-            <p className="md:text-2xl/[1.67] text-base">
+            <p className="md:text-2xl/[1.67] text-base md:mt-5 mt-2">
              Reach out to discuss new opportunities or simply connect at {" "}
               <a href="mailto:info@efoli.com" className="underline">
                 info@efoli.com
