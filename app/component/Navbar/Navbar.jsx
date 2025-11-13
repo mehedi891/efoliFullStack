@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router";
 import logo from "./logo.svg";
 import Button from "../Button/Button";
@@ -22,8 +22,16 @@ const navLinks = [
 const Navbar = ({ parentClassName, linkClassName ,isDark}) => {
   const [open, setOpen] = useState(false);
 
+    const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={`sticky top-0 z-50 ${parentClassName}`}>
+    <header className={`${scrolled && isDark ? "bg-[#090A0B]" : "bg-transparent"} sticky top-0 z-50 ${parentClassName}`}>
       <nav className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -55,7 +63,7 @@ const Navbar = ({ parentClassName, linkClassName ,isDark}) => {
                       to={l.href}
                       end={l.end}
                       className={({ isActive, isPending }) =>
-                        isPending ? "pending text-[#1d74bf] font-medium" : isActive ? `active ${isDark ? "text-[#a3d4ff]" : "text-[#0D99FF]"} font-medium` : `text-[#13181E] font-medium ${linkClassName}`
+                        isPending ? "pending text-[#1d74bf] font-medium" : isActive ? `active ${isDark ? "text-[#0D99FF]" : "text-[#0D99FF]"} font-medium` : `text-[#13181E] font-medium ${linkClassName}`
                       }
                     >
                       <Button

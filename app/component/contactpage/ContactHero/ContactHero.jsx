@@ -7,7 +7,7 @@ const ContactHero = () => {
   return (
     <section
       style={{ backgroundImage: `url(${cHero})` }}
-      className="md:py-20 py-10 text-white bg-cover bg-center"
+      className="md:py-20 py-10 text-white bg-cover bg-center pt-35 md:pt-40 relative -top-25"
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex max-w-[100%] items-start md:gap-20 gap-10 flex-wrap">

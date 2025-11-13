@@ -4,6 +4,7 @@ import Contactpage from "../component/contactpage/Contactpage";
 import { createTransport } from "nodemailer";
 import ElegantFloatingText from "../component/Loader/ElegantFloatingText";
 
+export const handle = { darkFooter: true, darkHeader: true};
 export function meta() {
   return [
     { title: "Contact us" },

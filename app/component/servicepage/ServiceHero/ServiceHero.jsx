@@ -3,7 +3,7 @@ import bgImg from "./sHero.webp";
 import bgImg2 from "./serviceHeroBg2.webp";
 const ServiceHero = () => {
   return (
-    <section style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }} className="md:py-15 py-10 text-white object-cover">
+    <section style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }} className="md:py-15 py-10 text-white object-cover pt-35 md:pt-40 relative -top-25">
       <div className="max-w-7xl mx-auto md:py-15 py-0 md:px-0 px-4">
         <div className="flex flex-col gap-6 max-w-[980px]">
           <h1 className="font-display font-bold md:text-7xl/[1.13] text-3xl/[1.35]  md:tracking-[-2.16px]">Product Development &<br />  App Support Solutions</h1>
