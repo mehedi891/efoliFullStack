@@ -50,10 +50,10 @@ const Footer = ({ isDark, isBannerHide = false }) => {
           <h3 className="text-xl font-bold font-display mb-5">Company</h3>
           <ul className="text-[18px]/[1.7] ">
             <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/">Home</Link></li>
-            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/">Work</Link></li>
-            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/service">Services</Link></li>
-            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/about-us">About Us</Link></li>
-            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/contact-us">Contact</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/#efProducts">Products</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/service/">Services</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/about-us/">About Us</Link></li>
+            <li className="mb-3"><Link className="transition ease-in duration-200 hover:text-[#0D99FF]" to="/contact-us/">Contact</Link></li>
           </ul>
         </div>
 

@@ -29,7 +29,7 @@ const Blogs = ({ posts }) => {
 
           </div>
           {posts && posts.length > 0 ? (
-            <div className="pt-8 md:pt-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="pt-8 md:pt-13 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {posts.map((post) => (
                 <Link key={post.id} to={post.link} target="_blank">
                   <article className="flex flex-col gap-2 group">
