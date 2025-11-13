@@ -10,28 +10,28 @@ const Faqs = () => {
   const faqsArr = [
     {
       id: 1,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "Do you only provide services for Shopify?",
+      answer: "We specialize in the Shopify ecosystem, such as apps, themes, and stores, because that’s where our products and experience are strongest. If your project is eCommerce or SaaS-related and connects to Shopify in any way, we’re usually a good fit."
     },
     {
       id: 2,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "What kind of services does eFoli offer?",
+      answer: "eFoli builds and maintains Shopify apps, develops custom Shopify solutions (apps, themes, store setup, custom features), and provides white-label customer support through KivoSupport for SaaS and Shopify apps."
     },
     {
       id: 3,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "Who do you typically work with?",
+      answer: "We work with Shopify merchants, SaaS founders, and agencies from early-stage startups to established brands who want stable products, thoughtful UX, and long-term technical or support partners."
     },
     {
       id: 4,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "Can you help with both new projects and existing apps or stores?",
+      answer: "Yes. We can start from scratch with a new idea or step into an existing app or store to improve performance, add features, or take over ongoing maintenance and support."
     },
     {
       id: 5,
-      question: "Can you work with wireframes or our existing designs?",
-      answer: "Yes, we can work with wireframes or our existing designs based on your requirements."
+      question: "What happens after I submit the contact form?",
+      answer: "Our team reviews your message and usually replies within one business day. If there’s a potential fit, we’ll schedule a short call to understand your goals, then share next steps or a proposal based on your needs."
     }
   ];
   return (
