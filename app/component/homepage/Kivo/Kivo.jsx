@@ -5,7 +5,7 @@ import Button from "../../Button/Button";
 import AnimatedSection from "../../AnimatedSection/AnimatedSection";
 const Kivo = () => {
   return (
-    <section style={{ backgroundImage: `url(${kivoBg})` }} className={`md:py-30 p-10 bg-no-repeat bg-cover bg-center`}>
+    <section style={{ backgroundImage: `url(${kivoBg})` }} className={`md:py-30 md:pb-8 p-10 bg-no-repeat bg-cover bg-center`}>
       <AnimatedSection>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-14 sm:pb-20 lg:pb-24">
           <h3 className="text-lg text-center text-blue-500 font-[600]">Our Service</h3>
