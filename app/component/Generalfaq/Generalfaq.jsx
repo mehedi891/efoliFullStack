@@ -17,7 +17,7 @@ const Generalfaq = ({ faqsArr = [],fClass = "",defaultOpen = null,actionBtnType=
           return (
             <div
               key={index}
-              className={`md:py-4 py-3 border-b ${index === 0 ? "border-t" : ""} border-[#e5e5e5]`}
+              className={`md:py-6 py-3 border-b ${index === 0 ? "border-t" : ""} border-[#e5e5e5]`}
             >
               <div
                 onClick={() => handleShowFaq(index)}
@@ -50,7 +50,7 @@ const Generalfaq = ({ faqsArr = [],fClass = "",defaultOpen = null,actionBtnType=
                     transition={{ duration: 0.25, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="text-base pb-2 pt-3 text-[#4B5154] max-w-11/12">
+                    <p className="text-base pb-0 pt-3 text-[#4B5154] max-w-11/12">
                       {faq?.answer}
                     </p>
                   </motion.div>

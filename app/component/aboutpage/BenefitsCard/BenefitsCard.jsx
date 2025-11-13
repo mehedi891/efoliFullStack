@@ -100,10 +100,10 @@ const BenefitsCard = () => {
     },
   ];
   return (
-    <section className="bg-[#f4f4f7] md:py-20 py-10">
+    <section className="bg-[#f4f4f7] md:py-30 py-10">
       <div className="max-w-7xl mx-auto md:px-0 px-4">
         <h2 className="md:text-5xl/[1.25] text-3xl font-bold font-display text-center"> Everything You Need to <br /> Succeed and Scale</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:mt-18 mt-10">
           {cards.map(({ title, description, Icon }, index) => (
             <div key={index} className="flex flex-col gap-8 bg-white rounded-xl px-5 py-8">
               <Icon />

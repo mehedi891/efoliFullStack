@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="bg-[#0A0C00] text-white relative overflow-hidden  pt-35 md:pt-40 -top-25">
       <div className="max-w-7xl mx-auto relative">
         <div className="max-w-max mx-auto flex flex-col gap-0 md:pb-60 pb-10 md:pt-15 pt-10">
-          <h3 className="text-center text-[18px]">About Us</h3>
+          <h3 className="text-center text-[18px] text-[#0D99FF]">About Us</h3>
           <motion.h1
             className="text-center font-bold text-3xl md:text-7xl font-display mb-5 leading-tight"
             initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}

@@ -4,31 +4,17 @@ import Button from "../../Button/Button"
 const Jobs = () => {
   const jobsArr = [
     {
-      title: 'Content Marketing Executive',
-      location: 'Mipur DOHS , Dhaka, Bangladesh',
-      date: '31 December, 2024',
-      open: '04',
+      title: 'Technical Support Engineer',
+      location: 'Dhaka, Bangladesh',
+      date: '31 December, 2025',
+      open: '10',
       applyLink: 'https://efoli.com/jobs',
     },
     {
-      title: 'Content Marketing Executive',
-      location: 'Mipur DOHS , Dhaka, Bangladesh',
-      date: '31 December, 2024',
-      open: '40',
-      applyLink: 'https://efoli.com/jobs',
-    },
-    {
-      title: 'Content Marketing Executive',
-      location: 'Mipur DOHS , Dhaka, Bangladesh',
-      date: '31 December, 2024',
-      open: '04',
-      applyLink: 'https://efoli.com/jobs',
-    },
-    {
-      title: 'Content Marketing Executive',
-      location: 'Mipur DOHS , Dhaka, Bangladesh',
-      date: '31 December, 2024',
-      open: '04',
+      title: 'Shopify Developer',
+      location: 'Dhaka, Bangladesh',
+      date: '31 December, 2025',
+      open: '03',
       applyLink: 'https://efoli.com/jobs',
     }
   ]
@@ -41,7 +27,7 @@ const Jobs = () => {
           {jobsArr.length > 0 && jobsArr.map((job, index) => (
             <div key={index} className={`flex  md:gap-6 gap-4 justify-between items-center text-[#13181E] pb-6 border-b border-[#c5c5c5] ${index === 0 ? 'pt-4 border-t' : ''}`}>
               <div className="flex flex-col gap-1">
-                <h4 className="md:text-[22px]/[1.36] text-base font-bold font-display">{job.title}</h4>
+                <h4 className="md:text-[22px]/[1.36] text-base font-bold font-display w-[284px] flex-1">{job.title}</h4>
                 <p className="md:text-base text-sm">{job.location}</p>
               </div>
               <div className="flex flex-col gap-1">
