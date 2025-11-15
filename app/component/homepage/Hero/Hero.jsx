@@ -59,9 +59,9 @@ export default function Hero() {
 
         {/* Subcopy */}
         <p className="mx-auto mt-5 max-w-4xl text-xl/[1.9] text-[#4B5154]">
-          EFOLI is a globally trusted software company with over<span className="font-semibold"> 15+ years </span> of experience in building
+          EFOLI is a globally trusted software company with over<span className="font-semibold"> 15+ years </span> of experience in building 
           <br className="hidden sm:block" />
-          scalable, high-impact B2B eCommerce solutions for merchants worldwide.
+            scalable, high-impact B2B eCommerce solutions for merchants worldwide.
         </p>
 
         {/* CTAs */}
