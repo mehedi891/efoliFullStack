@@ -85,7 +85,7 @@ const Faq = () => {
               })}
           </div> */}
 
-          <Generalfaq faqsArr={faqsArr} fClass="max-w-[750px]" />
+          <Generalfaq faqsArr={faqsArr} defaultOpen={0} fClass="max-w-[750px]" />
         </div>
       </div>
     </section>
