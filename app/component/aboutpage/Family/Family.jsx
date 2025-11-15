@@ -20,17 +20,17 @@ const Family = () => {
 
           <div className="max-w-[232px] flex flex-col gap-10 mt-10 lg:mt-0">
             <div>
-              <h4 className="text-5xl lg:text-[58px] font-display font-bold pb-3 border-b border-[#13181E]">2014</h4>
+              <h4 className="text-5xl lg:text-[58px] font-display font-bold pb-3 border-b border-[#13181E]">2010</h4>
               <span className="lg:text-xl mt-3 block">Founded</span>
             </div>
 
             <div>
-              <h4 className="text-5xl lg:text-[58px] font-display font-bold pb-3 border-b border-[#13181E]">10k+</h4>
+              <h4 className="text-5xl lg:text-[58px] font-display font-bold pb-3 border-b border-[#13181E]">15k+</h4>
               <span className="lg:text-xl mt-3 block">Clients</span>
             </div>
 
             <div>
-              <h4 className="text-5xl lg:text-[58px] font-display font-bold pb-3 border-b border-[#13181E]">30+</h4>
+              <h4 className="text-5xl lg:text-[58px] font-display font-bold pb-3 border-b border-[#13181E]">50+</h4>
               <span className="lg:text-xl mt-3 block">Experts</span>
             </div>
 

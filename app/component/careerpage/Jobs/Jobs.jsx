@@ -8,14 +8,14 @@ const Jobs = () => {
       location: 'Dhaka, Bangladesh',
       date: '31 December, 2025',
       open: '10',
-      applyLink: 'https://efoli.com/jobs',
+      applyLink: 'https://career.efoli.com/',
     },
     {
       title: 'Shopify Developer',
       location: 'Dhaka, Bangladesh',
       date: '31 December, 2025',
       open: '03',
-      applyLink: 'https://efoli.com/jobs',
+      applyLink: 'https://career.efoli.com/',
     }
   ]
   return (
