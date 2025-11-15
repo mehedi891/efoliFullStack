@@ -42,6 +42,8 @@ export function meta() {
   ];
 }
 
+
+
 export default function Home() {
   
   const {posts} = useLoaderData();

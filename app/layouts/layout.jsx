@@ -8,6 +8,7 @@ const Layout = () => {
   const darkFooter = matches.some(m => m.handle?.darkFooter === true);
   const darkHeader = matches.some(m => m.handle?.darkHeader === true);
   const isBannerHide = matches.some(m => m.handle?.isBannerHide === true);
+  const isHeaderBgTransparent = matches.some(m => m.handle?.isHeaderBgTransparent === true);
   return (
     <div>
       <Navbar
@@ -22,6 +23,7 @@ const Layout = () => {
             : "text-[#4b5154]"
         }
         isDark={darkHeader}
+        isHeaderBgTransparent={isHeaderBgTransparent}
       />
       <Outlet />
       <Footer
