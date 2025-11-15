@@ -61,7 +61,8 @@ const TextwithImage = () => {
       <div className="max-w-7xl mx-auto md:py-30 py-10 md:px-0 px-4">
           <div className="flex items-start justify-between gap-7 flex-wrap md:flex-row flex-col md:flex-nowrap md:gap-25 md:mb-25 mb-15">
               <div className="md:w-[48%] w-full">
-                <div className="h-[450px] md:w-[95%] w-full bg-[#D9D9D9]"></div>
+                {/* <div className="h-[450px] md:w-[95%] w-full bg-[#D9D9D9]"></div> */}
+                <img src="/public/images/sCustomer.png" alt="Customer Suppport" className="max-w-full object-cover " />
               </div>
 
               <div className="md:w-[48%] ">
@@ -88,7 +89,7 @@ const TextwithImage = () => {
               </div>
 
              <div className="md:w-[48%] w-full">
-                <div className="h-[450px] w-[95%] bg-[#D9D9D9]"></div>
+                <img src="/public/images/sDevelopmet.png" alt="Customer Suppport" className="max-w-full object-cover " />
               </div>
 
 

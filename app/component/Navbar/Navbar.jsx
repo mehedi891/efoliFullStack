@@ -31,7 +31,7 @@ const Navbar = ({ parentClassName, linkClassName ,isDark}) => {
   }, []);
 
   return (
-    <header className={`${scrolled && isDark ? "bg-[#090A0B]" : "bg-transparent"} sticky top-0 z-50 ${parentClassName}`}>
+    <header className={`${scrolled && isDark ? "bg-[#090A0B]" : "md:bg-transparent"} sticky top-0 z-50 ${parentClassName}`}>
       <nav className="mx-auto max-w-7xl px-4 py-4 md:px-0">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
