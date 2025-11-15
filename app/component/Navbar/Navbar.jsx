@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 const navLinks = [
   { name: "Home", href: "/", end: true },
   { name: "About Us", href: "/about-us/" },
-  { name: "Blog", href: "https://new.efoli.com/blog/", target: "_blank" },
+  { name: "Blog", href: "https://efoli.com/blog/", target: "_blank" },
   { name: "Career", href: "/career/" },
   { name: "Service", href: "/service/" },
   { name: "Contact Us", href: "/contact-us/" },
