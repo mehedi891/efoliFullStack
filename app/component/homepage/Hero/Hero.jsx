@@ -1,7 +1,7 @@
 import { Link } from "react-router";
-import heroImg1 from "./heroImg1.webp";
+import heroImg1 from "../../../images/heroImg1.webp";
 import heroImg2 from "./heroImg2.webp";
-import heroImg3 from "./heroImg3.webp";
+import heroImg3 from "../../../images/heroImg3.webp";
 import heroImg4 from "./heroImg4.webp";
 import mobHero from "../../../images/mobHero.webp"
 
