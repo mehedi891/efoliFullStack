@@ -1,7 +1,7 @@
 import { Link } from "react-router"
-import careerImg1 from "./1.webp"
-import careerImg2 from "./2.webp"
-import careerImg3 from "./3.webp"
+import careerImg1 from "./1.webp";
+import careerImg2 from "../../../images/team_saint.webp";
+import careerImg3 from "../../../images/ty_ja.webp";
 import ButtonWithIcon from "../../ButtonWithIcon/ButtonWithIcon"
 import AnimatedSection from "../../AnimatedSection/AnimatedSection"
 
