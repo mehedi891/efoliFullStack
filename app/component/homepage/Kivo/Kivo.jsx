@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import kivoImg from "./kivo.webp";
+import kivoImg from "../../../images/kivo.webp";
 import kivoBg from "./service_bg.webp";
 import Button from "../../Button/Button";
 import AnimatedSection from "../../AnimatedSection/AnimatedSection";
