@@ -62,7 +62,7 @@ const Innovation = () => {
               </div>
 
 
-              <img className="max-w-full max-h-[350px]" src={pb_demo} alt="Push Bundle" />
+              <img className="max-w-full max-h-[400px]" src={pb_demo} alt="Push Bundle" />
 
 
             </div>

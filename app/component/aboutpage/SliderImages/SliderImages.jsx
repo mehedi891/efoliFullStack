@@ -1,11 +1,24 @@
 // app/components/SliderImages.jsx
 import { useMemo, useRef } from "react";
 import { motion, useAnimationFrame, useMotionValue, useReducedMotion } from "motion/react";
-import img1 from "./slider1.png";
-import img2 from "./slider2.png";
+import img1 from "../../../images/ja.webp";
+import img2 from "../../../images/eva.webp";
+import img3 from "../../../images/syn.webp";
+import img4 from "../../../images/tabassum.webp";
+import img5 from "../../../images/rabby.webp";
+import img6 from "../../../images/wakhil.webp";
+import img7 from "../../../images/anika.webp";
+import img8 from "../../../images/tanzom.webp";
+import img9 from "../../../images/mehedi.webp";
+import img10 from "../../../images/sayed.webp";
+import img11 from "../../../images/iftekhar.webp";
+import img12 from "../../../images/sumon.webp";
+import img13 from "../../../images/hemel.webp";
+import img14 from "../../../images/touhid.webp";
+
 
 export default function SliderImages() {
-  const images = useMemo(() => [img1, img2, img1, img2, img1, img2], []);
+  const images = useMemo(() => [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14], []);
   return (
     <section className="bg-[#0A0C00] text-white md:py-30 py-15">
       <div className="max-w-full mx-auto">
@@ -18,7 +31,7 @@ export default function SliderImages() {
             slotWidth={500}   // px width of each slide "lane"
             slotGap={-90}      // px horizontal gap between slides
             itemHeight={400}  // px image height (keeps aspect with object-contain)
-            speedPx={30}     // pixels per second
+            speedPx={60}     // pixels per second
             bg="#fff"      // for edge fade (optional)
             edgeFade
           />
