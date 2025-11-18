@@ -75,7 +75,7 @@ const Innovation = () => {
                   <img src={drIcon} alt="DiscountRay" className="md:max-w-[42px] max-w-[35px] h-auto" />
                   <h4 className="md:text-2xl text-xl text-[#13181E] font-bold font-display">DiscountRay ‑ B2B Custom Pricing</h4>
                 </div>
-                <p className="text-base/[1.75] text-[#4B5154]  py-4">Create personalized discounts for every customer segment. Define pricing tiers, create conditions, automate exclusive deals, and drive higher sales with DiscountRay.</p>
+                <p className="text-base/[1.75] text-[#4B5154]  py-4">Create personalized discounts for every customer segment. Define pricing tiers, create conditions, automate exclusive deals.</p>
                 <Link to={"https://discountray.com"} target="_blank">
                   <ButtonWithIcon text1="Go to product" text2="Go to product" pClass="text-base font-semibold" />
                 </Link>
