@@ -47,7 +47,7 @@ const Innovation = () => {
 
           <div className="flex flex-wrap gap-7 justify-between">
 
-            <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[50%] flex-1
+            <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-self-end md:gap-12 shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[50%] flex-1
           transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl 
           ">
               <div className="max-w-[550px]">
@@ -67,7 +67,7 @@ const Innovation = () => {
 
             </div>
 
-            <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-between shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[50%]
+            <div className=" flex md:flex-wrap flex-wrap-reverse flex-col-reverse gap-4 items-center justify-self-end md:gap-6 shadow-lg p-8 rounded-2xl bg-linear-to-r from-[#fff] to-[#f2fbfa] max-w-full md:max-w-[50%]
           transition ease-in duration-300 hover:scale-105 hover:cursor-pointer hover-drop-shadow-2xl flex-1
           ">
               <div className="max-w-[550px]">

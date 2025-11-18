@@ -23,15 +23,31 @@ const Faq = () => {
       question: "What type of companies does eFoli typically work with?",
       answer: "We work with global eCommerce brands, SaaS businesses, and Shopify merchants, from startups to enterprise-level organizations, helping them scale with automation, personalization, and seamless user experiences."
     },
-     {
+    {
       id: 5,
       question: "Why should I join or collaborate with eFoli?",
       answer: "eFoli isn’t just a workplace, it’s a community of innovators building tools that empower thousands of businesses worldwide. Whether you join the team or partner with us, you become part of a mission that’s shaping the future of digital commerce."
-    }
-     
+    },
+    {
+      id: 6,
+      question: "What skills or qualities do you look for in candidates?",
+      answer: "We look for people who take initiative, communicate clearly, and care about building things that make an impact. Whether you’re technical or creative, we value a growth mindset, attention to detail, and a collaborative spirit."
+    },
+    {
+      id: 7,
+      question: "Does eFoli provide opportunities for learning and career growth?",
+      answer: "Yes. We invest in long-term growth through mentorship, cross-team collaboration, and real project exposure. Our team members gain hands-on experience with global SaaS products and the latest eCommerce technologies."
+    },
+    {
+      id: 8,
+      question: "What’s the recruitment process like at eFoli?",
+      answer: "After you apply, our team reviews your profile and reaches out if there’s a fit. The process usually includes a written exam, a technical or skill-based task, and a final interview to ensure alignment with our values and goals."
+    },
+
+
   ];
 
- 
+
 
   return (
     <section>

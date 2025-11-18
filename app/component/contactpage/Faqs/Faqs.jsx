@@ -32,6 +32,21 @@ const Faqs = () => {
       id: 5,
       question: "What happens after I submit the contact form?",
       answer: "Our team reviews your message and usually replies within one business day. If there’s a potential fit, we’ll schedule a short call to understand your goals, then share next steps or a proposal based on your needs."
+    },
+    {
+      id: 6,
+      question: "Do you work with platforms other than Shopify?",
+      answer: "Our core expertise is Shopify and the Shopify App ecosystem. However, if your project involves eCommerce workflows, integrations, or SaaS tools that connect with Shopify, we can evaluate it. Feel free to reach out. If it’s a good fit, we’ll let you know how we can help."
+    },
+    {
+      id: 7,
+      question: "Do you offer ongoing maintenance or long-term partnership plans?",
+      answer: "Yes. We support long-term partnerships through continuous development, feature updates, performance optimization, bug fixes, and 24/7 customer support (via KivoSupport). Many clients rely on us as their dedicated technical team for stable, scalable growth."
+    },
+    {
+      id: 8,
+      question: "Can eFoli help integrate third-party apps or custom APIs?",
+      answer: "Absolutely. We frequently integrate third-party services, APIs, and external systems into Shopify apps or stores. Whether it’s payments, analytics, logistics, or custom business tools, we can build secure, seamless integrations tailored to your requirements."
     }
   ];
   return (
