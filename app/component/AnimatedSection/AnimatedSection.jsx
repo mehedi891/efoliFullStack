@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 export default function AnimatedSection({ children }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.15 ,once:false});
+  const isInView = useInView(ref, { amount: 0.05 ,once:false});
   const controls = useAnimation();
 
   useEffect(() => {

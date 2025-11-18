@@ -5,6 +5,14 @@ import ElegantFloatingText from "../component/Loader/ElegantFloatingText";
 
 export const handle = { darkFooter: true, darkHeader: true, isBannerHide: true };
 
+
+export function meta() {
+  return [
+    { title: "Service" },
+    { name: "description", content: "Service Page" }
+  ];
+}
+
 const Service = () => {
   const navigation = useNavigation();
   return (navigation.state === "loading" ?
