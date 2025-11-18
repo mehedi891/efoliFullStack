@@ -30,7 +30,7 @@ export const loader = async () => {
   
 
 
-  return { posts,URI:process.env.BLOG_API_URL  };
+  return { posts };
 }
 
 import { useLoaderData, useNavigation } from "react-router";
@@ -109,8 +109,8 @@ export function meta() {
 
 export default function Home() {
   
-  const {posts,URI} = useLoaderData();
-  console.log('Blog URL:',URI);
+  const {posts} = useLoaderData();
+  // console.log('Blog URL:',URI);
   //console.log('posttt:',posts);
    const navigation = useNavigation();
   return (navigation.state === "loading" ?
@@ -121,3 +121,7 @@ export default function Home() {
   <Homepage posts={posts}/>
 );
 }
+
+
+
+
