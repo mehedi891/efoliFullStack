@@ -1,4 +1,4 @@
-import aboutHero from './aboutHero.webp';
+
 import circleImg from './circle.png';
 import circleImg2 from './circle2.png';
 import { motion } from "motion/react"

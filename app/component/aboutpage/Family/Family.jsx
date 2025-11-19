@@ -1,11 +1,11 @@
-import aboutHero from './aboutHero.webp';
+import aboutHero from '../../../images/aboutHero.webp';
 
 import ceoImg from "./ceoJA.webp";
 const Family = () => {
   return (
     <section className="lg:mb-30 mb-6 relative">
        <div  className='max-w-7xl mx-auto md:-mt-60 mt-10 md:px-0 px-4'>
-          <img className='object-contain' src={aboutHero} alt="About Us" />
+          <img className='object-contain rounded-3xl' src={aboutHero} alt="About Us" />
         </div>
       <div  className="max-w-7xl mx-auto md:mt-30 mt-10 md:px-0 px-4">
         <div className="flex flex-wrap lg:gap-40 gap-4">
