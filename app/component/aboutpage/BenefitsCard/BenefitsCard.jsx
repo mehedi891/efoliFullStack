@@ -134,7 +134,7 @@ const BenefitsCard = () => {
         <h2 className="md:text-5xl/[1.25] text-3xl font-bold font-display text-center"> Everything You Need to <br /> Succeed and Scale</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:mt-18 mt-10">
           {cards.map(({ title, description, Icon }, index) => (
-            <div key={index} className="flex flex-col gap-8 bg-white rounded-xl px-5 py-8 hover:shadow-lg transition-all ease-initial duration-600 hover:scale-[1.02] hover:cursor-pointer">
+            <div key={index} className="flex flex-col gap-8 bg-white rounded-xl px-5 py-8 hover:shadow-lg transition-all ease-initial duration-500 hover:scale-[1.02]">
               <Icon />
               <div className="flex flex-col gap-4">
                 <h3 className="text-2xl text-[#13181E] font-bold font-display">{title}</h3>
