@@ -1,8 +1,9 @@
 
-const Button = ({pClass="",text1="Button",text2="Button"}) => {
+const Button = ({pClass="",text1="Button",text2="Button",disabled = false}) => {
   return (
 
     <button
+      disabled={disabled}
       className={`cursor-pointer relative group ${pClass}`}
     >
       <div className="relative overflow-hidden">

@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import FormsubmitSuccessModal from "../contactpage/FormsubmitSuccessModal/FormsubmitSuccessModal"
 import { useForm, useWatch } from "react-hook-form";
 import Button from "../Button/Button";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
-const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
+const Form = ({ fClass = '', btnClass = '', btnTxt = 'Submit', hideService = false }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const fetcher = useFetcher();
   const {
@@ -13,6 +14,7 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
     reset,
     watch,
     control,
+    setValue,
     formState: { errors, isDirty, isSubmitting }
   } = useForm({
     defaultValues: {
@@ -21,6 +23,7 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
       email: "",
       service: "Other",
       message: "",
+      hCaptchaToken: "",
     },
   });
 
@@ -29,6 +32,11 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
 
   const onSubmit = (data) => {
     //console.log("Form data:", data);
+    if (!captchaVerified) {
+      setCaptchaVerified(false);
+      setBtnDisabled(true);
+      return;
+    }
     fetcher.submit(data, { method: "post", action: "/contact-us" });
     reset();
   };
@@ -37,13 +45,16 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
 
   const success = Boolean(fetcher?.data?.success && fetcher?.data?.message);
 
+  const handleVerificationSuccess = (token, ekey) => {
+    setValue("hCaptchaToken", token, { shouldDirty: true, shouldValidate: true });
+  };
 
   useEffect(() => {
-  if (success) {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setIsModalOpen(true);
-  }
-}, [success]);
+    if (success) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setIsModalOpen(true);
+    }
+  }, [success]);
 
 
   return (
@@ -110,36 +121,36 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
           )}
         </div>
 
-        { !hideService &&
+        {!hideService &&
 
-        <div>
-          <label
+          <div>
+            <label
 
-            className="text-xl after:content-['*'] after:ml-1 after:text-red-500"
-          >
-            Which service required?
-          </label>
-          <select
-            id="service"
-            defaultValue=""
-            className={`w-full px-0 py-4 border-b focus:outline-none text-2xl/[1.67] cursor-pointer 
+              className="text-xl after:content-['*'] after:ml-1 after:text-red-500"
+            >
+              Which service required?
+            </label>
+            <select
+              id="service"
+              defaultValue=""
+              className={`w-full px-0 py-4 border-b focus:outline-none text-2xl/[1.67] cursor-pointer 
     ${errors.service ? 'border-red-500' : 'border-gray-300'}
     ${isPlaceholder ? 'text-[#9B9B9A]' : ''}`}
-            {...register("service", { required: "Please select a service" })}
-          >
+              {...register("service", { required: "Please select a service" })}
+            >
 
-            <option value="" disabled hidden>
-              Please select
-            </option>
-            <option value="technical">Technical</option>
-            <option value="info">Information</option>
-            <option value="other">Other</option>
-          </select>
-          {errors.service && (
-            <p className="mt-2 text-sm text-red-300">{errors.service.message}</p>
-          )}
-        </div>
-}
+              <option value="" disabled hidden>
+                Please select
+              </option>
+              <option value="technical">Technical</option>
+              <option value="info">Information</option>
+              <option value="other">Other</option>
+            </select>
+            {errors.service && (
+              <p className="mt-2 text-sm text-red-300">{errors.service.message}</p>
+            )}
+          </div>
+        }
 
         <div>
           <label
@@ -162,13 +173,26 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
           )}
         </div>
 
-        {/* <button
-              type="submit"
-              disabled={fetcher?.state !== "idle"}
-              className="px-10 py-2 max-w-max bg-[#fff] text-[#020202] text-xl rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 cursor-pointer"
-            >
-              {fetcher?.state !== "idle" ? "Submitting..." : "Submit"}
-            </button> */}
+
+
+        <div className="md:-mt-8">
+          <HCaptcha
+            sitekey="14b0da6a-9b72-410a-8758-d2787a2cb814"
+            onVerify={(token, ekey) => handleVerificationSuccess(token, ekey)}
+            size="normal"
+          />
+          <input
+            type="hidden"
+            {...register("hCaptchaToken", {
+              required: "Please complete the CAPTCHA",
+            })}
+          />
+          {errors.hCaptchaToken && (
+            <p className="mt-2text-sm text-red-300">{errors.hCaptchaToken.message}</p>
+          )}
+        </div>
+
+
 
 
         <Button
@@ -176,6 +200,7 @@ const Form = ({fClass='',btnClass='',btnTxt='Submit',hideService=false}) => {
           pClass={`max-w-max  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 md:-mt-8 ${btnClass}`}
           text1={fetcher?.state !== "idle" ? "Submitting..." : btnTxt}
           text2={fetcher?.state !== "idle" ? "Submitting..." : btnTxt}
+
         />
 
 

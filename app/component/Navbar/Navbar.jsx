@@ -43,14 +43,10 @@ const Navbar = ({ parentClassName, linkClassName ,isDark}) => {
           <ul className="hidden lg:flex items-center gap-10.5">
             {navLinks.map((l) => (
               <li key={l.name}>
-
-
                 {
                   l.name === "Blog" ?
                     <a href={l.href}
                       className={`font-medium ${linkClassName} text-inherit`}
-
-
                     >
 
                       <Button
@@ -63,7 +59,7 @@ const Navbar = ({ parentClassName, linkClassName ,isDark}) => {
                       to={l.href}
                       end={l.end}
                       className={({ isActive, isPending }) =>
-                        isPending ? "pending text-[#1d74bf] font-medium" : isActive ? `active ${isDark ? "text-[#0D99FF]" : "text-[#0D99FF]"} font-medium` : `text-[#13181E] font-medium ${linkClassName}`
+                        isPending ? "pending text-inherit font-medium" : isActive ? `active ${isDark ? "text-[#0D99FF]" : "text-[#0D99FF]"} font-medium` : `text-[#13181E] font-medium ${linkClassName}`
                       }
                     >
                       <Button
