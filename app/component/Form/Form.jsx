@@ -32,11 +32,7 @@ const Form = ({ fClass = '', btnClass = '', btnTxt = 'Submit', hideService = fal
 
   const onSubmit = (data) => {
     //console.log("Form data:", data);
-    if (!captchaVerified) {
-      setCaptchaVerified(false);
-      setBtnDisabled(true);
-      return;
-    }
+    
     fetcher.submit(data, { method: "post", action: "/contact-us" });
     reset();
   };
